@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69835ba7dce6c7e438804aeea3e72a3e, type: 3}
-  m_Name: Artist_Data
+  m_Name: Drawing_Data
   m_EditorClassIdentifier: 
-  gravityStrength: -55.55555
-  gravityScale: 5.6631546
+  gravityStrength: -77.77777
+  gravityScale: 7.9284167
   fallGravityMultiplier: 2
   maxFallSpeed: 10
-  runMaxSpeed: 10
+  runMaxSpeed: 15
   runAcceleration: 2.5
-  runAccelAmount: 12.5
+  runAccelAmount: 8.333334
   runDecceleration: 5
-  runDeccelAmount: 25
+  runDeccelAmount: 16.666668
   accelInAir: 0.75
   deccelInAir: 0.75
-  jumpHeight: 2.5
+  jumpHeight: 3.5
   jumpTimeToApex: 0.3
-  jumpForce: 16.666666
+  jumpForce: 23.333332
   jumpCutGravityMultiplier: 3
   coyoteTime: 0.1
   jumpInputBufferTime: 0.1

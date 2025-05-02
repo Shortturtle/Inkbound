@@ -27,10 +27,16 @@ public class PlayerController : MonoBehaviour
     private bool isJumpFalling;
     private bool isJumpCut;
     private float lastJumpButtonPress;
+
+    //Animator variable
+    private Animator animator;
+    private int xInputInt;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
 
         SetGravityScale(data.gravityScale);
 
@@ -39,6 +45,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Animator Update
+        AnimatorUpdate();
+
         //Timer
         lastJumpButtonPress -= Time.deltaTime;
         lastOnGroundTime -= Time.deltaTime;
@@ -99,6 +108,9 @@ public class PlayerController : MonoBehaviour
             isJumpFalling = false;
             Jump();
         }
+
+        //GroundCheck
+        CheckGround();
     }
 
     private void FixedUpdate()
@@ -201,6 +213,15 @@ public class PlayerController : MonoBehaviour
     private void SetGravityScale(float scale)
     {
         rb.gravityScale = scale; // sets player gravity to be scale
+    }
+
+    private void AnimatorUpdate()
+    {
+        xInputInt = (int)xInput;
+        animator.SetInteger("Xinput", xInputInt);
+        animator.SetBool("Jumping", isJumping);
+        animator.SetBool("Falling", isJumpFalling);
+        animator.SetBool("Grounded", isGrounded);
     }
 
     private void OnDrawGizmos()
