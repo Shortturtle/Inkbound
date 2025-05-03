@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     private bool groundHit;
     [SerializeField] private bool isGrounded;
 
-    //Player Jump Variables
+    //Player Jump variables
     private bool isJumping;
     private float lastOnGroundTime;
     private bool isJumpFalling;
@@ -31,12 +31,18 @@ public class PlayerController : MonoBehaviour
     //Animator variable
     private Animator animator;
     private int xInputInt;
+
+    //Misc variables
+    [SerializeField] private PlayerInactive playerInactive;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
         animator = GetComponent<Animator>();
+
+        playerInactive = GetComponent<PlayerInactive>();
 
         SetGravityScale(data.gravityScale);
 
@@ -210,6 +216,18 @@ public class PlayerController : MonoBehaviour
         lastJumpButtonPress = 0;
     }
 
+    private void OnDisable()
+    {
+        rb.velocity = Vector2.zero;
+        xInput = 0;
+        playerInactive.enabled = true;
+    }
+
+    private void OnEnable()
+    {
+        playerInactive.enabled = false;
+    }
+
     private void SetGravityScale(float scale)
     {
         rb.gravityScale = scale; // sets player gravity to be scale
@@ -222,6 +240,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Jumping", isJumping);
         animator.SetBool("Falling", isJumpFalling);
         animator.SetBool("Grounded", isGrounded);
+        animator.SetFloat("Yvelocity", rb.velocity.y);
     }
 
     private void OnDrawGizmos()

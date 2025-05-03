@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
     public int activePlayer = 1;
-    [SerializeField] private PlayerController player1;
-    [SerializeField] private PlayerController player2;
+    [SerializeField] private PlayerController artist;
+    [SerializeField] private PlayerController drawing;
+    private CinemachineVirtualCamera virtualCam;
 
     private void Start()
     {
-        player1.enabled = true;
-        player2.enabled = false;
+        virtualCam = FindFirstObjectByType<CinemachineVirtualCamera>();
+
+        virtualCam.Follow = artist.gameObject.transform;
+        artist.enabled = true;
+        drawing.enabled = false;
     }
     // Update is called once per frame
     void Update()
@@ -27,14 +32,16 @@ public class NewBehaviourScript : MonoBehaviour
         switch (activePlayer)
         {
             case 1:
-                player1.enabled = false;
-                player2.enabled = true;
+                artist.enabled = false;
+                drawing.enabled = true;
+                virtualCam.Follow = drawing.gameObject.transform;
                 activePlayer = 2;
                 break;
 
             case 2:
-                player1.enabled = true;
-                player2.enabled = false;
+                artist.enabled = true;
+                drawing.enabled = false;
+                virtualCam.Follow = artist.gameObject.transform;
                 activePlayer = 1;
                 break;
         }
