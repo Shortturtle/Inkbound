@@ -11,7 +11,6 @@ public class PlayerInactive : MonoBehaviour
     [SerializeField] private Vector2 groundBoxCastSize;
     [SerializeField] private LayerMask realGround;
     private bool groundHit;
-    private bool isJumping;
     private float lastOnGroundTime;
     // Start is called before the first frame update
     void Start()
@@ -81,8 +80,6 @@ public class PlayerInactive : MonoBehaviour
 
     private void CheckGround()
     {
-        if (!isJumping)
-        {
             Vector2 groundBoxCastOrigin = ground.transform.position; // where the cast box originates from
 
             groundHit = Physics2D.OverlapBox(groundBoxCastOrigin, groundBoxCastSize, 0f, realGround); // grounded check
@@ -90,6 +87,5 @@ public class PlayerInactive : MonoBehaviour
             {
                 lastOnGroundTime = data.coyoteTime; // allows for jump buffer and also acts as ground check
             }
-        }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
@@ -9,6 +10,8 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private PlayerController artist;
     [SerializeField] private PlayerController drawing;
     private CinemachineVirtualCamera virtualCam;
+    [SerializeField] private SpriteRenderer background;
+    [SerializeField] private SpriteRenderer drawnBackground;
 
     private void Start()
     {
@@ -17,6 +20,8 @@ public class NewBehaviourScript : MonoBehaviour
         virtualCam.Follow = artist.gameObject.transform;
         artist.enabled = true;
         drawing.enabled = false;
+        
+        
     }
     // Update is called once per frame
     void Update()
@@ -35,6 +40,7 @@ public class NewBehaviourScript : MonoBehaviour
                 artist.enabled = false;
                 drawing.enabled = true;
                 virtualCam.Follow = drawing.gameObject.transform;
+                
                 activePlayer = 2;
                 break;
 
@@ -45,5 +51,12 @@ public class NewBehaviourScript : MonoBehaviour
                 activePlayer = 1;
                 break;
         }
+    }
+
+    private void ChangeBackgroundTransparency()
+    {
+        Color tmp = background.color;
+        tmp.a = 0f;
+        background.color = tmp;
     }
 }
