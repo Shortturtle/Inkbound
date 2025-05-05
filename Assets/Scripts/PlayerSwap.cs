@@ -4,7 +4,7 @@ using Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerSwap : MonoBehaviour
 {
     public int activePlayer = 1;
     [SerializeField] private PlayerController artist;

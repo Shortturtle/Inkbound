@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Artist
   - Drawing
+  - Water
+  - Spikes
+  - KillPlane
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private float xInput;
 
     //Player Rigidbody variable
-    private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D rb;
 
     //Player Groundcheck variable
     [SerializeField] private GameObject ground;
@@ -235,6 +235,27 @@ public class PlayerController : MonoBehaviour
     {
         playerInactive.enabled = false;
     }
+
+    /*
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (this.gameObject.CompareTag("Artist"))
+        {
+            if(collision.collider.gameObject.CompareTag("Spikes") || collision.collider.gameObject.CompareTag("KillPlane"))
+            {
+
+            }
+        }
+
+        else if (this.gameObject.CompareTag("Drawing"))
+        {
+            if (collision.collider.gameObject.CompareTag("Water") || collision.collider.gameObject.CompareTag("KillPlane"))
+            {
+
+            }
+        }
+    }
+    */
 
     private void PlayerOnBoxCheck()
     {
