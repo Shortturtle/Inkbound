@@ -30,13 +30,8 @@ public class PlayerController : MonoBehaviour
     private bool isJumpCut;
     private float lastJumpButtonPress;
 
-    /*
-    //Player Push varible
-    [SerializeField] private Vector3 offset;
-    [SerializeField] private float distance;
-    [SerializeField] private LayerMask boxMask;
-    private GameObject box;
-    */
+    //Player On Box variables
+    public bool isOnTopOfBox;
 
     //Animator variable
     private Animator animator;
@@ -129,7 +124,7 @@ public class PlayerController : MonoBehaviour
         CheckGround();
 
         //Box Check
-        //BoxCheck();
+        PlayerOnBoxCheck();
     }
 
     private void FixedUpdate()
@@ -229,27 +224,6 @@ public class PlayerController : MonoBehaviour
         lastJumpButtonPress = 0;
     }
 
-    /*
-    private void BoxCheck()
-    {
-        Physics2D.queriesStartInColliders = false;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position + offset, Vector2.right * transform.localScale.x, distance, boxMask);
-
-        if (hit.collider != null && lastOnGroundTime > 0 && xInput == (Vector2.right * transform.localScale.x).x)
-        {
-            box = hit.collider.gameObject;
-            box.GetComponent<FixedJoint2D>().enabled = true;
-
-            box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
-        }
-
-        else if (hit.collider != null)
-        {
-            box.GetComponent<FixedJoint2D>().enabled = false;
-        }
-    }
-    */
-
     private void OnDisable()
     {
         rb.velocity = Vector2.zero;
@@ -260,6 +234,15 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         playerInactive.enabled = false;
+    }
+
+    private void PlayerOnBoxCheck()
+    {
+        if(isOnTopOfBox && lastOnGroundTime < 0)
+        {
+            isOnTopOfBox = false;
+            transform.SetParent(null);
+        }
     }
 
     private void SetGravityScale(float scale)
@@ -282,12 +265,6 @@ public class PlayerController : MonoBehaviour
         // draw boxes for all detections
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(ground.transform.position, groundBoxCastSize);
-
-        /*
-        //Raycast boxes
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position + offset, (Vector2)transform.position + (Vector2)offset + Vector2.right * transform.localScale.x * distance);
-        */
     }
     private bool CanJump()
     {
