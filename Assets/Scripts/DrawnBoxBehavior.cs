@@ -9,7 +9,7 @@ public class DrawnBoxBehavior : MonoBehaviour
     void Start()
     {
         GameObject artist = GameObject.FindGameObjectWithTag("Artist");
-        Physics2D.IgnoreCollision(artist.GetComponent<BoxCollider2D>(), GetComponent<CompositeCollider2D>());
+        Physics2D.IgnoreCollision(artist.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
     }
 
     // Update is called once per frame

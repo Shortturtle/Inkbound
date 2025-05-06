@@ -218,9 +218,10 @@ GameObject:
   - component: {fileID: 74528752}
   - component: {fileID: 74528751}
   - component: {fileID: 74528750}
+  - component: {fileID: 74528754}
   m_Layer: 9
   m_Name: DrawnBox
-  m_TagString: Untagged
+  m_TagString: Drawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -364,6 +365,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &74528754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74528749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6169dfa9e5b474f9d35aa54d07d591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &354586346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,7 +1216,7 @@ Transform:
   m_GameObject: {fileID: 630888926}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.040966, y: 0.06745005, z: -13.376488}
+  m_LocalPosition: {x: -2.0188875, y: 0.06745005, z: -13.376488}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2707,7 +2720,7 @@ GameObject:
   - component: {fileID: 809308193}
   m_Layer: 7
   m_Name: Drawn Tilemap
-  m_TagString: Untagged
+  m_TagString: Drawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4169,6 +4182,8 @@ MonoBehaviour:
   drawing: {fileID: 396167933}
   background: {fileID: 2088136678}
   drawnBackground: {fileID: 52594968}
+  fadedAlpha: 0.5
+  fadeDuration: 1
 --- !u!114 &1139054894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4853,7 +4868,7 @@ Transform:
   m_GameObject: {fileID: 1830867384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.21, y: -4.78, z: 0}
+  m_LocalPosition: {x: -6.21, y: -4.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
