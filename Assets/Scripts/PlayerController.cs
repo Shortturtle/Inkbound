@@ -159,7 +159,6 @@ public class PlayerController : MonoBehaviour
 
     private void Run(float lerpAmount)
     {
-        GetInput();
 
         float targetSpeed = xInput * data.runMaxSpeed; // calculate target speed
         targetSpeed = Mathf.Lerp(rb.velocity.x, targetSpeed, lerpAmount);
@@ -294,5 +293,24 @@ public class PlayerController : MonoBehaviour
     private bool CanJumpCut()
     {
         return isJumping && rb.velocity.y > 0;
+    }
+
+    public void JumpMobile()
+    {
+        lastJumpButtonPress = data.jumpInputBufferTime;
+    }
+
+    public void JumpCutMobile()
+    {
+        if (CanJumpCut())
+        {
+            isJumpCut = true;
+        }
+    }
+
+    public void MoveMobile(int x) // Mobile Movement
+    {
+        xInput = x;
+
     }
 }

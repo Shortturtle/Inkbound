@@ -13,7 +13,9 @@ public class PlayerSwap : MonoBehaviour
 {
     public int activePlayer = 1;
     [SerializeField] private PlayerController artist;
+    [SerializeField] private GameObject artistArrow;
     [SerializeField] private PlayerController drawing;
+    [SerializeField] private GameObject drawingArrow;
     private CinemachineVirtualCamera virtualCam;
     [SerializeField] private SpriteRenderer background;
     [SerializeField] private SpriteRenderer drawnBackground;
@@ -29,7 +31,9 @@ public class PlayerSwap : MonoBehaviour
 
         virtualCam.Follow = artist.gameObject.transform;
         artist.enabled = true;
+        artistArrow.SetActive(true);
         drawing.enabled = false;
+        drawingArrow.SetActive(false);
         ToggleOpacity(isFaded);
         PlayerOpacityStart();
         SetAlpha(background, 1f);
@@ -55,7 +59,9 @@ public class PlayerSwap : MonoBehaviour
         {
             case 1:
                 artist.enabled = false;
+                artistArrow.SetActive(false);
                 drawing.enabled = true;
+                drawingArrow.SetActive(true);
                 virtualCam.Follow = drawing.gameObject.transform;
                 ChangePlayerOpacity();
                 activePlayer = 2;
@@ -63,7 +69,9 @@ public class PlayerSwap : MonoBehaviour
 
             case 2:
                 artist.enabled = true;
+                artistArrow.SetActive(true);
                 drawing.enabled = false;
+                drawingArrow.SetActive(false);
                 virtualCam.Follow = artist.gameObject.transform;
                 ChangePlayerOpacity();
                 activePlayer = 1;
@@ -158,6 +166,14 @@ public class PlayerSwap : MonoBehaviour
         Color c = sr.color;
         c.a = alpha;
         sr.color = c;
+    }
+
+    public void SwapCharacterMobile()
+    {
+        SwapPlayer();
+        isFaded = !isFaded;
+        ToggleOpacity(isFaded);
+        SetBackgroundOpacity();
     }
 
 }
