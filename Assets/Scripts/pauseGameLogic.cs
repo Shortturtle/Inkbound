@@ -48,7 +48,7 @@ public class pauseGameLogic : MonoBehaviour
     - In the function dropdown select "PauseGame" -> "TogglePause".
     
     
-    
+    - Amos
     
     
     */
