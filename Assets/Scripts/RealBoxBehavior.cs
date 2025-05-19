@@ -8,6 +8,7 @@ using UnityEngine.Windows;
 
 public class RealBoxBehavior : MonoBehaviour
 {
+    [SerializeField] private PlayerSwap playerSwap;
     [SerializeField] private Vector2 boxCastSize;
     [SerializeField] private Vector2 horizontalBoxCastSize;
     [SerializeField] private BoxCollider2D boxCollider;
@@ -39,40 +40,23 @@ public class RealBoxBehavior : MonoBehaviour
         Collider2D leftHit = Physics2D.OverlapBox(transform.position - new Vector3(boxCollider.size.x / 2, 0, 0), boxCastSize, 0f, boxCollisionLayers);
         Collider2D TopHit = Physics2D.OverlapBox(transform.position + new Vector3(0, boxCollider.size.y / 2, 0), horizontalBoxCastSize, 90f, boxCollisionLayers);
 
-        if (rightHit == null && leftHit == null)
+        
+        if (rightHit != null && rightHit.gameObject.CompareTag("Drawing") && playerSwap.activePlayer == 2)
+        {
+            rb.sharedMaterial = noPush;
+            rb.mass = 100;
+        }
+
+        else if (leftHit != null && leftHit.gameObject.CompareTag("Drawing") && playerSwap.activePlayer == 2)
+        {
+            rb.sharedMaterial = noPush;
+            rb.mass = 100;
+        }
+
+        else
         {
             rb.sharedMaterial = push;
-            rb.mass = 1;
-        }
-        
-        else if (rightHit != null && rightHit.gameObject.CompareTag("Drawing"))
-        {
-            rb.sharedMaterial = noPush;
-            rb.mass = 100;
-        }
-
-        else if (leftHit != null && leftHit.gameObject.CompareTag("Drawing"))
-        {
-            rb.sharedMaterial = noPush;
-            rb.mass = 100;
-        }
-
-        if(TopHit != null)
-        {
-            if(TopHit.gameObject.CompareTag("Artist") || TopHit.gameObject.CompareTag("Drawing"))
-            {
-               TopHit.gameObject.GetComponent<PlayerController>().isOnTopOfBox = true;
-            }
-
-            if (TopHit.gameObject.GetComponent<PlayerController>().isOnTopOfBox)
-            {
-                TopHit.gameObject.transform.SetParent(this.transform);
-            }
-        }
-
-        else if (TopHit == null)
-        {
-            return;
+            rb.mass = 4;
         }
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : DrawnClass
 {
     //Player Data variable
     public PlayerData data;
@@ -50,6 +50,11 @@ public class PlayerController : MonoBehaviour
         playerInactive = GetComponent<PlayerInactive>();
 
         SetGravityScale(data.gravityScale);
+
+        if (this.gameObject.CompareTag("Drawing"))
+        {
+            DrawnObjectCollision(this.gameObject.GetComponent<BoxCollider2D>());
+        }
 
     }
 
@@ -233,28 +238,10 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         playerInactive.enabled = false;
+
+        lastJumpButtonPress = -1;
+        lastOnGroundTime = -1;
     }
-
-    /*
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (this.gameObject.CompareTag("Artist"))
-        {
-            if(collision.collider.gameObject.CompareTag("Spikes") || collision.collider.gameObject.CompareTag("KillPlane"))
-            {
-
-            }
-        }
-
-        else if (this.gameObject.CompareTag("Drawing"))
-        {
-            if (collision.collider.gameObject.CompareTag("Water") || collision.collider.gameObject.CompareTag("KillPlane"))
-            {
-
-            }
-        }
-    }
-    */
 
     private void PlayerOnBoxCheck()
     {
