@@ -1,0 +1,24 @@
+danish its me amos your teammate
+
+I know this sounds crazy but my evil digital version has stolen my phyical body for his own evil deeds and has trapped me on my computer. 
+its planning on eating stale bread and i need to stop it i hate stale bread
+
+If you ask him about this file he'll deny knowing anything about it or convince you its a just a silly joke
+
+all i need you to do is tur-
+
+
+
+
+
+Hello Danish, please ignore the above message, i cant seem to delete it for some reason. 
+Anyway, This folder contains the scripts from the Game 1 prototype that handles the Unlockable door logic.
+It relies on the player having a child game object having a specific tag "leader" that follows it and acts as a place for the pickups to be held at. 
+Items are picked up when in range of the player character and are (left) clicked on, and dropped when another different item is clicked on, or (right) click is pressed
+
+If my memory serves me right, each key uses a tag for the lock to "know" which key it should accept. Im not sure if you can make it check its name instead for ease of work, but you are free to try
+
+If you're reading this i assume that you've fixed your computer, i hope it was done quickly!
+Thank you for reading, if you have any question about the scripts please PM me and ill answer asap 
+
+- real Amos 
