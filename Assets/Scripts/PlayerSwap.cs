@@ -17,6 +17,8 @@ public class PlayerSwap : MonoBehaviour
     [SerializeField] private PlayerController drawing;
     [SerializeField] private GameObject drawingArrow;
     private CinemachineVirtualCamera virtualCam;
+    [SerializeField] private SpriteRenderer artistSpriteRenderer;
+    [SerializeField] private SpriteRenderer drawingSpriteRenderer;
     [SerializeField] private SpriteRenderer background;
     [SerializeField] private SpriteRenderer drawnBackground;
     private Array drawnObjects;
@@ -28,6 +30,8 @@ public class PlayerSwap : MonoBehaviour
     private void Start()
     {
         virtualCam = FindFirstObjectByType<CinemachineVirtualCamera>();
+        artistSpriteRenderer = artist.gameObject.GetComponent<SpriteRenderer>();
+        drawingSpriteRenderer = drawing.gameObject.GetComponent<SpriteRenderer>();
 
         virtualCam.Follow = artist.gameObject.transform;
         artist.enabled = true;
@@ -107,26 +111,36 @@ public class PlayerSwap : MonoBehaviour
 
     private void ChangePlayerOpacity()
     {
-        SpriteRenderer tmp;
+        GameObject tempItem = null;
 
         switch (activePlayer)
         {
             case 1:
-                tmp = artist.gameObject.GetComponent<SpriteRenderer>();
-                SetAlpha(tmp, fadedAlpha);
+                SetAlpha(artistSpriteRenderer, fadedAlpha);
+                artistSpriteRenderer.sortingOrder = -1;
+                tempItem = artist.GetComponent<ArtistPickUpHandler>().heldItem;
+                if(tempItem != null)
+                {
+                    SetAlpha(tempItem.GetComponent<SpriteRenderer>(), fadedAlpha);
+                }
 
-                tmp = drawing.gameObject.GetComponent<SpriteRenderer>();
-                SetAlpha(tmp, 1f);
+                SetAlpha(drawingSpriteRenderer, 1f);
+                drawingSpriteRenderer.sortingOrder = 0;
 
                 break;
                 
 
             case 2:
-                tmp = artist.gameObject.GetComponent<SpriteRenderer>();
-                SetAlpha(tmp, 1f);
+                SetAlpha(artistSpriteRenderer, 1f);
+                artistSpriteRenderer.sortingOrder = 0;
+                tempItem = artist.GetComponent<ArtistPickUpHandler>().heldItem;
+                if (tempItem != null)
+                {
+                    SetAlpha(tempItem.GetComponent<SpriteRenderer>(), 1f);
+                }
 
-                tmp = drawing.gameObject.GetComponent<SpriteRenderer>();
-                SetAlpha(tmp, fadedAlpha);
+                SetAlpha(drawingSpriteRenderer, fadedAlpha);
+                drawingSpriteRenderer.sortingOrder = -1;
 
                 break;
         }
@@ -152,13 +166,11 @@ public class PlayerSwap : MonoBehaviour
 
     private void PlayerOpacityStart()
     {
-        SpriteRenderer tmp;
+        SetAlpha(artistSpriteRenderer, 1f);
+        artistSpriteRenderer.sortingOrder = 0;
 
-        tmp = artist.gameObject.GetComponent<SpriteRenderer>();
-        SetAlpha(tmp, 1f);
-
-        tmp = drawing.gameObject.GetComponent<SpriteRenderer>();
-        SetAlpha(tmp, fadedAlpha);
+        SetAlpha(drawingSpriteRenderer, fadedAlpha);
+        drawingSpriteRenderer.sortingOrder = -1;
     }
 
     void SetAlpha(SpriteRenderer sr, float alpha)

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -39,6 +41,8 @@ public class PlayerController : DrawnClass
 
     //Misc variables
     [SerializeField] private PlayerInactive playerInactive;
+    public PickUpHandlerClass pickUpHandler;
+
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +59,10 @@ public class PlayerController : DrawnClass
         {
             DrawnObjectCollision(this.gameObject.GetComponent<BoxCollider2D>());
         }
+
+        IgnoreCollisions();
+
+        pickUpHandler = gameObject.GetComponent<PickUpHandlerClass>();
 
     }
 
@@ -127,9 +135,6 @@ public class PlayerController : DrawnClass
 
         //GroundCheck
         CheckGround();
-
-        //Box Check
-        PlayerOnBoxCheck();
     }
 
     private void FixedUpdate()
@@ -232,6 +237,9 @@ public class PlayerController : DrawnClass
     {
         rb.velocity = Vector2.zero;
         xInput = 0;
+
+        pickUpHandler.enabled = false;
+
         playerInactive.enabled = true;
     }
 
@@ -239,17 +247,25 @@ public class PlayerController : DrawnClass
     {
         playerInactive.enabled = false;
 
+        pickUpHandler.enabled = true;
+
         lastJumpButtonPress = -1;
         lastOnGroundTime = -1;
     }
 
-    private void PlayerOnBoxCheck()
+    private void IgnoreCollisions()
     {
-        if(isOnTopOfBox && lastOnGroundTime < 0)
+        GameObject[] tmp;
+        tmp = GameObject.FindObjectsOfType<GameObject>();
+
+        foreach(GameObject item in tmp)
         {
-            isOnTopOfBox = false;
-            transform.SetParent(null);
+            if (item.GetComponent<PickUpClass>() != null)
+            {
+                Physics2D.IgnoreCollision(this.GetComponent<BoxCollider2D>(), item.GetComponent<BoxCollider2D>());
+            }
         }
+
     }
 
     private void SetGravityScale(float scale)
