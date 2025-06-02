@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
-public class PlayerController : DrawnClass
+public class PlayerController : MonoBehaviour
 {
     //Player Data variable
     public PlayerData data;
@@ -54,11 +54,6 @@ public class PlayerController : DrawnClass
         playerInactive = GetComponent<PlayerInactive>();
 
         SetGravityScale(data.gravityScale);
-
-        if (this.gameObject.CompareTag("Drawing"))
-        {
-            DrawnObjectCollision(this.gameObject.GetComponent<BoxCollider2D>());
-        }
 
         IgnoreCollisions();
 
@@ -255,6 +250,13 @@ public class PlayerController : DrawnClass
 
     private void IgnoreCollisions()
     {
+        if (this.CompareTag("Drawing"))
+        {
+            GameObject artist = GameObject.FindGameObjectWithTag("Artist");
+
+            Physics2D.IgnoreCollision(artist.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
+        }
+
         GameObject[] tmp;
         tmp = GameObject.FindObjectsOfType<GameObject>();
 

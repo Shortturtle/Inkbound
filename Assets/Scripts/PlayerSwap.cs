@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -21,6 +22,8 @@ public class PlayerSwap : MonoBehaviour
     [SerializeField] private SpriteRenderer drawingSpriteRenderer;
     [SerializeField] private SpriteRenderer background;
     [SerializeField] private SpriteRenderer drawnBackground;
+    [SerializeField] private Canvas colouredUI;
+    [SerializeField] private Canvas uncolouredUI;
     private Array drawnObjects;
 
     [SerializeField] [Range(0f, 1f)] public float fadedAlpha; // The transparency level when faded
@@ -38,6 +41,8 @@ public class PlayerSwap : MonoBehaviour
         artistArrow.SetActive(true);
         drawing.enabled = false;
         drawingArrow.SetActive(false);
+        colouredUI.enabled = true;
+        uncolouredUI.enabled = false;
         ToggleOpacity(isFaded);
         PlayerOpacityStart();
         SetAlpha(background, 1f);
@@ -68,6 +73,8 @@ public class PlayerSwap : MonoBehaviour
                 drawingArrow.SetActive(true);
                 virtualCam.Follow = drawing.gameObject.transform;
                 ChangePlayerOpacity();
+                colouredUI.enabled = false;
+                uncolouredUI.enabled = true;
                 activePlayer = 2;
                 break;
 
@@ -78,6 +85,8 @@ public class PlayerSwap : MonoBehaviour
                 drawingArrow.SetActive(false);
                 virtualCam.Follow = artist.gameObject.transform;
                 ChangePlayerOpacity();
+                colouredUI.enabled = true;
+                uncolouredUI.enabled = false;
                 activePlayer = 1;
                 break;
         }

@@ -227,8 +227,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1122509853
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2059103999, guid: 496562456fdbe6647887febf11640c70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -375,6 +375,7 @@ MonoBehaviour:
   isGrounded: 0
   isOnTopOfBox: 0
   playerInactive: {fileID: 1755108926382272032}
+  pickUpHandler: {fileID: 0}
 --- !u!114 &9135400618097891171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,8 +402,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heldItem: {fileID: 0}
-  pickUpTag: Key
+  pickUpsInRadius: []
   pickUpLocation: {fileID: 2605707806664945598}
+  doorNearby: 0
 --- !u!58 &2859755752012434780
 CircleCollider2D:
   m_ObjectHideFlags: 0

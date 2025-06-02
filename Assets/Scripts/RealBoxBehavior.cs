@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
-public class RealBoxBehavior : MonoBehaviour
+public class RealBoxBehavior : BoxClass
 {
     [SerializeField] private PlayerSwap playerSwap;
     [SerializeField] private Vector2 boxCastSize;

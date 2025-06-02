@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class ArtistPickUpHandler : PickUpHandlerClass
 {
-    private RealDoorHandler RealDoorHandler;
+    private RealDoorHandler realDoorHandler;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class ArtistPickUpHandler : PickUpHandlerClass
             {
                 if (heldItem.GetComponent<KeyClass>() && doorNearby == true)
                 {
-                    RealDoorHandler.KeyInserted();
+                    realDoorHandler.KeyInserted();
                     Destroy(heldItem);
                     heldItem = null;
                 }
@@ -46,13 +46,12 @@ public class ArtistPickUpHandler : PickUpHandlerClass
         if (collision.gameObject.GetComponent<PickUpClass>() && !collision.gameObject.CompareTag("Drawn"))
         {
             pickUpsInRadius.Add(collision.gameObject);
-            Debug.Log(pickUpsInRadius); 
         }
 
         if (collision.gameObject.GetComponent<RealDoorHandler>())
         {
             doorNearby = true;
-            RealDoorHandler = collision.GetComponent<RealDoorHandler>();
+            realDoorHandler = collision.GetComponent<RealDoorHandler>();
         }
     }
 
@@ -66,7 +65,29 @@ public class ArtistPickUpHandler : PickUpHandlerClass
         if (collision.gameObject.GetComponent<RealDoorHandler>())
         {
             doorNearby = false;
-            RealDoorHandler = null;
+            realDoorHandler = null;
+        }
+    }
+
+    public void InteractButtonMobile()
+    {
+        if (heldItem == null)
+        {
+            PickUpItem();
+        }
+
+        else if (heldItem != null)
+        {
+            if (heldItem.GetComponent<KeyClass>() && doorNearby == true)
+            {
+                realDoorHandler.KeyInserted();
+                Destroy(heldItem);
+                heldItem = null;
+            }
+            else
+            {
+                PutDownItem();
+            }
         }
     }
 }

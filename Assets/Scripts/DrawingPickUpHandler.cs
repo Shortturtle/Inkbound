@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DrawingPickUpHandler : PickUpHandlerClass
 {
+    private DrawnDoorHandler drawnDoorHandler;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,17 @@ public class DrawingPickUpHandler : PickUpHandlerClass
 
             else if (heldItem != null)
             {
-                PutDownItem();
+                if (heldItem.GetComponent<KeyClass>() && doorNearby == true)
+                {
+                    drawnDoorHandler.KeyInserted();
+                    Destroy(heldItem);
+                    heldItem = null;
+                }
+
+                else
+                {
+                    PutDownItem();
+                }
             }
         }
 
@@ -33,8 +44,14 @@ public class DrawingPickUpHandler : PickUpHandlerClass
         if (collision.gameObject.GetComponent<PickUpClass>() && collision.gameObject.CompareTag("Drawn"))
         {
             pickUpsInRadius.Add(collision.gameObject);
-            Debug.Log(pickUpsInRadius);
         }
+
+        if (collision.gameObject.GetComponent<DrawnDoorHandler>())
+        {
+            doorNearby = true;
+            drawnDoorHandler = collision.GetComponent<DrawnDoorHandler>();
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -42,6 +59,34 @@ public class DrawingPickUpHandler : PickUpHandlerClass
         if (collision.gameObject.GetComponent<PickUpClass>() && collision.gameObject.CompareTag("Drawn"))
         {
             pickUpsInRadius.Remove(collision.gameObject);
+        }
+
+        if (collision.gameObject.GetComponent<DrawnDoorHandler>())
+        {
+            doorNearby = false;
+            drawnDoorHandler = null;
+        }
+    }
+
+    public void InteractButtonMobile()
+    {
+        if (heldItem == null)
+        {
+            PickUpItem();
+        }
+
+        else if (heldItem != null)
+        {
+            if (heldItem.GetComponent<KeyClass>() && doorNearby == true)
+            {
+                drawnDoorHandler.KeyInserted();
+                Destroy(heldItem);
+                heldItem = null;
+            }
+            else
+            {
+                PutDownItem();
+            }
         }
     }
 }
