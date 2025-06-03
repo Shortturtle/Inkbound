@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69835ba7dce6c7e438804aeea3e72a3e, type: 3}
   m_Name: Artist_Data
   m_EditorClassIdentifier: 
-  gravityStrength: -88.888885
-  gravityScale: 9.0610485
-  fallGravityMultiplier: 2
+  gravityStrength: -87.5
+  gravityScale: 8.91947
+  fallGravityMultiplier: 1.5
   maxFallSpeed: 20
   runMaxSpeed: 12
   runAcceleration: 4
@@ -23,9 +23,9 @@ MonoBehaviour:
   runDeccelAmount: 29.166668
   accelInAir: 1
   deccelInAir: 1
-  jumpHeight: 4
-  jumpTimeToApex: 0.3
-  jumpForce: 26.666666
+  jumpHeight: 7
+  jumpTimeToApex: 0.4
+  jumpForce: 35
   jumpCutGravityMultiplier: 2.5
   coyoteTime: 0.1
   jumpInputBufferTime: 0.1

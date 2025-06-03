@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class pauseGameLogic : MonoBehaviour
 {
-    public static bool GameIsPaused = false; 
-    public GameObject pauseMenuUI; 
+    public static bool GameIsPaused = false;
+    public GameObject pauseMenuUI;
+    [SerializeField] private Canvas colouredUI;
+    [SerializeField] private Canvas uncolouredUI;
+    [SerializeField] private PlayerSwap playerswap;
+    [SerializeField] private SoundManager soundManager;
 
     // ------------------------------ Pause Resume Toggle ------------------------//    
     public void TogglePause()
@@ -25,6 +29,10 @@ public class pauseGameLogic : MonoBehaviour
         pauseMenuUI.SetActive(true); 
         Time.timeScale = 0f; 
         GameIsPaused = true;
+        colouredUI.enabled = false;
+        uncolouredUI.enabled = false;
+        soundManager.musicSource.pitch = 0.75f;
+        soundManager.musicSource.volume = 0.5f;
     }
     //------------------------------- Resume Function ---------------------------//
     void Resume()
@@ -32,6 +40,17 @@ public class pauseGameLogic : MonoBehaviour
         pauseMenuUI.SetActive(false); 
         Time.timeScale = 1f; 
         GameIsPaused = false;
+        soundManager.musicSource.pitch = 1f;
+        soundManager.musicSource.volume = 0.8f;
+        if (playerswap.activePlayer == 1)
+        {
+            colouredUI.enabled = true;
+        }
+
+        else
+        {
+            uncolouredUI.enabled = true;
+        }
     }
     //------------------------------ Change Scene Funciton (not done)---------------------//
 

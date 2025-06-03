@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DoorClass : MonoBehaviour
 {
-    public GameObject doorOpenPosition;
+    public bool doorOpen;
     public int numOfKeysNeeded;
     [HideInInspector] public int keysPresent;
 
@@ -15,6 +16,7 @@ public class DoorClass : MonoBehaviour
 
     public void UnlockDoor()
     {
-        gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, doorOpenPosition.transform.position, 0.05f);
+        doorOpen = true;
+        this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 }

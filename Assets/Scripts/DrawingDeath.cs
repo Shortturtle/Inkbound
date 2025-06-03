@@ -17,12 +17,4 @@ public class DrawingDeath : MonoBehaviour
     {
         
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.gameObject.CompareTag("Water") || collision.collider.gameObject.CompareTag("KillPlane"))
-            {
-             drawingDead = true;
-            }
-    }
 }

@@ -31,6 +31,8 @@ public class RealBoxBehavior : BoxClass
     void Update()
     {
         BoxCheck();
+
+        VelocityCap(rb);
     }
     
     private void BoxCheck()

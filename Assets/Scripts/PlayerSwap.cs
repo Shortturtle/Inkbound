@@ -175,6 +175,8 @@ public class PlayerSwap : MonoBehaviour
 
     private void PlayerOpacityStart()
     {
+        Physics2D.IgnoreCollision(artist.GetComponent<BoxCollider2D>(), drawing.GetComponent<BoxCollider2D>());
+
         SetAlpha(artistSpriteRenderer, 1f);
         artistSpriteRenderer.sortingOrder = 0;
 

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69835ba7dce6c7e438804aeea3e72a3e, type: 3}
   m_Name: Drawing_Data
   m_EditorClassIdentifier: 
-  gravityStrength: -66.666664
-  gravityScale: 6.795786
-  fallGravityMultiplier: 2
+  gravityStrength: -81.25
+  gravityScale: 8.282365
+  fallGravityMultiplier: 1.5
   maxFallSpeed: 20
   runMaxSpeed: 12
   runAcceleration: 4
@@ -23,9 +23,9 @@ MonoBehaviour:
   runDeccelAmount: 29.166668
   accelInAir: 1
   deccelInAir: 1
-  jumpHeight: 3
-  jumpTimeToApex: 0.3
-  jumpForce: 20
-  jumpCutGravityMultiplier: 3
+  jumpHeight: 6.5
+  jumpTimeToApex: 0.4
+  jumpForce: 32.5
+  jumpCutGravityMultiplier: 2.5
   coyoteTime: 0.1
   jumpInputBufferTime: 0.1

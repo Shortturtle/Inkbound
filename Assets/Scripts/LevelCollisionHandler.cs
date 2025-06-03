@@ -32,7 +32,11 @@ public class LevelCollisionHandler : MonoBehaviour
                 Physics2D.IgnoreCollision(i.gameObject.GetComponent<CompositeCollider2D>(), artist);
                 
             }
-            Physics2D.IgnoreCollision(i, artist);
+
+            else
+            {
+                Physics2D.IgnoreCollision(i, artist);
+            }
         }
     }
 

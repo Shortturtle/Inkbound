@@ -10,6 +10,7 @@ TagManager:
   - Spikes
   - KillPlane
   - Drawn
+  - AudioManager
   layers:
   - Default
   - TransparentFX
@@ -47,15 +48,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 1122509853
-    locked: 0
-  - name: Foreground
-    uniqueID: 854348037
+  - name: Background
+    uniqueID: 3547678573
     locked: 0
   - name: Midground
     uniqueID: 932035355
     locked: 0
-  - name: Background
-    uniqueID: 3547678573
+  - name: Foreground
+    uniqueID: 854348037
     locked: 0

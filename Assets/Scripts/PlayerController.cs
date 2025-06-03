@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -39,6 +40,11 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private int xInputInt;
 
+    //Audio variables
+    [SerializeField] private SoundManager soundManager;
+    [SerializeField] private AudioClip jumpAudio;
+    [SerializeField] private AudioClip runAudio;
+    
     //Misc variables
     [SerializeField] private PlayerInactive playerInactive;
     public PickUpHandlerClass pickUpHandler;
@@ -136,6 +142,9 @@ public class PlayerController : MonoBehaviour
     {
         //Movement
         Run(1);
+
+        //Footstep audio
+        FootstepAudio();
     }
     private void CheckGround()
     {
@@ -210,6 +219,15 @@ public class PlayerController : MonoBehaviour
             float direction = Mathf.Sign(xInput);
             transform.localScale = new Vector3(direction, 1, 1); //flip player to face input direciton
         }
+
+        if (lastOnGroundTime > 0)
+        {
+            if (MathF.Abs(xInput) > 0)
+            {
+                soundManager.StartFootsteps(runAudio);
+            }
+
+        }
     }
 
     private void Jump()
@@ -226,6 +244,10 @@ public class PlayerController : MonoBehaviour
         // prevents multiple jumps 
         lastOnGroundTime = 0;
         lastJumpButtonPress = 0;
+
+        // plays jump audio
+        soundManager.PlaySoundEffect(jumpAudio);
+        soundManager.StopFootsteps();
     }
 
     private void OnDisable()
@@ -236,6 +258,8 @@ public class PlayerController : MonoBehaviour
         pickUpHandler.enabled = false;
 
         playerInactive.enabled = true;
+
+        soundManager.StopFootsteps();
     }
 
     private void OnEnable()
@@ -250,13 +274,6 @@ public class PlayerController : MonoBehaviour
 
     private void IgnoreCollisions()
     {
-        if (this.CompareTag("Drawing"))
-        {
-            GameObject artist = GameObject.FindGameObjectWithTag("Artist");
-
-            Physics2D.IgnoreCollision(artist.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
-        }
-
         GameObject[] tmp;
         tmp = GameObject.FindObjectsOfType<GameObject>();
 
@@ -268,6 +285,21 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+    }
+    private void FootstepAudio()
+    {
+        if(lastOnGroundTime > 0)
+        {
+            if (MathF.Abs(xInput) > 0)
+            {
+                soundManager.StartFootsteps(runAudio);
+            }
+
+            else if (xInput == 0)
+            {
+                soundManager.StopFootsteps();
+            }
+        }
     }
 
     private void SetGravityScale(float scale)

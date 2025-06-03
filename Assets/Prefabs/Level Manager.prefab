@@ -55,6 +55,8 @@ MonoBehaviour:
   drawingSpriteRenderer: {fileID: 0}
   background: {fileID: 0}
   drawnBackground: {fileID: 0}
+  colouredUI: {fileID: 0}
+  uncolouredUI: {fileID: 0}
   fadedAlpha: 0.5
   fadeDuration: 1
 --- !u!114 &5571168758307711012

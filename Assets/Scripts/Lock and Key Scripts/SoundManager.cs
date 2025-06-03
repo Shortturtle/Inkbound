@@ -9,13 +9,15 @@ public class SoundManager : MonoBehaviour
 
     public AudioSource musicSource;
     public AudioSource effectsSource;
+    public AudioSource footstepsSource;
+
+    private bool footstepsPlaying;
 
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -27,6 +29,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySoundEffect(AudioClip clip)
     {
+        effectsSource.pitch = Random.Range(0.9f, 1.1f);
         effectsSource.PlayOneShot(clip);
     }
     // Function to play background music
@@ -41,6 +44,24 @@ public class SoundManager : MonoBehaviour
     public void StopBackgroundMusic()
     {
         musicSource.Stop();
+    }
+
+    public void StartFootsteps(AudioClip clip)
+    {
+        if (!footstepsPlaying)
+        {
+            footstepsSource.pitch = Random.Range(0.9f, 1.1f);
+            footstepsSource.clip = clip;
+            footstepsSource.loop = true;
+            footstepsSource.Play();
+            footstepsPlaying = true;
+        }
+    }
+
+    public void StopFootsteps()
+    {
+        footstepsSource.Stop();
+        footstepsPlaying = false;
     }
 }
 
