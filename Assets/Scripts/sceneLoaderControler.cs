@@ -5,10 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class sceneLoaderControler : MonoBehaviour
 {
+    [SerializeField] private Animator transition;
+    [SerializeField] private float transitionTime;
     public void LoadLevel(string sceneName)
     {
-        Debug.Log("Loading level: " + sceneName); 
+       StartCoroutine(LoadLevelCoroutine(sceneName));
+    }
+
+    IEnumerator LoadLevelCoroutine(string sceneName)
+    {
+        Time.timeScale = 1.0f;
+        transition.SetTrigger("Start");
+        Debug.Log("Start");
+
+        yield return new WaitForSecondsRealtime(transitionTime);
+
+        Debug.Log("Loading level: " + sceneName);
         SceneManager.LoadScene(sceneName);
+    }
+
+    private void Awake()
+    {
+        Time.timeScale = 1.0f;
     }
 }
 
