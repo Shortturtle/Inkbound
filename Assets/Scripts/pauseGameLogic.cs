@@ -11,6 +11,23 @@ public class pauseGameLogic : MonoBehaviour
     [SerializeField] private PlayerSwap playerswap;
     [SerializeField] private SoundManager soundManager;
 
+    private void Awake()
+    {
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+        soundManager.musicSource.pitch = 1f;
+        soundManager.musicSource.volume = 0.8f;
+        if (playerswap.activePlayer == 1)
+        {
+            colouredUI.enabled = true;
+        }
+
+        else
+        {
+            uncolouredUI.enabled = true;
+        }
+    }
+
     // ------------------------------ Pause Resume Toggle ------------------------//    
     public void TogglePause()
     {

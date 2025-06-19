@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class sceneLoaderControler : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class sceneLoaderControler : MonoBehaviour
 
         Debug.Log("Loading level: " + sceneName);
         SceneManager.LoadScene(sceneName);
+        
     }
 
     private void Awake()
