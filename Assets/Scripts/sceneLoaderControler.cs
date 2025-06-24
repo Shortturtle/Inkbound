@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class sceneLoaderControler : MonoBehaviour
 {
     [SerializeField] private Animator transition;
+    [SerializeField] private UnityEngine.UI.Image paperMask;
     [SerializeField] private float transitionTime;
     public void LoadLevel(string sceneName)
     {
@@ -23,7 +25,6 @@ public class sceneLoaderControler : MonoBehaviour
 
         Debug.Log("Loading level: " + sceneName);
         SceneManager.LoadScene(sceneName);
-        
     }
 
     private void Awake()

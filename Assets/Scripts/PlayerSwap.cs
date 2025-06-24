@@ -20,8 +20,10 @@ public class PlayerSwap : MonoBehaviour
     private CinemachineVirtualCamera virtualCam;
     [SerializeField] private SpriteRenderer artistSpriteRenderer;
     [SerializeField] private SpriteRenderer drawingSpriteRenderer;
-    [SerializeField] private SpriteRenderer background;
-    [SerializeField] private SpriteRenderer drawnBackground;
+    [SerializeField] private GameObject colouredBG;
+    private List<SpriteRenderer> background;
+    [SerializeField] private GameObject uncolouredBG;
+    private List<SpriteRenderer> drawnBackground;
     [SerializeField] private Canvas colouredUI;
     [SerializeField] private Canvas uncolouredUI;
     private Array drawnObjects;
@@ -32,6 +34,8 @@ public class PlayerSwap : MonoBehaviour
 
     private void Start()
     {
+        BGSort();
+
         virtualCam = FindFirstObjectByType<CinemachineVirtualCamera>();
         artistSpriteRenderer = artist.gameObject.GetComponent<SpriteRenderer>();
         drawingSpriteRenderer = drawing.gameObject.GetComponent<SpriteRenderer>();
@@ -45,8 +49,8 @@ public class PlayerSwap : MonoBehaviour
         uncolouredUI.enabled = false;
         ToggleOpacity(isFaded);
         PlayerOpacityStart();
-        SetAlpha(background, 1f);
-        SetAlpha(drawnBackground, 0f);
+        SetAlphaList(background, 1f);
+        SetAlphaList(drawnBackground, 0f);
 
     }
 
@@ -160,14 +164,14 @@ public class PlayerSwap : MonoBehaviour
         switch (activePlayer)
         {
             case 1:
-                SetAlpha(background, 1f);
-                SetAlpha(drawnBackground, 0f);
+                SetAlphaList(background, 1f);
+                SetAlphaList(drawnBackground, 0f);
 
                 break;
 
             case 2:
-                SetAlpha(background, 0f);
-                SetAlpha(drawnBackground, 1f);
+                SetAlphaList(background, 0f);
+                SetAlphaList(drawnBackground, 1f);
 
                 break;
         }
@@ -191,6 +195,52 @@ public class PlayerSwap : MonoBehaviour
         sr.color = c;
     }
 
+    void SetAlphaList(List<SpriteRenderer> srl, float alpha)
+    {
+        foreach(SpriteRenderer sr in srl)
+        {
+            Color c = sr.color;
+            c.a = alpha;
+            sr.color = c;
+        }
+    }
+
+    private void BGSort()
+    {
+        background = new List<SpriteRenderer>();
+        drawnBackground = new List<SpriteRenderer>();
+
+        for (int i = 0; i < colouredBG.transform.childCount; i++)
+        {
+            GameObject tempGO = colouredBG.transform.GetChild(i).gameObject;
+            SpriteRenderer tempSR = tempGO.GetComponent<SpriteRenderer>();
+            background.Add(tempSR);
+
+            for (int j = 0; j < tempGO.transform.childCount; j++)
+            {
+                tempSR = tempGO.transform.GetChild(j).gameObject.GetComponent<SpriteRenderer>();
+                background.Add(tempSR);
+                Debug.Log("added");
+            }
+                Debug.Log("added");
+        }
+
+        for (int i = 0; i < uncolouredBG.transform.childCount; i++)
+        {
+            GameObject tempGO = uncolouredBG.transform.GetChild(i).gameObject;
+            SpriteRenderer tempSR = tempGO.GetComponent<SpriteRenderer>();
+            drawnBackground.Add(tempSR);
+
+            for (int j = 0; j < tempGO.transform.childCount; j++)
+            {
+                tempSR = tempGO.transform.GetChild(j).gameObject.GetComponent<SpriteRenderer>();
+                drawnBackground.Add(tempSR);
+                Debug.Log("added");
+            }
+            Debug.Log("added");
+        }
+    }
+
     public void SwapCharacterMobile()
     {
         SwapPlayer();
@@ -198,5 +248,4 @@ public class PlayerSwap : MonoBehaviour
         ToggleOpacity(isFaded);
         SetBackgroundOpacity();
     }
-
 }
