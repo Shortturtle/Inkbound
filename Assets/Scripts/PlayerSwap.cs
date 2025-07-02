@@ -18,6 +18,7 @@ public class PlayerSwap : MonoBehaviour
     [SerializeField] private PlayerController drawing;
     [SerializeField] private GameObject drawingArrow;
     private CinemachineVirtualCamera virtualCam;
+    private Camera cam;
     [SerializeField] private SpriteRenderer artistSpriteRenderer;
     [SerializeField] private SpriteRenderer drawingSpriteRenderer;
     [SerializeField] private GameObject colouredBG;
@@ -37,6 +38,7 @@ public class PlayerSwap : MonoBehaviour
         BGSort();
 
         virtualCam = FindFirstObjectByType<CinemachineVirtualCamera>();
+        cam = FindFirstObjectByType<Camera>();
         artistSpriteRenderer = artist.gameObject.GetComponent<SpriteRenderer>();
         drawingSpriteRenderer = drawing.gameObject.GetComponent<SpriteRenderer>();
 
@@ -87,6 +89,7 @@ public class PlayerSwap : MonoBehaviour
                 artistArrow.SetActive(true);
                 drawing.enabled = false;
                 drawingArrow.SetActive(false);
+                cam.transform.position = Vector3.Lerp(cam.transform.position, artist.transform.position, 0.5f);
                 virtualCam.Follow = artist.gameObject.transform;
                 ChangePlayerOpacity();
                 colouredUI.enabled = true;
