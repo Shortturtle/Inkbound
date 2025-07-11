@@ -208,9 +208,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popOutLocation: {fileID: 1419355125150987209}
-  popOutValue: 2
+  popOutValue: 3
   popOutTimer: 0
-  activeValue: 2
+  activeValue: 1
   activeTimer: 0
   isActive: 0
-  lerpValue: 0.5
+  lerpValue: 0.7

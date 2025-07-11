@@ -1,0 +1,1618 @@
+fileFormatVersion: 2
+guid: 40340cc45985f62449553fc1e6d6c809
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da73bffd326391846913c83d1e471671
+      internalID: -2071499131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896d7e5f45f089d42875223181344c28
+      internalID: 992066686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_2
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69078c3cf7b24e14ebbe12884aa663dd
+      internalID: -821767661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_3
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc94e184bab414429c5440b3ffca383
+      internalID: 1216733931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_4
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d1ca431f8f2514b904b34c089f7ab7
+      internalID: 955918181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_5
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb53f1b97261db40a056e1de9967a41
+      internalID: 1899440061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_6
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405c5d61e4645cd4a92c3bff8ae6b984
+      internalID: 1325416992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_7
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944e7a3ae0aad00468f531bcf2bd4dae
+      internalID: 1143911434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_8
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1797c3001193c31498b0d38557a443dd
+      internalID: -1595282236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_9
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 3835
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c41b89fca3f886418240ff5c356daa4
+      internalID: -742859763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_12
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d8ab487d268ab489367ca5b08c6e38
+      internalID: -2142420476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3218004aa16702d4d8a3985c6a2f88d4
+      internalID: -520772478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_14
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ab66c53974be84780874931ecdc0c8
+      internalID: 75233463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_15
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd943d96a8875994694139a6013a5d79
+      internalID: -1339757337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_16
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817fe3fdc8bf3ba4da7ea8ee06499154
+      internalID: 1193342229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_17
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5901a21d6fde0a140a0031edfdd39f4f
+      internalID: -807357056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_18
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf66dfc73294df449baf580aac709d3
+      internalID: -562092144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_19
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace919dcbd9c438429d8a7362be396d1
+      internalID: 883279321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_20
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215c3a62123d29348b7b558a80e6c6c7
+      internalID: -90942333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_21
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 3579
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2200918dcbdfcb41a620f7c696f510b
+      internalID: -1438255203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_22
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da5f9c7749317a46b7249f4a769170d
+      internalID: -1860256460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_23
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c252d2306f1663648b553839cae3ea20
+      internalID: -4741858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_24
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1ed819473b2f9468757e231570a42f
+      internalID: 2088568974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_25
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80ff41f15b323a4f979ce0802b317ad
+      internalID: 461428731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_26
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde79accb9fa076499e97789a7e8e016
+      internalID: -1537349315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_27
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c4aa3ba422be6409790cf532ef8643
+      internalID: -365798366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_28
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda29d50d790dd240844b0ef44552e0c
+      internalID: 1423044256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_29
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbf10ad3994a154f9da8f96831426dc
+      internalID: 1999503210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_30
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a44c4b42dd684443a8dd7a41943facf
+      internalID: -1073523409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_31
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 3323
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3fc70745b537c4e85e37df875dd7cd
+      internalID: -936563759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_33
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b512819bdb95084891a77b1c38ea284
+      internalID: 188349267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_34
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ee7bb690cc0154a8e46d0436f21940
+      internalID: 174418344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_35
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a71e2f2e46d1e4e85efdc42519d603
+      internalID: -1959535030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_36
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790153bc7c501274f82835431af0a327
+      internalID: 331244534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_37
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ad9997a27882848a96d93f57f5cbc6
+      internalID: 1306435007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_38
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6d26e37c1d60c4abdb60866ebc9388
+      internalID: -547951566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_39
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aac5c5ac68ad2a42ba3b3dff832b1f8
+      internalID: 296290931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_40
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732cb7118e0420e47994db57b919a0f5
+      internalID: -2032055413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_41
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee834a1b478e44a44baf52e60b889d26
+      internalID: 347838022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_42
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 3067
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a711dcb2c15851c4bb0848760df5ed92
+      internalID: -1725538727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_45
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2811
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ebbd5e8b02fea4eabec518750f1709
+      internalID: 428661689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_46
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 2811
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51a23ac57ccea444860be8ea6f616ce
+      internalID: 1311628040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_47
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2811
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad3e5d930493d84a9093145942607ba
+      internalID: -83514764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_48
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 2811
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e90f47d75b23fd4895990b37a44ccbd
+      internalID: -154003121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_49
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 2811
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88744d0a310b3564cae177efd033ff62
+      internalID: 378614010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_50
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 2811
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0db780b14d785144bd731ccded77aff
+      internalID: -353563938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_56
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2555
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7980feafdde3fc6438b7710367b7cd9d
+      internalID: 1161517359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_57
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 2555
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d3f7ae120728b44aa8b0d6fcdeb970
+      internalID: 1796182682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_58
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2555
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db242bb60a131ea4c8084eb0826ebcc6
+      internalID: 938983677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_59
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 2555
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59afe9af1770c142a6c42f24f9f9320
+      internalID: 1549981224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_60
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 2555
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9dee5339d5956b4e813a11a03049b6e
+      internalID: 823260425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_61
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 2555
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db00daeffbc527843953658c4423d7d4
+      internalID: -138261219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_63
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2299
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0509b5a9fa73f324680c2173595c9ff0
+      internalID: 430495268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_64
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 2299
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddcaa7940d820f4bacc3471c73a23ee
+      internalID: -114282860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_65
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2299
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f05a20095cff284ca03c2fadbb6831a
+      internalID: 1093739554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_66
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 2299
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f0a08786dd5fa488e468d14db825ba
+      internalID: 96206402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_70
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2043
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2614f7416d3f52044abfba044e218710
+      internalID: 743865692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_71
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 2043
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61decf8ad9901d40a9663e12b3ec5c1
+      internalID: 2099585689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_72
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2043
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567326253e9d1a3498a4bbc1565dde9d
+      internalID: -521109422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_73
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 2043
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c2b66759f8c6a4bb61f223da7cc53d
+      internalID: -154479455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_75
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1787
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68966764a0e49a64ba5cef92105b20b8
+      internalID: 812245586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_76
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1787
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0adca9b35fb8f4e8232895b2e330da
+      internalID: 718808851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_77
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1787
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ad2c4ee873aa84bbb3147c3c6dbc6d
+      internalID: -1446903861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_78
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1787
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8973c1e183e42fb48b968fca96c15017
+      internalID: -1832698447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_80
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1531
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e566b33b3bd854ca97114ce1aa8eb1
+      internalID: 1579093753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_81
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1531
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c5ec57a27e8f047b781088ef091b4b
+      internalID: 1401861372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest tilemap (grey world)_82
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1531
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cba139fb97b2746900246f70847c4b
+      internalID: 1202412089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Forest tilemap (grey world)_0: -2071499131
+      Forest tilemap (grey world)_1: 992066686
+      Forest tilemap (grey world)_10: -1207298407
+      Forest tilemap (grey world)_11: 1028410677
+      Forest tilemap (grey world)_12: -2142420476
+      Forest tilemap (grey world)_13: -520772478
+      Forest tilemap (grey world)_14: 75233463
+      Forest tilemap (grey world)_15: -1339757337
+      Forest tilemap (grey world)_16: 1193342229
+      Forest tilemap (grey world)_17: -807357056
+      Forest tilemap (grey world)_18: -562092144
+      Forest tilemap (grey world)_19: 883279321
+      Forest tilemap (grey world)_2: -821767661
+      Forest tilemap (grey world)_20: -90942333
+      Forest tilemap (grey world)_21: -1438255203
+      Forest tilemap (grey world)_22: -1860256460
+      Forest tilemap (grey world)_23: -4741858
+      Forest tilemap (grey world)_24: 2088568974
+      Forest tilemap (grey world)_25: 461428731
+      Forest tilemap (grey world)_26: -1537349315
+      Forest tilemap (grey world)_27: -365798366
+      Forest tilemap (grey world)_28: 1423044256
+      Forest tilemap (grey world)_29: 1999503210
+      Forest tilemap (grey world)_3: 1216733931
+      Forest tilemap (grey world)_30: -1073523409
+      Forest tilemap (grey world)_31: -936563759
+      Forest tilemap (grey world)_32: -1666311843
+      Forest tilemap (grey world)_33: 188349267
+      Forest tilemap (grey world)_34: 174418344
+      Forest tilemap (grey world)_35: -1959535030
+      Forest tilemap (grey world)_36: 331244534
+      Forest tilemap (grey world)_37: 1306435007
+      Forest tilemap (grey world)_38: -547951566
+      Forest tilemap (grey world)_39: 296290931
+      Forest tilemap (grey world)_4: 955918181
+      Forest tilemap (grey world)_40: -2032055413
+      Forest tilemap (grey world)_41: 347838022
+      Forest tilemap (grey world)_42: -1725538727
+      Forest tilemap (grey world)_43: -531389396
+      Forest tilemap (grey world)_44: -758124630
+      Forest tilemap (grey world)_45: 428661689
+      Forest tilemap (grey world)_46: 1311628040
+      Forest tilemap (grey world)_47: -83514764
+      Forest tilemap (grey world)_48: -154003121
+      Forest tilemap (grey world)_49: 378614010
+      Forest tilemap (grey world)_5: 1899440061
+      Forest tilemap (grey world)_50: -353563938
+      Forest tilemap (grey world)_51: 1377158472
+      Forest tilemap (grey world)_52: 888175393
+      Forest tilemap (grey world)_53: 1671086664
+      Forest tilemap (grey world)_54: -229534280
+      Forest tilemap (grey world)_55: 1841528425
+      Forest tilemap (grey world)_56: 1161517359
+      Forest tilemap (grey world)_57: 1796182682
+      Forest tilemap (grey world)_58: 938983677
+      Forest tilemap (grey world)_59: 1549981224
+      Forest tilemap (grey world)_6: 1325416992
+      Forest tilemap (grey world)_60: 823260425
+      Forest tilemap (grey world)_61: -138261219
+      Forest tilemap (grey world)_62: 1135177554
+      Forest tilemap (grey world)_63: 430495268
+      Forest tilemap (grey world)_64: -114282860
+      Forest tilemap (grey world)_65: 1093739554
+      Forest tilemap (grey world)_66: 96206402
+      Forest tilemap (grey world)_67: 396846518
+      Forest tilemap (grey world)_68: -2064020230
+      Forest tilemap (grey world)_69: 1517341491
+      Forest tilemap (grey world)_7: 1143911434
+      Forest tilemap (grey world)_70: 743865692
+      Forest tilemap (grey world)_71: 2099585689
+      Forest tilemap (grey world)_72: -521109422
+      Forest tilemap (grey world)_73: -154479455
+      Forest tilemap (grey world)_74: -253478053
+      Forest tilemap (grey world)_75: 812245586
+      Forest tilemap (grey world)_76: 718808851
+      Forest tilemap (grey world)_77: -1446903861
+      Forest tilemap (grey world)_78: -1832698447
+      Forest tilemap (grey world)_79: -630809269
+      Forest tilemap (grey world)_8: -1595282236
+      Forest tilemap (grey world)_80: 1579093753
+      Forest tilemap (grey world)_81: 1401861372
+      Forest tilemap (grey world)_82: 1202412089
+      Forest tilemap (grey world)_83: -934161305
+      Forest tilemap (grey world)_9: -742859763
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

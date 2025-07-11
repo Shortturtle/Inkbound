@@ -89,7 +89,6 @@ public class PlayerSwap : MonoBehaviour
                 artistArrow.SetActive(true);
                 drawing.enabled = false;
                 drawingArrow.SetActive(false);
-                cam.transform.position = Vector3.Lerp(cam.transform.position, artist.transform.position, 0.5f);
                 virtualCam.Follow = artist.gameObject.transform;
                 ChangePlayerOpacity();
                 colouredUI.enabled = true;
@@ -250,5 +249,15 @@ public class PlayerSwap : MonoBehaviour
         isFaded = !isFaded;
         ToggleOpacity(isFaded);
         SetBackgroundOpacity();
+    }
+
+    IEnumerator CamSwapCoroutine(PlayerController player)
+    {
+        virtualCam.Follow = null;
+        cam.transform.position = Vector3.Lerp(cam.transform.position, player.transform.position, 0.5f);
+
+        yield return new WaitForSeconds(1f);
+
+        virtualCam.Follow = player.gameObject.transform; 
     }
 }

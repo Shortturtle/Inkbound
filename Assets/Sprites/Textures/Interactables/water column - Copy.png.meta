@@ -1,0 +1,529 @@
+fileFormatVersion: 2
+guid: 96a619c80cbcfdf488a2d6c9d6ade74f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: water column - Copy_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 6104
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34961f9186cd02b40bc43edff45c1fc9
+      internalID: -2041370088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_1
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 6104
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c081e56bbd93a6b439038174c9825f04
+      internalID: -1014830220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_2
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 6104
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98c4ee99522be144bfe105b5428ae3e
+      internalID: 805264698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_3
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 6104
+        width: 1048
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7304a1d07def43542878f6fb9e8ce4f9
+      internalID: 864202111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_4
+      rect:
+        serializedVersion: 2
+        x: 4868
+        y: 6104
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8ec2ba3dfe14b458f6b3c4bc244a25
+      internalID: 762084876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_5
+      rect:
+        serializedVersion: 2
+        x: 6052
+        y: 6104
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45fc3789a974d84dbfb5216093dec78
+      internalID: -109556090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 4008
+        width: 1044
+        height: 2052
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d743498662c2344fb3b39f79a924c9c
+      internalID: 288653367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_7
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 4008
+        width: 1044
+        height: 2052
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2226b28ca4a17f5478b8e3ab66c2adab
+      internalID: -1058324819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_8
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 4008
+        width: 1044
+        height: 2052
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fd4db24c6052a4d8338925645e78eb
+      internalID: 566656547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_9
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 4008
+        width: 1048
+        height: 2052
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7023677132701d044b4e037caa88e537
+      internalID: 459387798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_10
+      rect:
+        serializedVersion: 2
+        x: 4868
+        y: 4008
+        width: 1044
+        height: 2052
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0918746cc9330d04a9af574290e40dc4
+      internalID: 1753770503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_11
+      rect:
+        serializedVersion: 2
+        x: 6032
+        y: 4028
+        width: 1044
+        height: 2052
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cdfc155d73f534794e892742bcb1f6
+      internalID: -766699408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1908
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca665e9e9ae5d34fb39dcb8141ef2e3
+      internalID: -1195498784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_13
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1908
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53c12a1a0a150546a6e74b5d5c9024f
+      internalID: -1319694353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_14
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1908
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b52fb7d191644643892fc7f74981847
+      internalID: 627670353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_15
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 1888
+        width: 1048
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac898c37f653164e8ac7a6d822c6f33
+      internalID: -264720887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_16
+      rect:
+        serializedVersion: 2
+        x: 4868
+        y: 1908
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc995d7a17b39443bdb280de2e703b4
+      internalID: 850735567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water column - Copy_17
+      rect:
+        serializedVersion: 2
+        x: 6052
+        y: 1908
+        width: 1044
+        height: 2056
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f90c9f5237d674b8c393f3111f8ba1
+      internalID: 1533379259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      water column - Copy_0: -2041370088
+      water column - Copy_1: -1014830220
+      water column - Copy_10: 1753770503
+      water column - Copy_11: -766699408
+      water column - Copy_12: -1195498784
+      water column - Copy_13: -1319694353
+      water column - Copy_14: 627670353
+      water column - Copy_15: -264720887
+      water column - Copy_16: 850735567
+      water column - Copy_17: 1533379259
+      water column - Copy_18: -2131341600
+      water column - Copy_19: -1153978295
+      water column - Copy_2: 805264698
+      water column - Copy_20: 1932550477
+      water column - Copy_21: 1022989149
+      water column - Copy_22: 36209619
+      water column - Copy_23: 561285868
+      water column - Copy_3: 864202111
+      water column - Copy_4: 762084876
+      water column - Copy_5: -109556090
+      water column - Copy_6: 288653367
+      water column - Copy_7: -1058324819
+      water column - Copy_8: 566656547
+      water column - Copy_9: 459387798
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
