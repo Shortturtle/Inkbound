@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TreeEditor;
@@ -21,6 +22,7 @@ public class ForestBossLogic : MonoBehaviour
     private bool attacking;
     private float cooldownTimer;
     private Vector2 dropPosition;
+    private Vector2 attackPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +32,13 @@ public class ForestBossLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cooldownTimer -= Time.deltaTime; cooldownTime -= Time.deltaTime;
+        cooldownTimer -= Time.deltaTime;
         PlayerCheck();
     }
 
     private void FixedUpdate()
     {
-        if (!triggered)
+        if (!triggered && !attacking)
         {
             MoveLeftRight();
         }
@@ -59,7 +61,7 @@ public class ForestBossLogic : MonoBehaviour
 
     private void PlayerCheck()
     {
-        RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position - new Vector2(0, collision.size.y / 2), Vector2.down, 99f, layerMask);
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position, Vector2.down, 99f, layerMask);
         
         if (hit)
         {
@@ -67,8 +69,10 @@ public class ForestBossLogic : MonoBehaviour
             {
                 triggered = true;
                 Debug.Log(hit.point);
+                attacking = true;
                 dropPosition = transform.position;
-                StartCoroutine(AttackBuffer(hit.point));
+                attackPosition = hit.point;
+                Attack();
             }
         }
     }
@@ -79,8 +83,25 @@ public class ForestBossLogic : MonoBehaviour
 
         yield return new WaitForSeconds(bufferTime);
 
-        StartCoroutine(AttackDown(attackLoc));
+        while (Vector2.Distance(transform.position, attackLoc) > 0.5f)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, attackLoc, speed * Time.deltaTime);
+            yield return null;
+        }
 
+        yield return new WaitForSeconds(stunTime);
+
+        while (Vector2.Distance(transform.position, dropPosition) > 0.5f)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, dropPosition, speed * Time.deltaTime);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(bufferTime);
+
+        cooldownTimer = cooldownTime;
+        triggered = false;
+        attacking = false;
     }
 
     IEnumerator AttackDown(Vector2 attackLoc)
@@ -102,6 +123,11 @@ public class ForestBossLogic : MonoBehaviour
         cooldownTimer = cooldownTime;
         triggered = false;
         attacking = false;
+    }
+
+    private void Attack()
+    {
+            StartCoroutine(AttackBuffer(attackPosition));
     }
 
 
