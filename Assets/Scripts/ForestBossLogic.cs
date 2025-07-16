@@ -85,7 +85,7 @@ public class ForestBossLogic : MonoBehaviour
 
         while (Vector2.Distance(transform.position, attackLoc) > 0.5f)
         {
-            transform.position = Vector2.MoveTowards(transform.position, attackLoc, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, attackLoc, speed * 2 * Time.deltaTime);
             yield return null;
         }
 
@@ -93,7 +93,7 @@ public class ForestBossLogic : MonoBehaviour
 
         while (Vector2.Distance(transform.position, dropPosition) > 0.5f)
         {
-            transform.position = Vector2.MoveTowards(transform.position, dropPosition, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, dropPosition, speed * 2 * Time.deltaTime);
             yield return null;
         }
 
