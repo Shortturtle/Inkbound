@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class PickUpHandlerClass : MonoBehaviour
 {
@@ -73,6 +74,14 @@ public class PickUpHandlerClass : MonoBehaviour
         {
             DropItem(heldItem);
         }
+    }   
+    
+    public void FailSafe()
+    {
+        if (heldItem != null && heldItem.transform.parent == null)
+        {
+            heldItem.transform.SetParent(pickUpLocation.transform);
+            heldItem.transform.position = new Vector3(pickUpLocation.transform.position.x, pickUpLocation.transform.position.y + (heldItem.GetComponent<Collider2D>().bounds.size.y / 2), pickUpLocation.transform.position.z);
+        }
     }
-
 }
