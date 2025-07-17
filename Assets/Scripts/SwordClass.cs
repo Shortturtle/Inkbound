@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpClass : MonoBehaviour
+public class SwordClass : PickUpClass
 {
-    public bool held;
     // Start is called before the first frame update
     void Start()
     {

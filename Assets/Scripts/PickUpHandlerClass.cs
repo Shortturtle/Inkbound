@@ -24,6 +24,7 @@ public class PickUpHandlerClass : MonoBehaviour
     public void GrabItem(GameObject item)
     {
         heldItem = item;
+        item.GetComponent<PickUpClass>().held = true;
         item.transform.SetParent(pickUpLocation.transform);
         item.transform.position = new Vector3(pickUpLocation.transform.position.x, pickUpLocation.transform.position.y + (item.GetComponent<Collider2D>().bounds.size.y / 2), pickUpLocation.transform.position.z);
         item.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
@@ -34,6 +35,7 @@ public class PickUpHandlerClass : MonoBehaviour
         item.transform.SetParent(null);
         item.transform.position = new Vector3(pickUpLocation.transform.position.x + (item.GetComponent<Collider2D>().bounds.size.x / 2), pickUpLocation.transform.position.y, pickUpLocation.transform.position.z);
         item.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        item.GetComponent<PickUpClass>().held = false;
         heldItem = null;
     }
 

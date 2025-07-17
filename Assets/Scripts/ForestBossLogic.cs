@@ -20,6 +20,7 @@ public class ForestBossLogic : MonoBehaviour
 
     private bool triggered;
     private bool attacking;
+    private bool stun;
     private float cooldownTimer;
     private Vector2 dropPosition;
     private Vector2 attackPosition;
@@ -83,52 +84,46 @@ public class ForestBossLogic : MonoBehaviour
 
         yield return new WaitForSeconds(bufferTime);
 
-        while (Vector2.Distance(transform.position, attackLoc) > 0.5f)
+        while (Vector2.Distance(transform.position, attackLoc) > 0.5f && !stun)
         {
             transform.position = Vector2.MoveTowards(transform.position, attackLoc, speed * 2 * Time.deltaTime);
             yield return null;
         }
 
-        yield return new WaitForSeconds(stunTime);
-
-        while (Vector2.Distance(transform.position, dropPosition) > 0.5f)
+        if (stun)
         {
-            transform.position = Vector2.MoveTowards(transform.position, dropPosition, speed * 2 * Time.deltaTime);
-            yield return null;
+            yield return new WaitForSeconds(stunTime);
         }
 
-        yield return new WaitForSeconds(bufferTime);
+        else
+        {
+            yield return new WaitForSeconds(bufferTime);
+        }
 
-        cooldownTimer = cooldownTime;
-        triggered = false;
-        attacking = false;
-    }
-
-    IEnumerator AttackDown(Vector2 attackLoc)
-    {
-
-        transform.position = Vector2.Lerp(transform.position, attackLoc, speed * Time.deltaTime);
-
-        yield return new WaitForSeconds(stunTime);
-
-        StartCoroutine(AttackUp());
-    }
-
-    IEnumerator AttackUp()
-    {
-        transform.position = Vector2.Lerp(transform.position, dropPosition, speed * Time.deltaTime);
+            while (Vector2.Distance(transform.position, dropPosition) > 0.5f)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, dropPosition, speed * 2 * Time.deltaTime);
+                yield return null;
+            }
 
         yield return new WaitForSeconds(bufferTime);
 
         cooldownTimer = cooldownTime;
+        stun = false;
         triggered = false;
         attacking = false;
     }
-
     private void Attack()
     {
             StartCoroutine(AttackBuffer(attackPosition));
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<SwordClass>())
+        {
+            stun = true;
+        }
+    }
 
 }

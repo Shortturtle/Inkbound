@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4763261338156206973}
   m_Layer: 0
   m_Name: MantaRayBait
-  m_TagString: Drawn
+  m_TagString: Both
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e340db7f5d5be9343958ebe52ce93607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  held: 0
 --- !u!50 &2295367043936630821
 Rigidbody2D:
   serializedVersion: 4

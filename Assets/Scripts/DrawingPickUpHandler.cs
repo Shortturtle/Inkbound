@@ -43,7 +43,7 @@ public class DrawingPickUpHandler : PickUpHandlerClass
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<PickUpClass>() && collision.gameObject.CompareTag("Drawn"))
+        if (collision.gameObject.GetComponent<PickUpClass>() && !collision.gameObject.GetComponent<PickUpClass>().held && (collision.gameObject.CompareTag("Drawn") || collision.gameObject.CompareTag("Both")))
         {
             pickUpsInRadius.Add(collision.gameObject);
         }
@@ -58,7 +58,7 @@ public class DrawingPickUpHandler : PickUpHandlerClass
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<PickUpClass>() && collision.gameObject.CompareTag("Drawn"))
+        if (collision.gameObject.GetComponent<PickUpClass>() && (collision.gameObject.CompareTag("Drawn") || collision.gameObject.CompareTag("Both")))
         {
             pickUpsInRadius.Remove(collision.gameObject);
         }
