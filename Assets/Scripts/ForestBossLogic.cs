@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class ForestBossLogic : MonoBehaviour
 {
+    [SerializeField] private int Health;
     [SerializeField] private float speed;
     [SerializeField] private int startingPoint;
     [SerializeField] private Transform[] points;
@@ -125,5 +126,12 @@ public class ForestBossLogic : MonoBehaviour
             stun = true;
         }
     }
+
+    public void OnButtonPress()
+    {
+        Health -= 1;
+    }
+
+
 
 }

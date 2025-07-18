@@ -49,6 +49,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerInactive playerInactive;
     public PickUpHandlerClass pickUpHandler;
 
+    //Debuff variables
+    [SerializeField] private float stunTime;
+    [SerializeField] private float slowTime;
+    private float stunTimer;
+    private float slowTimer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -76,14 +82,16 @@ public class PlayerController : MonoBehaviour
         //Timer
         lastJumpButtonPress -= Time.deltaTime;
         lastOnGroundTime -= Time.deltaTime;
+        stunTimer -= Time.deltaTime;
+        slowTimer -= Time.deltaTime;
 
         //Jump Input
-        if (UnityEngine.Input.GetButtonDown("Jump"))
+        if (UnityEngine.Input.GetButtonDown("Jump") && stunTimer <= 0)
         {
             lastJumpButtonPress = data.jumpInputBufferTime;
         }
 
-        if (UnityEngine.Input.GetButtonUp("Jump"))
+        if (UnityEngine.Input.GetButtonUp("Jump") && stunTimer <= 0)
         {
             if (CanJumpCut())
             {
@@ -125,7 +133,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //Jump
-        if (CanJump() && lastJumpButtonPress > 0) // if jump button has been pressed and not bouncing and is able to jump
+        if (CanJump() && lastJumpButtonPress > 0 && stunTimer <= 0) // if jump button has been pressed and not bouncing and is able to jump
         {
             // sets bools to false other than isJumping to ensure correct gravity
             isJumping = true;
@@ -140,11 +148,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Movement
-        Run(1);
+            //Movement
+            Run(1);
 
-        //Footstep audio
-        FootstepAudio();
+
+            //Footstep audio
+            FootstepAudio();
     }
     private void CheckGround()
     {
@@ -173,8 +182,17 @@ public class PlayerController : MonoBehaviour
 
     private void Run(float lerpAmount)
     {
+        float targetSpeed = 0f;
 
-        float targetSpeed = xInput * data.runMaxSpeed; // calculate target speed
+        if(slowTimer >= 0)
+        {
+            targetSpeed = (xInput * data.runMaxSpeed) * 0.6f; // calculate target speed slowed
+        }
+
+        else
+        {
+            targetSpeed = xInput * data.runMaxSpeed; // calculate target speed
+        }
         targetSpeed = Mathf.Lerp(rb.velocity.x, targetSpeed, lerpAmount);
         float speedDiff = targetSpeed - rb.velocity.x; // calculate difference between current speed and target speed
 
@@ -272,6 +290,16 @@ public class PlayerController : MonoBehaviour
         lastOnGroundTime = -1;
     }
 
+    public void Slow()
+    {
+        slowTimer = slowTime;
+    }
+
+    public void Stun()
+    {
+        stunTimer = stunTime;
+    }
+
     private void IgnoreCollisions()
     {
         GameObject[] tmp;
@@ -347,7 +375,15 @@ public class PlayerController : MonoBehaviour
 
     public void MoveMobile(int x) // Mobile Movement
     {
-        xInput = x;
+        if(stunTimer > 0)
+        {
+            xInput = 0;
+        }
+
+        else
+        {
+            xInput = x;
+        }
 
     }
 }

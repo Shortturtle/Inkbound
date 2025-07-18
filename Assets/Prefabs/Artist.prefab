@@ -379,6 +379,8 @@ MonoBehaviour:
   runAudio: {fileID: 8300000, guid: dcb13d8c5056cd447ad0e79c9613fc24, type: 3}
   playerInactive: {fileID: 1755108926382272032}
   pickUpHandler: {fileID: 0}
+  stunTime: 2
+  slowTime: 2
 --- !u!114 &9135400618097891171
 MonoBehaviour:
   m_ObjectHideFlags: 0

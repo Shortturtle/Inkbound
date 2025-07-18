@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2509704237924672270}
   - component: {fileID: 4135472705231179139}
   m_Layer: 10
-  m_Name: Drawing
+  m_Name: ForestDrawing
   m_TagString: Drawing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,6 +214,8 @@ MonoBehaviour:
   runAudio: {fileID: 8300000, guid: 4693256c2244242409d96ae5ef5913ca, type: 3}
   playerInactive: {fileID: 2760242314730567713}
   pickUpHandler: {fileID: 0}
+  stunTime: 2
+  slowTime: 2
 --- !u!114 &2760242314730567713
 MonoBehaviour:
   m_ObjectHideFlags: 0
