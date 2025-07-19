@@ -182,7 +182,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: d5a4a6ff1fd919a42a56d13a4f782b7b, type: 2}
   rb: {fileID: 7058564056062049032}
   ground: {fileID: 6990647609692192135}
-  groundBoxCastSize: {x: 1.1, y: 0.25}
+  groundBoxCastSize: {x: 1.4, y: 0.25}
   realGround:
     serializedVersion: 2
     m_Bits: 960
@@ -192,7 +192,7 @@ MonoBehaviour:
   jumpAudio: {fileID: 8300000, guid: a9ef68625b5f0ce46ad5f9f879540c24, type: 3}
   runAudio: {fileID: 8300000, guid: 4693256c2244242409d96ae5ef5913ca, type: 3}
   playerInactive: {fileID: 2760242314730567713}
-  pickUpHandler: {fileID: 0}
+  pickUpHandler: {fileID: 2509704237924672270}
   stunTime: 2
   slowTime: 2
 --- !u!114 &2760242314730567713
