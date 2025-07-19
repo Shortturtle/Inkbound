@@ -64,7 +64,7 @@ public class pauseGameLogic : MonoBehaviour
             colouredUI.enabled = true;
         }
 
-        else
+        else if (playerswap.activePlayer == 2)
         {
             uncolouredUI.enabled = true;
         }

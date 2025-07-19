@@ -270,10 +270,6 @@ PrefabInstance:
       propertyPath: soundManager
       value: 
       objectReference: {fileID: 492673713}
-    - target: {fileID: 3427058149939577852, guid: 69426f3798268344bac0609354447f2b, type: 3}
-      propertyPath: uncolouredUI
-      value: 
-      objectReference: {fileID: 1037078802}
     - target: {fileID: 3810073895171815172, guid: 69426f3798268344bac0609354447f2b, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -342,6 +338,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1349590906560162459, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2116280082}
+    - target: {fileID: 1349590906560162459, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503538740479248525, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: colouredUI
+      value: 
+      objectReference: {fileID: 1037078802}
+    - target: {fileID: 1503538740479248525, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: playerswap
+      value: 
+      objectReference: {fileID: 2012527657}
+    - target: {fileID: 1503538740479248525, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 492673713}
+    - target: {fileID: 1503538740479248525, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: uncolouredUI
+      value: 
+      objectReference: {fileID: 2091048472}
     - target: {fileID: 5150864776375534409, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
       propertyPath: m_Name
       value: Menu
@@ -1222,6 +1242,10 @@ PrefabInstance:
       propertyPath: playerswap
       value: 
       objectReference: {fileID: 2012527657}
+    - target: {fileID: 8702215984979791075, guid: bcf62b6d092bea340a0339e5158c7748, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 78895486}
     - target: {fileID: 8702215984979791075, guid: bcf62b6d092bea340a0339e5158c7748, type: 3}
       propertyPath: soundManager
       value: 
@@ -3076,6 +3100,17 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 3448268640541108269, guid: 69426f3798268344bac0609354447f2b, type: 3}
   m_PrefabInstance: {fileID: 49606103}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2116280082 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 883335491262093719, guid: 5c1fc4b2c81eb9e47933b4dc0de1bd3f, type: 3}
+  m_PrefabInstance: {fileID: 663533672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2034553987e0e8e40a34fb24b9733b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
