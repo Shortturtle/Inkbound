@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Aviator character sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1565
+        width: 256
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4935ada2eb1a989488a2ef73232eefff
+      internalID: 129718016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1565
+        width: 256
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373e3f7150e55044a9eb168f628bb24d
+      internalID: 332397782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1565
+        width: 256
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f8d063057a7f74d95f639ba4a3254a
+      internalID: 985118740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1565
+        width: 256
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4f4d915c57612408656f696702172d
+      internalID: -1533970653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1565
+        width: 256
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baed5086d6f93e479dc2b21de7e8692
+      internalID: -1932843567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1565
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43ffd514d3f21e4bac51dbfe7133fe6
+      internalID: -1010924519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1059
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c615ffb8407641468023d01e98a718c
+      internalID: 93606684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1059
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b7b79ff7b3e614e809c54c339efb46
+      internalID: -1687794812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1059
+        width: 256
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888c776a3ed3ce74793efc09dc190357
+      internalID: -113901707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1059
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ad9a2ad6861d643be8958a3dd5059a
+      internalID: 770296722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1059
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f18b89a62bb144880be042f6a16118
+      internalID: 751259021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1059
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe3954e46434de458e7590a5ad8743d
+      internalID: -1940126794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 599
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b00f458eef9b3540b9e1165d7989059
+      internalID: -1118038473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 599
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59095b2aadc95347872d829837f04b4
+      internalID: 1065262728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 599
+        width: 256
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c143c4c4cbe0b748b7ae044eb9a591b
+      internalID: -1101697268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 599
+        width: 256
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47440586aaf5cde4bb4ec2883d70ec70
+      internalID: 623271098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 599
+        width: 256
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67338e060a044ec4a96889229da05610
+      internalID: 69406837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aviator character sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 599
+        width: 256
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c308c233884ee419ad35b09c67372f
+      internalID: -1388484354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +497,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Aviator character sheet_0: 129718016
+      Aviator character sheet_1: 332397782
+      Aviator character sheet_10: 751259021
+      Aviator character sheet_11: -1940126794
+      Aviator character sheet_12: -1118038473
+      Aviator character sheet_13: 1065262728
+      Aviator character sheet_14: -1101697268
+      Aviator character sheet_15: 623271098
+      Aviator character sheet_16: 69406837
+      Aviator character sheet_17: -1388484354
+      Aviator character sheet_2: 985118740
+      Aviator character sheet_3: -1533970653
+      Aviator character sheet_4: -1932843567
+      Aviator character sheet_5: -1010924519
+      Aviator character sheet_6: 93606684
+      Aviator character sheet_7: -1687794812
+      Aviator character sheet_8: -113901707
+      Aviator character sheet_9: 770296722
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 1099073900799466612}
   - component: {fileID: 6069253732276168772}
   - component: {fileID: 8560658511039553182}
+  - component: {fileID: 8702215984979791075}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -506,6 +507,23 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &8702215984979791075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196190070245524707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccd205dae355144a846035786c8f800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  colouredUI: {fileID: 4209805211901721065}
+  uncolouredUI: {fileID: 0}
+  playerswap: {fileID: 0}
+  soundManager: {fileID: 0}
 --- !u!1 &1777856451737358358
 GameObject:
   m_ObjectHideFlags: 0
