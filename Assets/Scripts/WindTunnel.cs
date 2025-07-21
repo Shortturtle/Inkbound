@@ -212,6 +212,6 @@ public class WindTunnel : MonoBehaviour
     public void OnButtonRelease()
     {
         buttonPress = false;
-        WindParticles.Play();
+        WindParticles.Emit(1);
     }
 }
