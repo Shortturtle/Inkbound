@@ -19,7 +19,7 @@ public class DrawnButtonHandler : ButtonClass
         animator.SetBool("isButtonPressed", isButtonPressed);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (!collision.isTrigger && (collision.gameObject.CompareTag("Drawing") || collision.gameObject.GetComponent<DrawnBoxBehavior>()))
         {

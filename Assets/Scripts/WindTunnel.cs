@@ -105,7 +105,7 @@ public class WindTunnel : MonoBehaviour
 
                                 float force;
 
-                                force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
+                                force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.x * ratio));
 
                                 collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
                             }
@@ -177,7 +177,7 @@ public class WindTunnel : MonoBehaviour
 
                             float force;
 
-                            force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
+                            force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.x * ratio));
 
                             collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
                         }
