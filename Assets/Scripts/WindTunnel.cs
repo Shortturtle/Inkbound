@@ -47,7 +47,23 @@ public class WindTunnel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (buttonActivated)
+        {
+            if (buttonPress)
+            {
+                WindParticles.Stop();
+            }
 
+            else if (!WindParticles.isPlaying)
+            {
+                WindParticles.Play();
+            }
+        }
+
+        else if (!WindParticles.isPlaying)
+        {
+            WindParticles.Play();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -105,7 +121,7 @@ public class WindTunnel : MonoBehaviour
 
                                 float force;
 
-                                force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
+                                force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.x * ratio));
 
                                 collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
                             }
@@ -177,7 +193,7 @@ public class WindTunnel : MonoBehaviour
 
                             float force;
 
-                            force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
+                            force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.x * ratio));
 
                             collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
                         }
@@ -206,12 +222,10 @@ public class WindTunnel : MonoBehaviour
     public void OnButtonPress()
     {
         buttonPress = true;
-        WindParticles.Stop();
     }
 
     public void OnButtonRelease()
     {
         buttonPress = false;
-        WindParticles.Play();
     }
 }

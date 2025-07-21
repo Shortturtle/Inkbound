@@ -159,6 +159,10 @@ public class PlayerController : MonoBehaviour
                 Run(1);
             }
 
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
 
             //Footstep audio
             FootstepAudio();

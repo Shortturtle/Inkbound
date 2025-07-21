@@ -67,6 +67,12 @@ public class MantaRayPlatform : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, followPoint.transform.position, speed * Time.deltaTime);
             }
         }
+
+        if (followPoint.transform.position.x - transform.position.x < 0)
+        {
+
+        }
+   
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

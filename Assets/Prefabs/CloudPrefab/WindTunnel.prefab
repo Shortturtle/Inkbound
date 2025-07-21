@@ -4966,9 +4966,10 @@ MonoBehaviour:
   windForce: 15
   layerMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1792
   WindParticles: {fileID: 7623509616803583593}
   boxCollider: {fileID: 3513923549552070790}
+  buttonActivated: 0
 --- !u!61 &3513923549552070790
 BoxCollider2D:
   m_ObjectHideFlags: 0

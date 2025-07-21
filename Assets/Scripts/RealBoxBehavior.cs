@@ -58,7 +58,7 @@ public class RealBoxBehavior : BoxClass
         else
         {
             rb.sharedMaterial = push;
-            rb.mass = 4;
+            rb.mass = 1;
         }
     }
 
