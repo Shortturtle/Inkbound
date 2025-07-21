@@ -47,7 +47,23 @@ public class WindTunnel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (buttonActivated)
+        {
+            if (buttonPress)
+            {
+                WindParticles.Stop();
+            }
 
+            else if (!WindParticles.isPlaying)
+            {
+                WindParticles.Play();
+            }
+        }
+
+        else if (!WindParticles.isPlaying)
+        {
+            WindParticles.Play();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -206,12 +222,10 @@ public class WindTunnel : MonoBehaviour
     public void OnButtonPress()
     {
         buttonPress = true;
-        WindParticles.Stop();
     }
 
     public void OnButtonRelease()
     {
         buttonPress = false;
-        WindParticles.Emit(1);
     }
 }
