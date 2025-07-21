@@ -300,7 +300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5556030797902581108, guid: 69426f3798268344bac0609354447f2b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6123209384437424729, guid: 69426f3798268344bac0609354447f2b, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -750,7 +750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5188981044843528668, guid: 07b4ca21ea457a64581bd7f00a4f789d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.83
+      value: 17.8
       objectReference: {fileID: 0}
     - target: {fileID: 5188981044843528668, guid: 07b4ca21ea457a64581bd7f00a4f789d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3195,7 +3195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210485152847557351, guid: bcf62b6d092bea340a0339e5158c7748, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8560658511039553182, guid: bcf62b6d092bea340a0339e5158c7748, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -7253,6 +7253,17 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6413466248293453816, guid: 3fefcb5ba5c90c841b4a2d55d022f999, type: 3}
   m_PrefabInstance: {fileID: 795257172}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484187413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3082476425377711668, guid: 3d1126c9724c0814b97ec4a14bd32e29, type: 3}
+  m_PrefabInstance: {fileID: 1738989891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e60c4451a461e44b26ce9fc4f0809e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1571237918 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 229167252290845499, guid: d6c65726655d218459e8be3882f0420f, type: 3}
@@ -7596,6 +7607,46 @@ PrefabInstance:
     - target: {fileID: 6017434998355165652, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1484187413}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1484187413}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnButtonPress
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnButtonRelease
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WindTunnel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WindTunnel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882420751639401930, guid: 71766c0337bbdbb4593234d782ab8c97, type: 3}
+      propertyPath: buttonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
