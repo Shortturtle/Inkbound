@@ -26,4 +26,12 @@ public class DrawnButtonHandler : ButtonClass
             isButtonPressed = true;
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (!collision.isTrigger && (collision.gameObject.CompareTag("Drawing") || collision.gameObject.GetComponent<DrawnBoxBehavior>()))
+        {
+            isButtonPressed = false;
+        }
+    }
 }
