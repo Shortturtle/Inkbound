@@ -10,18 +10,22 @@ public class PlayerInactive : MonoBehaviour
     [SerializeField] private GameObject ground;
     [SerializeField] private Vector2 groundBoxCastSize;
     [SerializeField] private LayerMask realGround;
+    private Animator animator;
     private bool groundHit;
+    private bool isGrounded;
     private float lastOnGroundTime;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckGround();
+
+        AnimatorUpdate();
     }
 
     private void FixedUpdate()
@@ -85,7 +89,22 @@ public class PlayerInactive : MonoBehaviour
             groundHit = Physics2D.OverlapBox(groundBoxCastOrigin, groundBoxCastSize, 0f, realGround); // grounded check
             if (groundHit)
             {
+                isGrounded = true;
                 lastOnGroundTime = data.coyoteTime; // allows for jump buffer and also acts as ground check
             }
+
+            else
+            {
+                isGrounded= false;
+            }
+    }
+
+    private void AnimatorUpdate()
+    {
+        animator.SetInteger("Xinput", 0);
+        animator.SetBool("Jumping", false);
+        animator.SetBool("Falling", false);
+        animator.SetBool("Grounded", isGrounded);
+        animator.SetFloat("Yvelocity", rb.velocity.y);
     }
 }

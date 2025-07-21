@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private bool isJumpFalling;
     private bool isJumpCut;
     private float lastJumpButtonPress;
+    [SerializeField] private GameObject shadow;
 
     //Player On Box variables
     public bool isOnTopOfBox;
@@ -70,6 +71,8 @@ public class PlayerController : MonoBehaviour
         IgnoreCollisions();
 
         pickUpHandler = gameObject.GetComponent<PickUpHandlerClass>();
+
+        shadow.SetActive(false);
 
     }
 
@@ -144,12 +147,17 @@ public class PlayerController : MonoBehaviour
 
         //GroundCheck
         CheckGround();
+
+        ShadowCheck();
     }
 
     private void FixedUpdate()
     {
             //Movement
-            Run(1);
+            if (stunTimer < 0)
+            {
+                Run(1);
+            }
 
 
             //Footstep audio
@@ -157,22 +165,22 @@ public class PlayerController : MonoBehaviour
     }
     private void CheckGround()
     {
-        if (!isJumping)
-        {
             Vector2 groundBoxCastOrigin = ground.transform.position; // where the cast box originates from
 
             groundHit = Physics2D.OverlapBox(groundBoxCastOrigin, groundBoxCastSize, 0f, realGround); // grounded check
             if (groundHit)
             {
                 isGrounded = true;
+            if (!isJumping)
+            {
                 lastOnGroundTime = data.coyoteTime; // allows for jump buffer and also acts as ground check
+            }
             }
 
             else
             {
                 isGrounded = false;
             }
-        }
     }
 
     private void GetInput()
@@ -272,6 +280,10 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = Vector2.zero;
         xInput = 0;
+        isJumping = false;
+        isJumpFalling = false;
+        isJumpCut = false;
+        shadow.SetActive(false);
 
         pickUpHandler.enabled = false;
 
@@ -337,7 +349,14 @@ public class PlayerController : MonoBehaviour
 
     private void AnimatorUpdate()
     {
-        xInputInt = (int)xInput;
+        if(stunTimer > 0)
+        {
+            xInputInt = 0;
+        }
+        else
+        {
+            xInputInt = (int)xInput;
+        }
         animator.SetInteger("Xinput", xInputInt);
         animator.SetBool("Jumping", isJumping);
         animator.SetBool("Falling", isJumpFalling);
@@ -375,15 +394,25 @@ public class PlayerController : MonoBehaviour
 
     public void MoveMobile(int x) // Mobile Movement
     {
-        if(stunTimer > 0)
-        {
-            xInput = 0;
-        }
-
-        else
         {
             xInput = x;
         }
 
+    }
+
+    private void ShadowCheck()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(ground.transform.position, Vector2.down, 99f, realGround);
+
+        if (lastOnGroundTime < 0 &&  hit)
+        {
+            shadow.SetActive(true);
+            shadow.transform.position = hit.point;
+        }
+
+        else
+        {
+            shadow.SetActive(false);
+        }
     }
 }
