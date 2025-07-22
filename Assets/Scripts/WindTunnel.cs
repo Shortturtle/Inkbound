@@ -77,145 +77,13 @@ public class WindTunnel : MonoBehaviour
 
             else
             {
-                switch (orientation)
-                {
-                    case Orientation.Up:
-                        {
-                            if (collision != null)
-                            {
-                                float ratio = Mathf.Abs((collision.gameObject.transform.position.y / (transform.position.y - 2)) + 1);
-                                Debug.Log(ratio);
-                                float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
-
-                                float force;
-
-                                force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
-
-                                collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, force), ForceMode2D.Force);
-                            }
-                            break;
-                        }
-                    case Orientation.Down:
-                        {
-                            if (collision != null)
-                            {
-                                float ratio = Mathf.Abs((collision.gameObject.transform.position.y / (transform.position.y - 2)) + 1);
-                                Debug.Log(ratio);
-                                float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
-
-                                float force;
-
-                                force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
-
-                                collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -force), ForceMode2D.Force);
-                            }
-                            break;
-                        }
-                    case Orientation.Left:
-                        {
-                            if (collision != null)
-                            {
-                                float ratio = Mathf.Abs((collision.gameObject.transform.position.x / (transform.position.x - 2)) + 1);
-                                Debug.Log(ratio);
-                                float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
-
-                                float force;
-
-                                force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.x * ratio));
-
-                                collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
-                            }
-                            break;
-                        }
-                    case Orientation.Right:
-                        {
-                            if (collision != null)
-                            {
-                                float ratio = Mathf.Abs((collision.gameObject.transform.position.x / (transform.position.y - 2)) + 1);
-                                Debug.Log(ratio);
-                                float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
-
-                                float force;
-
-                                force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.x * ratio));
-
-                                collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
-                            }
-                            break;
-                        }
-                }
+                WindActive(collision);
             }
         }
 
         else
         {
-            switch (orientation)
-            {
-                case Orientation.Up:
-                    {
-                        if (collision != null)
-                        {
-                            float ratio = Mathf.Abs((collision.gameObject.transform.position.y / (transform.position.y - 2)) + 1);
-                            Debug.Log(ratio);
-                            float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
-
-                            float force;
-
-                            force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
-
-                            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, force), ForceMode2D.Force);
-                        }
-                        break;
-                    }
-                case Orientation.Down:
-                    {
-                        if (collision != null)
-                        {
-                            float ratio = Mathf.Abs((collision.gameObject.transform.position.y / (transform.position.y - 2)) + 1);
-                            Debug.Log(ratio);
-                            float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
-
-                            float force;
-
-                            force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
-
-                            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -force), ForceMode2D.Force);
-                        }
-                        break;
-                    }
-                case Orientation.Left:
-                    {
-                        if (collision != null)
-                        {
-                            float ratio = Mathf.Abs((collision.gameObject.transform.position.x / (transform.position.x - 2)) + 1);
-                            Debug.Log(ratio);
-                            float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
-
-                            float force;
-
-                            force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.x * ratio));
-
-                            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
-                        }
-                        break;
-                    }
-                case Orientation.Right:
-                    {
-                        if (collision != null)
-                        {
-                            float ratio = Mathf.Abs((collision.gameObject.transform.position.x / (transform.position.y - 2)) + 1);
-                            Debug.Log(ratio);
-                            float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
-
-                            float force;
-
-                            force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.x * ratio));
-
-                            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
-                        }
-                        break;
-                    }
-            }
+            WindActive(collision);
         }
     }
 
@@ -227,5 +95,73 @@ public class WindTunnel : MonoBehaviour
     public void OnButtonRelease()
     {
         buttonPress = false;
+    }
+
+    private void WindActive(Collider2D collision)
+    {
+        switch (orientation)
+        {
+            case Orientation.Up:
+                {
+                    if (collision != null)
+                    {
+                        float ratio = Mathf.Abs((collision.gameObject.transform.position.y / (transform.position.y - 2)) + 1);
+                        Debug.Log(ratio);
+                        float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
+
+                        float force;
+
+                        force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
+
+                        collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, force), ForceMode2D.Force);
+                    }
+                    break;
+                }
+            case Orientation.Down:
+                {
+                    if (collision != null)
+                    {
+                        float ratio = Mathf.Abs((collision.gameObject.transform.position.y / (transform.position.y - 2)) + 1);
+                        Debug.Log(ratio);
+
+                        float force;
+
+                        force = (windForce * 2 * ratio);
+
+                        collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -force), ForceMode2D.Force);
+                    }
+                    break;
+                }
+            case Orientation.Left:
+                {
+                    if (collision != null)
+                    {
+                        float ratio = Mathf.Abs((collision.gameObject.transform.position.x / (transform.position.x - 2)) + 1);
+                        Debug.Log(ratio);
+
+                        float force;
+
+                        force = (windForce * 2 * ratio);
+
+                        collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
+                    }
+                    break;
+                }
+            case Orientation.Right:
+                {
+                    if (collision != null)
+                    {
+                        float ratio = Mathf.Abs((collision.gameObject.transform.position.x / (transform.position.y - 2)) + 1);
+                        Debug.Log(ratio);
+
+                        float force;
+
+                        force = (windForce * 2 * ratio);
+
+                        collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
+                    }
+                    break;
+                }
+        }
     }
 }
