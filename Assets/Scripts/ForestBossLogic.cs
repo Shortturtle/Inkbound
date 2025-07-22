@@ -23,6 +23,8 @@ public class ForestBossLogic : MonoBehaviour
     private bool attacking;
     private bool stun;
     private bool dead;
+    private bool dying;
+    private float buttonPressCooldown;
     private float cooldownTimer;
     private Vector2 dropPosition;
     private Vector2 attackPosition;
@@ -36,6 +38,8 @@ public class ForestBossLogic : MonoBehaviour
     void Update()
     {
         cooldownTimer -= Time.deltaTime;
+        buttonPressCooldown -= Time.deltaTime;
+
         if (!dead)
         {
             PlayerCheck();
@@ -44,9 +48,9 @@ public class ForestBossLogic : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (dead)
+        if (dead && !dying)
         {
-
+            StartCoroutine(Death());
         }
         else
         {
@@ -140,7 +144,25 @@ public class ForestBossLogic : MonoBehaviour
 
     public void OnButtonPress()
     {
-        Health -= 1;
+        if (buttonPressCooldown < 0)
+        {
+            Health -= 1;
+            
+        }
+
+        if (Health < 0)
+        {
+            dead = true;
+        }
+    }
+
+    IEnumerator Death()
+    {
+        dying = true;
+
+        yield return new WaitForSeconds(stunTime);
+
+        Destroy(gameObject);
     }
 
 

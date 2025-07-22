@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8916702240711853864}
   - component: {fileID: 5616635856469091493}
   - component: {fileID: 3013559131033826309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DrawnExtendingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
