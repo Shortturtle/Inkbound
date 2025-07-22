@@ -14,6 +14,7 @@ public class ForestBossLogic : MonoBehaviour
     private int i;
 
     [SerializeField] private BoxCollider2D collision;
+    [SerializeField] private BoxCollider2D AreaEffector;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private float bufferTime;
     [SerializeField] private float stunTime;
@@ -177,6 +178,14 @@ public class ForestBossLogic : MonoBehaviour
         yield return new WaitForSeconds(stunTime);
 
         Destroy(gameObject);
+    }
+
+    private void PushPlayerOff()
+    {
+        if (buttonPressCooldown > 0)
+        {
+
+        }
     }
 
 
