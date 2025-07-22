@@ -22403,7 +22403,6 @@ Tilemap:
     e33: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 --- !u!1 &1232535446
 GameObject:
   m_ObjectHideFlags: 0
@@ -22488,8 +22487,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.518}
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -22581,11 +22578,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
       value: -29.703701
-=======
-      value: -15.499084
->>>>>>> Stashed changes
 =======
       value: -15.499084
 >>>>>>> Stashed changes
@@ -23212,12 +23205,9 @@ SceneRoots:
   - {fileID: 216784013}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - {fileID: 1232535448}
   - {fileID: 1111918344}
   - {fileID: 1914764866}
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
