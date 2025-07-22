@@ -22,6 +22,7 @@ public class ForestBossLogic : MonoBehaviour
     private bool triggered;
     private bool attacking;
     private bool stun;
+    private bool dead;
     private float cooldownTimer;
     private Vector2 dropPosition;
     private Vector2 attackPosition;
@@ -35,14 +36,24 @@ public class ForestBossLogic : MonoBehaviour
     void Update()
     {
         cooldownTimer -= Time.deltaTime;
-        PlayerCheck();
+        if (!dead)
+        {
+            PlayerCheck();
+        }
     }
 
     private void FixedUpdate()
     {
-        if (!triggered && !attacking)
+        if (dead)
         {
-            MoveLeftRight();
+
+        }
+        else
+        {
+            if (!triggered && !attacking)
+            {
+                MoveLeftRight();
+            }
         }
     }
 

@@ -26,6 +26,6 @@ MonoBehaviour:
   jumpHeight: 7
   jumpTimeToApex: 0.5
   jumpForce: 28
-  jumpCutGravityMultiplier: 4
+  jumpCutGravityMultiplier: 2
   coyoteTime: 0.1
   jumpInputBufferTime: 0.1
