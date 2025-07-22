@@ -44,6 +44,11 @@ public class ForestBossLogic : MonoBehaviour
         {
             PlayerCheck();
         }
+
+        if (dead)
+        {
+
+        }
     }
 
     private void FixedUpdate()
@@ -116,6 +121,14 @@ public class ForestBossLogic : MonoBehaviour
             yield return new WaitForSeconds(bufferTime);
         }
 
+        if (dead)
+        {
+            stun = false;
+            triggered = false;
+            attacking = false;
+            StopCoroutine(AttackBuffer(attackLoc));
+        }
+
             while (Vector2.Distance(transform.position, dropPosition) > 0.5f)
             {
                 transform.position = Vector2.MoveTowards(transform.position, dropPosition, speed * 2 * Time.deltaTime);
@@ -147,6 +160,7 @@ public class ForestBossLogic : MonoBehaviour
         if (buttonPressCooldown < 0)
         {
             Health -= 1;
+            buttonPressCooldown = bufferTime;
             
         }
 
