@@ -22401,6 +22401,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< Updated upstream
 --- !u!1 &1232535446
 GameObject:
   m_ObjectHideFlags: 0
@@ -22485,6 +22486,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.518}
+=======
+>>>>>>> Stashed changes
 --- !u!114 &1370571549 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7983590677359019919, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
@@ -22570,7 +22573,11 @@ PrefabInstance:
       objectReference: {fileID: 1434221948}
     - target: {fileID: 9174774325126141794, guid: 4eca269dc0f0a8b4a8adb8379c23a89c, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -29.703701
+=======
+      value: -15.499084
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 9174774325126141794, guid: 4eca269dc0f0a8b4a8adb8379c23a89c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23189,6 +23196,9 @@ SceneRoots:
   - {fileID: 1997324889}
   - {fileID: 724676385}
   - {fileID: 216784013}
+<<<<<<< Updated upstream
   - {fileID: 1232535448}
   - {fileID: 1111918344}
   - {fileID: 1914764866}
+=======
+>>>>>>> Stashed changes
