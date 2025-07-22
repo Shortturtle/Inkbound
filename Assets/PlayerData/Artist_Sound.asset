@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8ff191da7e8734198c57a44173a8c1, type: 3}
+  m_Name: Artist_Sound
+  m_EditorClassIdentifier: 
+  FootstepSounds: {fileID: 8300000, guid: dcb13d8c5056cd447ad0e79c9613fc24, type: 3}
+  JumpSounds: {fileID: 8300000, guid: b65a614779ddeb443bfebc6a8a4765fb, type: 3}
+  LandingSounds: {fileID: 0}
+  PickUpSounds: {fileID: 0}
+  PutDownSounds: {fileID: 0}
