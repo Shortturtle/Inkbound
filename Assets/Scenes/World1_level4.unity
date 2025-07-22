@@ -948,19 +948,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452992570615413158, guid: 3fefcb5ba5c90c841b4a2d55d022f999, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.18
+      value: 2.655894
       objectReference: {fileID: 0}
     - target: {fileID: 4452992570615413158, guid: 3fefcb5ba5c90c841b4a2d55d022f999, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.64
+      value: 2.6896
       objectReference: {fileID: 0}
     - target: {fileID: 4452992570615413158, guid: 3fefcb5ba5c90c841b4a2d55d022f999, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 50.3
+      value: 63.6
       objectReference: {fileID: 0}
     - target: {fileID: 4452992570615413158, guid: 3fefcb5ba5c90c841b4a2d55d022f999, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.6
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 4452992570615413158, guid: 3fefcb5ba5c90c841b4a2d55d022f999, type: 3}
       propertyPath: m_LocalPosition.z
@@ -111426,11 +111426,11 @@ PrefabInstance:
       objectReference: {fileID: 1434221948}
     - target: {fileID: 9174774325126141794, guid: 4eca269dc0f0a8b4a8adb8379c23a89c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.480824
+      value: 18.432316
       objectReference: {fileID: 0}
     - target: {fileID: 9174774325126141794, guid: 4eca269dc0f0a8b4a8adb8379c23a89c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.81015086
+      value: 0.000009775162
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -112157,90 +112157,6 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 3448268640541108269, guid: 69426f3798268344bac0609354447f2b, type: 3}
   m_PrefabInstance: {fileID: 49606103}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2099876288
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2099876290}
-  - component: {fileID: 2099876289}
-  m_Layer: 0
-  m_Name: WhatsApp Image 2025-07-23 at 05.19.34_2669413e
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &2099876289
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099876288}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 932035355
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c4e1910307c29b947bef1b78ee8447e6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7921569}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 15.99, y: 8.99}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &2099876290
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099876288}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.5, y: 19.9, z: 0}
-  m_LocalScale: {x: 7.6875186, y: 7.6875186, z: 7.6875186}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2116280082 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 883335491262093719, guid: 5c1fc4b2c81eb9e47933b4dc0de1bd3f, type: 3}
@@ -112267,7 +112183,6 @@ SceneRoots:
   - {fileID: 795257172}
   - {fileID: 1602656588}
   - {fileID: 1767064904}
-  - {fileID: 2099876290}
   - {fileID: 831409185}
   - {fileID: 815280949}
   - {fileID: 2069540387}
