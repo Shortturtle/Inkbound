@@ -453,7 +453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldSelect: {fileID: 38599541}
   world1LevelSelect: {fileID: 885882774}
-  world2LevelSelect: {fileID: 0}
+  world2LevelSelect: {fileID: 1236230913}
 --- !u!1 &183525554
 GameObject:
   m_ObjectHideFlags: 0
