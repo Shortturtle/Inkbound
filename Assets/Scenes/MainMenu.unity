@@ -1760,7 +1760,7 @@ GameObject:
   - component: {fileID: 1236230916}
   - component: {fileID: 1236230915}
   m_Layer: 5
-  m_Name: World1LevelSelect (1)
+  m_Name: World2LevelSelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
