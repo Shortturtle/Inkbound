@@ -1008,8 +1008,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1771295232341020288, guid: 293bb5728a95b8946ba2d1087fa6d1c3, type: 3}
+      propertyPath: bufferTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771295232341020288, guid: 293bb5728a95b8946ba2d1087fa6d1c3, type: 3}
       propertyPath: breakDelayTime
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2275405052723517285, guid: 293bb5728a95b8946ba2d1087fa6d1c3, type: 3}
       propertyPath: m_Name
@@ -111600,7 +111604,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: c640b37a42d1a38419ed105664d903c4, type: 3}
     - target: {fileID: 9174774325126141794, guid: 4eca269dc0f0a8b4a8adb8379c23a89c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.2314
+      value: 37.67191
       objectReference: {fileID: 0}
     - target: {fileID: 9174774325126141794, guid: 4eca269dc0f0a8b4a8adb8379c23a89c, type: 3}
       propertyPath: m_LocalPosition.y
