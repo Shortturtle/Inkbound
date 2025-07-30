@@ -434,7 +434,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 12a4a031402b5cc44b741bce36e0f964, type: 2}
   rb: {fileID: 92243794655828500}
   ground: {fileID: 4057677312609703568}
-  groundBoxCastSize: {x: 1.5, y: 0.25}
+  groundBoxCastSize: {x: 1.6, y: 0.25}
   realGround:
     serializedVersion: 2
     m_Bits: 320
@@ -453,7 +453,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 12a4a031402b5cc44b741bce36e0f964, type: 2}
   rb: {fileID: 92243794655828500}
   ground: {fileID: 4057677312609703568}
-  groundBoxCastSize: {x: 1.5, y: 0.25}
+  groundBoxCastSize: {x: 1.6, y: 0.25}
   realGround:
     serializedVersion: 2
     m_Bits: 320
