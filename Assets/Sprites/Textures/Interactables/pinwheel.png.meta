@@ -118,7 +118,7 @@ TextureImporter:
         width: 216
         height: 382
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: pinwheel_1
       rect:
         serializedVersion: 2
-        x: 667
-        y: 50
-        width: 205
-        height: 377
+        x: 658
+        y: 51
+        width: 216
+        height: 382
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: pinwheel_2
       rect:
         serializedVersion: 2
-        x: 1195
+        x: 1171
         y: 50
-        width: 174
-        height: 359
+        width: 216
+        height: 382
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: pinwheel_3
       rect:
         serializedVersion: 2
-        x: 1691
-        y: 50
-        width: 206
-        height: 368
+        x: 1684
+        y: 51
+        width: 216
+        height: 382
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: pinwheel_4
       rect:
         serializedVersion: 2
-        x: 2191
-        y: 50
-        width: 228
-        height: 377
+        x: 2190
+        y: 52
+        width: 226
+        height: 382
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,6 +230,8 @@ TextureImporter:
       pinwheel_2: 1779005007
       pinwheel_3: 169013998
       pinwheel_4: -1811735621
+      pinwheel_5: -1724412985
+      pinwheel_6: 194751419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
