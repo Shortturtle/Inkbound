@@ -10920,6 +10920,18 @@ PrefabInstance:
       propertyPath: uncolouredUI
       value: 
       objectReference: {fileID: 1222060491}
+    - target: {fileID: 3809857956058832110, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 947506070}
+    - target: {fileID: 3809857956058832110, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809857956058832110, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: World1_Level2
+      objectReference: {fileID: 0}
     - target: {fileID: 5150864776375534409, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
       propertyPath: m_Name
       value: Menu

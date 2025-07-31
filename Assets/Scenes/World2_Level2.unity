@@ -370,6 +370,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.005126953
       objectReference: {fileID: 0}
+    - target: {fileID: 3809857956058832110, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2116280082}
+    - target: {fileID: 3809857956058832110, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809857956058832110, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: World2_Level3
+      objectReference: {fileID: 0}
     - target: {fileID: 5150864776375534409, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
       propertyPath: m_Name
       value: Menu
@@ -453,6 +465,14 @@ PrefabInstance:
     - target: {fileID: 7364856892591734311, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683602903287271291, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2116280082}
+    - target: {fileID: 7683602903287271291, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
