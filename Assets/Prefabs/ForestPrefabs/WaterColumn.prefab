@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 320
+    m_Bits: 336
   waterfallParticles: {fileID: 3580380397891131140, guid: 98284863315a9e244abed0d2923b8729, type: 3}
   waterfallParticlesInstance: {fileID: 0}
 --- !u!61 &5570376039828184085
