@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Android",
+  "BasePlatform": "Android",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2310174327",
+    "Type": "User",
+    "GUID": "{C2C1AC37-6903-4571-BBA0-A63B76AC0E1C}",
+    "Language": "SFX",
+    "Hash": "{330231A8-6D43-DD09-3C70-806512330CAC}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbanks",
+    "ShortName": "Main_Soundbanks",
+    "Path": "Main_Soundbanks.bnk"
+   }
+  ],
+  "FileHash": "{931744F2-70A0-6B43-8456-CD3A151BB666}"
+ }
+}
