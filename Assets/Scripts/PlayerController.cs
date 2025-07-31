@@ -138,7 +138,6 @@ public class PlayerController : MonoBehaviour
         //Jump
         if (CanJump() && lastJumpButtonPress > 0 && stunTimer <= 0) // if jump button has been pressed and not bouncing and is able to jump
         {
-            rb.velocity = new Vector2(rb.velocity.x, 0f);
             // sets bools to false other than isJumping to ensure correct gravity
             isJumping = true;
             isJumpCut = false;
