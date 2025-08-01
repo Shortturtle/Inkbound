@@ -13,25 +13,36 @@ public class ForestBossLogic : MonoBehaviour
     private int i;
 
     [SerializeField] private BoxCollider2D collision;
-    [SerializeField] private BoxCollider2D AreaEffector;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private float bufferTime;
     [SerializeField] private float stunTime;
     [SerializeField] private float cooldownTime;
+    [SerializeField] private AreaEffector2D push1;
+    [SerializeField] private AreaEffector2D push2;
+    [SerializeField] private float shakeAmt;
+    [SerializeField] private Sprite normal;
+    [SerializeField] private Sprite angry;
+    [SerializeField] private Sprite damaged;
 
     private bool triggered;
     private bool attacking;
     private bool stun;
-    private bool dead;
-    private bool dying;
+    private bool hurt;
     private float buttonPressCooldown;
     private float cooldownTimer;
+    private SpriteRenderer sr;
+    private Vector2 originalPos;
     private Vector2 dropPosition;
     private Vector2 attackPosition;
     // Start is called before the first frame update
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
+
         transform.position = points[startingPoint].position;
+
+        push1.forceMagnitude = 0f;
+        push2.forceMagnitude = 0f;
     }
 
     // Update is called once per frame
@@ -40,30 +51,24 @@ public class ForestBossLogic : MonoBehaviour
         cooldownTimer -= Time.deltaTime;
         buttonPressCooldown -= Time.deltaTime;
 
-        if (!dead)
-        {
-            PlayerCheck();
-        }
-
-        if (dead)
+        if (hurt)
         {
 
+            Vector2 pos = new Vector2(transform.position.x + (Mathf.Sin(Time.time * shakeAmt) * 0.05f), transform.position.y) ;
+
+            transform.position = pos;
         }
+
+        PlayerCheck();
     }
 
     private void FixedUpdate()
     {
-        if (dead && !dying)
-        {
-            StartCoroutine(Death());
-        }
-        else
-        {
-            if (!triggered && !attacking)
+       if (!triggered && !attacking)
             {
                 MoveLeftRight();
             }
-        }
+        
     }
 
     private void MoveLeftRight()
@@ -102,6 +107,7 @@ public class ForestBossLogic : MonoBehaviour
     IEnumerator AttackBuffer(Vector2 attackLoc)
     {
         attacking = true;
+        sr.sprite = angry;
 
         yield return new WaitForSeconds(bufferTime);
 
@@ -118,15 +124,7 @@ public class ForestBossLogic : MonoBehaviour
 
         else
         {
-            yield return new WaitForSeconds(bufferTime);
-        }
-
-        if (dead)
-        {
-            stun = false;
-            triggered = false;
-            attacking = false;
-            StopCoroutine(AttackBuffer(attackLoc));
+            yield return new WaitForSeconds(0.2f);
         }
 
             while (Vector2.Distance(transform.position, dropPosition) > 0.5f)
@@ -141,6 +139,7 @@ public class ForestBossLogic : MonoBehaviour
         stun = false;
         triggered = false;
         attacking = false;
+        sr.sprite = normal;
     }
     private void Attack()
     {
@@ -155,28 +154,56 @@ public class ForestBossLogic : MonoBehaviour
         }
     }
 
+    private void Damage()
+    {
+        StopAllCoroutines();
+        StartCoroutine(Hurt(dropPosition));
+    }
+
+    IEnumerator Hurt(Vector2 dropPosition)
+    {
+
+        yield return new WaitForSeconds(0.2f);
+        originalPos = transform.position;
+
+        sr.sprite = damaged;
+        hurt = true;
+        push1.forceMagnitude = 1000f;
+        push2.forceMagnitude = 1000f;
+
+        yield return new WaitForSeconds(2f);
+
+        hurt = false;
+        push1.forceMagnitude = 0f;
+        push2.forceMagnitude = 0f;
+        transform.position = originalPos;
+        sr.sprite = normal;
+
+        yield return new WaitForSeconds(0.2f);
+
+
+        while (Vector2.Distance(transform.position, dropPosition) > 0.5f)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, dropPosition, speed * 2 * Time.deltaTime);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(bufferTime);
+
+        cooldownTimer = cooldownTime;
+        stun = false;
+        triggered = false;
+        attacking = false;
+    }
+
     public void OnButtonPress()
     {
         if (buttonPressCooldown < 0)
         {
-            Health -= 1;
-            buttonPressCooldown = bufferTime;
+            Damage();
+            buttonPressCooldown = 5f;
             
         }
-
-        if (Health < 0)
-        {
-            dead = true;
-        }
-    }
-
-    IEnumerator Death()
-    {
-        dying = true;
-
-        yield return new WaitForSeconds(stunTime);
-
-        Destroy(gameObject);
     }
 
     private void PushPlayerOff()
