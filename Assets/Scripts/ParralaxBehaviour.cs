@@ -33,5 +33,15 @@ public class ParralaxBehaviour : MonoBehaviour
         {
             startPos.x -= length.x;
         }
+
+        if (temp.y > startPos.y + length.y)
+        {
+            startPos.y += length.y;
+        }
+
+        else if (temp.y < startPos.y - length.y)
+        {
+            startPos.y -= length.y;
+        }
     }
 }

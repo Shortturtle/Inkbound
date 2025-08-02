@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.U2D;
 
@@ -26,8 +27,15 @@ public class WaterShapeController : MonoBehaviour
     // How much to spread to the other springs
     public float spread = 0.006f;
 
-    void Start() { 
-       
+    private Material hueShifter;
+    [SerializeField] private float hue1;
+    [SerializeField] private float hue2;
+    [SerializeField] private int currentPlayer;
+    [SerializeField] private PlayerSwap playerswap;
+
+    void Start() 
+    {
+        hueShifter = GetComponent<Renderer>().sharedMaterial;
     }
     void OnValidate() {
         // Clean waterpoints 
@@ -152,6 +160,24 @@ public class WaterShapeController : MonoBehaviour
     private void Splash(int index, float speed) { 
         if (index >= 0 && index < springs.Count) {
             springs[index].velocity += speed;
+        }
+    }
+
+    private void Update()
+    {
+        if (currentPlayer != playerswap.activePlayer)
+        {
+            if (playerswap.activePlayer == 1)
+            {
+                hueShifter.SetFloat("_Hue", hue1);
+                currentPlayer = playerswap.activePlayer;
+            }
+
+            else if (playerswap.activePlayer == 2)
+            {
+                hueShifter.SetFloat("_Hue", hue2);
+                currentPlayer = playerswap.activePlayer;
+            }
         }
     }
 }

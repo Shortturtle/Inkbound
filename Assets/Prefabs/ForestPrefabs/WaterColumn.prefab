@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: b20a08fdfce7d4e47981db7e597a4eb6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 854348037
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2041370088, guid: 96a619c80cbcfdf488a2d6c9d6ade74f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
+  m_Sprite: {fileID: -2041370088, guid: d0fbadf64b24ce14cbfab50cc2bb5c45, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -104,6 +104,10 @@ MonoBehaviour:
     m_Bits: 336
   waterfallParticles: {fileID: 3580380397891131140, guid: 98284863315a9e244abed0d2923b8729, type: 3}
   waterfallParticlesInstance: {fileID: 0}
+  hue1: 0.56
+  hue2: 1
+  currentPlayer: 0
+  playerswap: {fileID: 0}
 --- !u!61 &5570376039828184085
 BoxCollider2D:
   m_ObjectHideFlags: 0

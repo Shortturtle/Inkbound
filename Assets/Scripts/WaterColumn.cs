@@ -20,6 +20,12 @@ public class WaterColumn : MonoBehaviour
     private float newScale;
     private float endposition;
     private float sizeX;
+
+    private Material hueShifter;
+    [SerializeField] private float hue1;
+    [SerializeField] private float hue2;
+    [SerializeField] private int currentPlayer;
+    [SerializeField] private PlayerSwap playerswap;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,8 @@ public class WaterColumn : MonoBehaviour
 
         startPosition1 = new Vector2(transform.position.x - (sizeX / 2), transform.position.y);
         startPosition2 = new Vector2(transform.position.x + (sizeX / 2), transform.position.y);
+
+        hueShifter = GetComponent<Renderer>().sharedMaterial;
     }
 
     // Update is called once per frame
@@ -91,6 +99,22 @@ public class WaterColumn : MonoBehaviour
 
             ParticleSpawn();
         }
+
+        if (currentPlayer != playerswap.activePlayer)
+        {
+            if (playerswap.activePlayer == 1)
+            {
+                hueShifter.SetFloat("_Hue", hue1);
+                currentPlayer = playerswap.activePlayer;
+            }
+
+            else if (playerswap.activePlayer == 2)
+            {
+                hueShifter.SetFloat("_Hue", hue2);
+                currentPlayer = playerswap.activePlayer;
+            }
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
