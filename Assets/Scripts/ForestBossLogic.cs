@@ -20,6 +20,7 @@ public class ForestBossLogic : MonoBehaviour
     [SerializeField] private AreaEffector2D push1;
     [SerializeField] private AreaEffector2D push2;
     [SerializeField] private float shakeAmt;
+    [SerializeField] private GameObject spikes;
     [SerializeField] private Sprite normal;
     [SerializeField] private Sprite angry;
     [SerializeField] private Sprite damaged;
@@ -28,6 +29,7 @@ public class ForestBossLogic : MonoBehaviour
     private bool attacking;
     private bool stun;
     private bool hurt;
+    private bool dead;
     private float buttonPressCooldown;
     private float cooldownTimer;
     private SpriteRenderer sr;
@@ -51,10 +53,21 @@ public class ForestBossLogic : MonoBehaviour
         cooldownTimer -= Time.deltaTime;
         buttonPressCooldown -= Time.deltaTime;
 
-        if (hurt)
+        float shakeVar = 1f;
+
+
+        if (hurt && !dead)
         {
 
             Vector2 pos = new Vector2(transform.position.x + (Mathf.Sin(Time.time * shakeAmt) * 0.05f), transform.position.y) ;
+
+            transform.position = pos;
+        }
+
+        if (dead)
+        {
+            Vector2 pos = new Vector2(transform.position.x + (Mathf.Sin(Time.time * shakeAmt * shakeVar) * 0.05f), transform.position.y);
+            shakeVar += 0.5f;  
 
             transform.position = pos;
         }
@@ -64,7 +77,7 @@ public class ForestBossLogic : MonoBehaviour
 
     private void FixedUpdate()
     {
-       if (!triggered && !attacking)
+       if (!triggered && !attacking && !dead)
             {
                 MoveLeftRight();
             }
@@ -92,7 +105,7 @@ public class ForestBossLogic : MonoBehaviour
         
         if (hit)
         {
-            if(cooldownTimer < 0 && !attacking)
+            if(cooldownTimer < 0 && !attacking && !dead)
             {
                 triggered = true;
                 Debug.Log(hit.point);
@@ -157,13 +170,22 @@ public class ForestBossLogic : MonoBehaviour
     private void Damage()
     {
         StopAllCoroutines();
-        StartCoroutine(Hurt(dropPosition));
+
+        if (Health > 0)
+        {
+            StartCoroutine(Hurt(dropPosition));
+        }
+
+        else if (Health <= 0)
+        {
+            StartCoroutine(Death());
+        }
     }
 
     IEnumerator Hurt(Vector2 dropPosition)
     {
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         originalPos = transform.position;
 
         sr.sprite = damaged;
@@ -171,7 +193,7 @@ public class ForestBossLogic : MonoBehaviour
         push1.forceMagnitude = 1000f;
         push2.forceMagnitude = 1000f;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
 
         hurt = false;
         push1.forceMagnitude = 0f;
@@ -179,7 +201,7 @@ public class ForestBossLogic : MonoBehaviour
         transform.position = originalPos;
         sr.sprite = normal;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
 
 
         while (Vector2.Distance(transform.position, dropPosition) > 0.5f)
@@ -196,24 +218,26 @@ public class ForestBossLogic : MonoBehaviour
         attacking = false;
     }
 
+    IEnumerator Death()
+    {
+        dead = true;
+        sr.sprite = damaged;
+        spikes.SetActive(false);
+
+        yield return new WaitForSeconds(3f);
+
+        gameObject.SetActive(false);
+        
+    }
+
     public void OnButtonPress()
     {
-        if (buttonPressCooldown < 0)
+        if (buttonPressCooldown < 0 && !dead)
         {
+            Health -= 1;
             Damage();
             buttonPressCooldown = 5f;
             
         }
     }
-
-    private void PushPlayerOff()
-    {
-        if (buttonPressCooldown > 0)
-        {
-
-        }
-    }
-
-
-
 }

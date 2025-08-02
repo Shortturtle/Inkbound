@@ -254,7 +254,6 @@ MonoBehaviour:
   - {fileID: 3561531799305566752}
   - {fileID: 69611502053620174}
   collision: {fileID: 6917351266550602218}
-  AreaEffector: {fileID: 0}
   layerMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -264,6 +263,7 @@ MonoBehaviour:
   push1: {fileID: 1503153745144068520}
   push2: {fileID: 5759868062134756468}
   shakeAmt: 40
+  spikes: {fileID: 2378879810625619399}
   normal: {fileID: 21300000, guid: 5c059a0d907b79c4283adf15358e639c, type: 3}
   angry: {fileID: 21300000, guid: 6beb175ca97d5ef4b8b27a66971734ec, type: 3}
   damaged: {fileID: 21300000, guid: 8d953e2a31ef0f847857703a87012304, type: 3}
