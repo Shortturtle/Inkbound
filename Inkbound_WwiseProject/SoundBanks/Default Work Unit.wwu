@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Artist_Land" ID="{C063ABF2-40EA-41C8-B755-BA77BBF2310E}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WaterFall" ID="{D3395AEB-DB2D-4210-9614-D50A0BC4F8D2}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ForestTheme" ID="{585A6DEF-7085-4308-8ECA-DA9690C0B3AA}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Drawing_Footsteps" ID="{53F72768-1D06-431E-9AE8-B0A6F2013240}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Artist_Footsteps" ID="{E4FCC2F8-FC33-48A9-B97E-651C012DCEDD}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Button_Down" ID="{C366C04C-E1F6-48B7-A378-F662BC3A3AE6}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>

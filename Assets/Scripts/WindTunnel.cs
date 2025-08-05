@@ -25,6 +25,7 @@ public class WindTunnel : MonoBehaviour
     private float lifeTime;
     [SerializeField] private bool buttonActivated;
     private bool buttonPress;
+    [SerializeField] private AK.Wwise.Event fanSound;
    
 
     private void OnValidate()
@@ -41,6 +42,19 @@ public class WindTunnel : MonoBehaviour
         Physics2D.IgnoreCollision(GameObject.FindGameObjectWithTag("Artist").GetComponent<CircleCollider2D>(), boxCollider);
         Physics2D.IgnoreCollision(GameObject.FindGameObjectWithTag("Drawing").GetComponent<CircleCollider2D>(), boxCollider);
         psMain.startLifetime = lifeTime;
+        if(orientation == Orientation.Left || orientation == Orientation.Right)
+        {
+            psMain.startSizeX = 2;
+            psMain.startSizeY = 0.1f;
+        }
+
+        else if (orientation == Orientation.Up || orientation == Orientation.Down)
+        {
+            psMain.startSizeX = 0.1f;
+            psMain.startSizeY = 2;
+        }
+
+        fanSound.Post(gameObject);
     }
 
     // Update is called once per frame

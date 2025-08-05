@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID DRAWING_FOOTSTEPS = 472988777U;
         static const AkUniqueID DRAWING_JUMP = 2683770016U;
         static const AkUniqueID DRAWING_LAND = 4152864347U;
+        static const AkUniqueID FORESTTHEME = 4083970009U;
+        static const AkUniqueID PINWHEELSOUND = 1876678492U;
         static const AkUniqueID WATERFALL = 2074477625U;
     } // namespace EVENTS
 

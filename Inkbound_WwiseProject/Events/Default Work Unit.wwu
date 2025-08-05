@@ -102,6 +102,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ForestTheme" ID="{585A6DEF-7085-4308-8ECA-DA9690C0B3AA}">
+					<ChildrenList>
+						<Action Name="" ID="{85176941-2223-436A-BD1F-8FAEAB352A58}" ShortID="796891710">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ForestTheme" ID="{766FE364-E86C-4A74-8959-8FACF930FBE3}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PinWheelSound" ID="{F15608FC-35FA-4644-B483-6C1504BC7E52}">
+					<ChildrenList>
+						<Action Name="" ID="{FE8AF945-942F-49AC-9DB2-6DE5BC7CB53E}" ShortID="185907528">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PinWheelSound" ID="{A2BB9ACD-86BF-4BF8-B321-293562799D04}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
