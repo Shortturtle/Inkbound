@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 25923231}
   - component: {fileID: 25923230}
+  - component: {fileID: 25923232}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -179,6 +180,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &25923232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25923229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0447efc9671914982d98b0a92346af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 632df6c5da26a3146a78c0ef711920d9, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!223 &342502978 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 4209805211901721065, guid: bcf62b6d092bea340a0339e5158c7748, type: 3}
@@ -6542,13 +6568,19 @@ MonoBehaviour:
   - {fileID: 7119368859488472216}
   - {fileID: 1466012096989950664}
   collision: {fileID: 6165453577924727146}
-  AreaEffector: {fileID: 0}
   layerMask:
     serializedVersion: 2
     m_Bits: 1024
   bufferTime: 1
   stunTime: 3
   cooldownTime: 1
+  push1: {fileID: 0}
+  push2: {fileID: 0}
+  shakeAmt: 0
+  spikes: {fileID: 0}
+  normal: {fileID: 0}
+  angry: {fileID: 0}
+  damaged: {fileID: 0}
 --- !u!61 &7686898882937449538
 BoxCollider2D:
   m_ObjectHideFlags: 0

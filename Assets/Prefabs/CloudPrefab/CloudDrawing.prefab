@@ -191,12 +191,23 @@ MonoBehaviour:
   shadow: {fileID: 3164091310715808526}
   isOnTopOfBox: 0
   soundManager: {fileID: 0}
-  jumpAudio: {fileID: 8300000, guid: a9ef68625b5f0ce46ad5f9f879540c24, type: 3}
-  runAudio: {fileID: 8300000, guid: 4693256c2244242409d96ae5ef5913ca, type: 3}
   playerInactive: {fileID: 2760242314730567713}
   pickUpHandler: {fileID: 2509704237924672270}
   stunTime: 2
   slowTime: 2
+  footstepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: be2a5d605b7538245865938f5fa109a0, type: 2}
+  jumpEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 67504c7c61abf834994c6906d66d2ff2, type: 2}
+  landEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 50ae2a1d1d3d7dd46886cf1963e1ce92, type: 2}
+  timeBetweenFootsteps: 0.3
 --- !u!114 &2760242314730567713
 MonoBehaviour:
   m_ObjectHideFlags: 0

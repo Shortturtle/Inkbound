@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9a0d91e9c707764ea664907ca60a3436
     GuidInternal: 
-    m_lastTime: -8584474930598223273
+    m_lastTime: -8584472027791939791
     List:
     - name: Main_Soundbanks
       guid: 37acc1c203697145bba0a63b76ac0e1c
@@ -94,8 +94,161 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 21c547873dd38d40bc26bec4498df421
     GuidInternal: 
-    m_lastTime: -8584474930598590087
-    List: []
+    m_lastTime: -8584472027791971315
+    List:
+    - name: Artist_Footsteps
+      guid: f8c2fce433fca948b97e651c012dcedd
+      id: 936091232
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Artist_Footsteps
+        ObjectType: 3
+        guid: f8c2fce433fca948b97e651c012dcedd
+      Path: Events\Default Work Unit\Artist_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.25
+      minDuration: 0.25
+    - name: Artist_Jump
+      guid: 9981b6cfc282884f99ecc7a7ff32955a
+      id: 95834383
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Artist_Jump
+        ObjectType: 3
+        guid: 9981b6cfc282884f99ecc7a7ff32955a
+      Path: Events\Default Work Unit\Artist_Jump
+      maxAttenuation: 0
+      maxDuration: 0.093605444
+      minDuration: 0.07015873
+    - name: Artist_Land
+      guid: f2ab63c0ea40c841b755ba77bbf2310e
+      id: 2033183396
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Artist_Land
+        ObjectType: 3
+        guid: f2ab63c0ea40c841b755ba77bbf2310e
+      Path: Events\Default Work Unit\Artist_Land
+      maxAttenuation: 0
+      maxDuration: 0.41165534
+      minDuration: 0.28433105
+    - name: Button_Down
+      guid: 4cc066c3f6e1b748a378f662bc3a3ae6
+      id: 4085851028
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Button_Down
+        ObjectType: 3
+        guid: 4cc066c3f6e1b748a378f662bc3a3ae6
+      Path: Events\Default Work Unit\Button_Down
+      maxAttenuation: 0
+      maxDuration: 0.28993198
+      minDuration: 0.28993198
+    - name: Button_Up
+      guid: 1244fa414beba54b8e2d005f303f06fb
+      id: 1972958575
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Button_Up
+        ObjectType: 3
+        guid: 1244fa414beba54b8e2d005f303f06fb
+      Path: Events\Default Work Unit\Button_Up
+      maxAttenuation: 0
+      maxDuration: 0.2802721
+      minDuration: 0.2802721
+    - name: Drawing_Footsteps
+      guid: 6827f753061d1e439ae8b0a6f2013240
+      id: 472988777
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Drawing_Footsteps
+        ObjectType: 3
+        guid: 6827f753061d1e439ae8b0a6f2013240
+      Path: Events\Default Work Unit\Drawing_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.43575963
+      minDuration: 0.43575963
+    - name: Drawing_Jump
+      guid: 5e122065ce53644bac2aea24740a1e24
+      id: 2683770016
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Drawing_Jump
+        ObjectType: 3
+        guid: 5e122065ce53644bac2aea24740a1e24
+      Path: Events\Default Work Unit\Drawing_Jump
+      maxAttenuation: 0
+      maxDuration: 0.18721089
+      minDuration: 0.14031745
+    - name: Drawing_Land
+      guid: da386c237da32c4fa8c0c13a93dbe03f
+      id: 4152864347
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Drawing_Land
+        ObjectType: 3
+        guid: da386c237da32c4fa8c0c13a93dbe03f
+      Path: Events\Default Work Unit\Drawing_Land
+      maxAttenuation: 0
+      maxDuration: 0.597415
+      minDuration: 0.47009072
+    - name: WaterFall
+      guid: eb5a39d32ddb10429614d50a0bc4f8d2
+      id: 2074477625
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: WaterFall
+        ObjectType: 3
+        guid: eb5a39d32ddb10429614d50a0bc4f8d2
+      Path: Events\Default Work Unit\WaterFall
+      maxAttenuation: 100
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -153,8 +306,8 @@ MonoBehaviour:
     m_lastTime: -8584474930598176684
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000007000000110000001200000013000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

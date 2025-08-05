@@ -130,6 +130,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  buttonPress:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 82e979129d892704582b9cd61a107220, type: 2}
+  buttonRelease:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db18b25b29c587f428b4305385699ced, type: 2}
 --- !u!61 &5757607388868024687
 BoxCollider2D:
   m_ObjectHideFlags: 0

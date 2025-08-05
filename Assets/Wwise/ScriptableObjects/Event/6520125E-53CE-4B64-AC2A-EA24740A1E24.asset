@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d33f39382733640b32d768bf185588, type: 3}
+  m_Name: 6520125E-53CE-4B64-AC2A-EA24740A1E24
+  m_EditorClassIdentifier: 
+  objectName: Drawing_Jump
+  id: 2683770016
+  guid: 6520125E-53CE-4B64-AC2A-EA24740A1E24
+  IsInUserDefinedSoundBank: 1

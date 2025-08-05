@@ -43,8 +43,6 @@ public class PlayerController : MonoBehaviour
 
     //Audio variables
     [SerializeField] private SoundManager soundManager;
-    [SerializeField] private AudioClip jumpAudio;
-    [SerializeField] private AudioClip runAudio;
     
     //Misc variables
     [SerializeField] private PlayerInactive playerInactive;
@@ -55,6 +53,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float slowTime;
     private float stunTimer;
     private float slowTimer;
+
+    [Header("Wwise Events")]
+    [SerializeField] private AK.Wwise.Event footstepEvent;
+    [SerializeField] private AK.Wwise.Event jumpEvent;
+    [SerializeField] private AK.Wwise.Event landEvent;
+    [SerializeField] private float timeBetweenFootsteps;
+    private bool footstepIsPlaying;
+    private float lastFootstepTime;
 
 
     // Start is called before the first frame update
@@ -87,6 +93,7 @@ public class PlayerController : MonoBehaviour
         lastOnGroundTime -= Time.deltaTime;
         stunTimer -= Time.deltaTime;
         slowTimer -= Time.deltaTime;
+        lastFootstepTime -= Time.deltaTime;
 
         //Jump Input
         if (UnityEngine.Input.GetButtonDown("Jump") && stunTimer <= 0)
@@ -115,6 +122,12 @@ public class PlayerController : MonoBehaviour
 
             if (!isJumping)
                 isJumpFalling = false;
+        }
+
+        if (lastOnGroundTime < 0 && rb.velocity.y < 0 && !isJumpFalling)
+        {
+            isJumpFalling = true;
+            isGrounded = false;
         }
 
         //Gravity handling
@@ -178,6 +191,10 @@ public class PlayerController : MonoBehaviour
             if (!isJumping)
             {
                 lastOnGroundTime = data.coyoteTime; // allows for jump buffer and also acts as ground check
+            }
+            if (isJumpFalling && isGrounded)
+            {
+                landEvent.Post(gameObject);
             }
             }
 
@@ -254,7 +271,6 @@ public class PlayerController : MonoBehaviour
         {
             if (MathF.Abs(xInput) > 0)
             {
-                soundManager.StartFootsteps(runAudio);
             }
 
         }
@@ -275,9 +291,7 @@ public class PlayerController : MonoBehaviour
         lastOnGroundTime = 0;
         lastJumpButtonPress = 0;
 
-        // plays jump audio
-        soundManager.PlaySoundEffect(jumpAudio);
-        soundManager.StopFootsteps();
+        jumpEvent.Post(gameObject);
     }
 
     private void OnDisable()
@@ -332,16 +346,21 @@ public class PlayerController : MonoBehaviour
     }
     private void FootstepAudio()
     {
-        if(lastOnGroundTime > 0)
+        if(lastOnGroundTime > 0 && MathF.Abs(xInput) > 0)
         {
-            if (MathF.Abs(xInput) > 0)
+            if (!footstepIsPlaying)
             {
-                soundManager.StartFootsteps(runAudio);
+                footstepEvent.Post(gameObject);
+                footstepIsPlaying = true;
+                lastFootstepTime = timeBetweenFootsteps;
             }
 
-            else if (xInput == 0)
+            if (footstepIsPlaying)
             {
-                soundManager.StopFootsteps();
+                if (lastFootstepTime <= 0)
+                {
+                    footstepIsPlaying = false;
+                }
             }
         }
     }

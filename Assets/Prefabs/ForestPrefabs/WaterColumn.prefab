@@ -108,6 +108,10 @@ MonoBehaviour:
   hue2: 1
   currentPlayer: 0
   playerswap: {fileID: 0}
+  waterfallAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c587c248d4460b843a17c9cbca9cbbef, type: 2}
 --- !u!61 &5570376039828184085
 BoxCollider2D:
   m_ObjectHideFlags: 0

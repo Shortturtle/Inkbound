@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8747C521-D33D-408D-BC26-BEC4498DF421}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{8747C521-D33D-408D-BC26-BEC4498DF421}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8747C521-D33D-408D-BC26-BEC4498DF421}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Artist_Footsteps" ID="{E4FCC2F8-FC33-48A9-B97E-651C012DCEDD}">
+					<ChildrenList>
+						<Action Name="" ID="{9054E1D5-1C45-44F3-990E-9080ECABD772}" ShortID="896381073">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Artist_Footsteps_Grass" ID="{37BE85CD-A78B-4B55-8617-1C7A6D04E188}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Drawing_Footsteps" ID="{53F72768-1D06-431E-9AE8-B0A6F2013240}">
+					<ChildrenList>
+						<Action Name="" ID="{7F5C7EEF-E018-4A47-B812-BB9A3A1831C3}" ShortID="222862158">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drawing_Footsteps_Grass" ID="{3549BEED-9564-4819-B7C6-5A1B23E9B278}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Artist_Jump" ID="{CFB68199-82C2-4F88-99EC-C7A7FF32955A}">
+					<ChildrenList>
+						<Action Name="" ID="{807CCB61-9096-4859-AEA3-F26D9B95C052}" ShortID="828028228">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Artist_Jump" ID="{35C769D1-BE66-4DFB-8D0A-0F1A099FB6E1}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Drawing_Jump" ID="{6520125E-53CE-4B64-AC2A-EA24740A1E24}">
+					<ChildrenList>
+						<Action Name="" ID="{2253AD66-26B7-40C4-8AD8-AF7AA052DA66}" ShortID="204304187">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drawing_Jump" ID="{243F61B1-05F8-4943-9076-BC0995DBF02F}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Artist_Land" ID="{C063ABF2-40EA-41C8-B755-BA77BBF2310E}">
+					<ChildrenList>
+						<Action Name="" ID="{BFE71785-F647-47AB-A482-17552CD841BC}" ShortID="692729655">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Artist_Land_Grass" ID="{F6A5FD54-8E88-4BC7-8233-82D331215025}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Drawing_Land" ID="{236C38DA-A37D-4F2C-A8C0-C13A93DBE03F}">
+					<ChildrenList>
+						<Action Name="" ID="{CCAB6D33-964F-4A27-8A46-D8B220386AC4}" ShortID="325310183">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drawing_Land_Grass" ID="{36D6D0B6-25AD-4E3A-BFB0-42066FFC05B7}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Button_Down" ID="{C366C04C-E1F6-48B7-A378-F662BC3A3AE6}">
+					<ChildrenList>
+						<Action Name="" ID="{F852CF59-D6E5-4C3E-B9DE-7B7803711F66}" ShortID="75648782">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button_Down" ID="{0AD93F8C-FD0A-4165-ABDD-3C3CCBFEAA44}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Button_Up" ID="{41FA4412-EB4B-4BA5-8E2D-005F303F06FB}">
+					<ChildrenList>
+						<Action Name="" ID="{26CD092F-1C5F-424F-8447-DB72FB731334}" ShortID="494850050">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button_Up" ID="{F7ECAB03-758E-4562-B78A-DC54E2807602}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WaterFall" ID="{D3395AEB-DB2D-4210-9614-D50A0BC4F8D2}">
+					<ChildrenList>
+						<Action Name="" ID="{F365F15A-282A-4AF3-87F4-C824F8C13303}" ShortID="301133421">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WaterColumn" ID="{1AAEEABC-5AA5-402C-8A19-E396027F1789}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

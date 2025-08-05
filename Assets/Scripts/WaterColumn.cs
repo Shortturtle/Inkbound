@@ -26,6 +26,7 @@ public class WaterColumn : MonoBehaviour
     [SerializeField] private float hue2;
     [SerializeField] private int currentPlayer;
     [SerializeField] private PlayerSwap playerswap;
+    [SerializeField] private AK.Wwise.Event waterfallAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -130,6 +131,7 @@ public class WaterColumn : MonoBehaviour
         if (waterfallParticlesInstance != null)
         {
             waterfallParticlesInstance.gameObject.transform.position = new Vector2(transform.position.x, endposition);
+            waterfallAudio.Post(waterfallParticlesInstance.gameObject);
         }
 
         else
