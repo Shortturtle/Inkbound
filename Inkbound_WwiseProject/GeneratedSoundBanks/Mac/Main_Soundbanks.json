@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C2C1AC37-6903-4571-BBA0-A63B76AC0E1C}",
     "Language": "SFX",
-    "Hash": "{D924C91E-611F-6929-A4D1-0F4E5EE4E892}",
+    "Hash": "{539086D7-EC01-8D82-7EFD-B5F55A2FCB67}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbanks",
     "ShortName": "Main_Soundbanks",
     "Path": "Main_Soundbanks.bnk",
@@ -300,6 +300,16 @@
       ]
      },
      {
+      "Id": "3778633917",
+      "Name": "AudioStopDeath",
+      "ObjectPath": "\\Events\\Default Work Unit\\AudioStopDeath",
+      "GUID": "{59CF1C66-FB66-4144-8290-A2A7E0545C6E}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "4085851028",
       "Name": "Button_Down",
       "ObjectPath": "\\Events\\Default Work Unit\\Button_Down",
@@ -434,6 +444,6 @@
     ]
    }
   ],
-  "FileHash": "{2C2619F5-92F3-7DDC-7550-1DFDA3E27F47}"
+  "FileHash": "{3A785A91-6423-914D-20B1-0CF5AAA33CEA}"
  }
 }

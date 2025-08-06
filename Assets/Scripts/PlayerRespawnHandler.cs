@@ -12,6 +12,7 @@ public class PlayerRespawnHandler : MonoBehaviour
     private DrawingDeath drawingDeath;
     [SerializeField] private GameObject artistDeathParticles;
     [SerializeField] private GameObject drawingDeathParticles;
+    [SerializeField] private AK.Wwise.Event AudioStop;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +58,7 @@ public class PlayerRespawnHandler : MonoBehaviour
 
         isRespawning = false;
 
+        AudioStop.Post(gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 
@@ -82,6 +84,7 @@ public class PlayerRespawnHandler : MonoBehaviour
 
         isRespawning = false;
 
+        AudioStop.Post(gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 

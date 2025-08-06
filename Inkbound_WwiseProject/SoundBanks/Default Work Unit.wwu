@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main_Soundbanks" ID="{C2C1AC37-6903-4571-BBA0-A63B76AC0E1C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="AudioStopDeath" ID="{59CF1C66-FB66-4144-8290-A2A7E0545C6E}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Artist_Land" ID="{C063ABF2-40EA-41C8-B755-BA77BBF2310E}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WaterFall" ID="{D3395AEB-DB2D-4210-9614-D50A0BC4F8D2}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ForestTheme" ID="{585A6DEF-7085-4308-8ECA-DA9690C0B3AA}" WorkUnitID="{8747C521-D33D-408D-BC26-BEC4498DF421}" Origin="Manual" Filter="7"/>

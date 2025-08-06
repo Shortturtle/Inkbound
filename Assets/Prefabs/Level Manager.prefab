@@ -144,6 +144,10 @@ MonoBehaviour:
   timeToRespawn: 1
   artistDeathParticles: {fileID: 9049432415393769825, guid: 7f2823b440bf27d4e9376e946fbc89e9, type: 3}
   drawingDeathParticles: {fileID: 4764361037756484235, guid: 67b133124e5a53949b1701534d4384ad, type: 3}
+  AudioStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b964ddea6c9eafb419fdba7c59cade2a, type: 2}
 --- !u!114 &9052141699003771459
 MonoBehaviour:
   m_ObjectHideFlags: 0

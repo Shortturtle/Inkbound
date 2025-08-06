@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9a0d91e9c707764ea664907ca60a3436
     GuidInternal: 
-    m_lastTime: -8584471938911474654
+    m_lastTime: -8584471635965136143
     List:
     - name: Main_Soundbanks
       guid: 37acc1c203697145bba0a63b76ac0e1c
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 21c547873dd38d40bc26bec4498df421
     GuidInternal: 
-    m_lastTime: -8584471951427401054
+    m_lastTime: -8584471635965257631
     List:
     - name: Artist_Footsteps
       guid: f8c2fce433fca948b97e651c012dcedd
@@ -147,6 +147,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.41165534
       minDuration: 0.28433105
+    - name: AudioStopDeath
+      guid: 661ccf5966fb44418290a2a7e0545c6e
+      id: 3778633917
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: AudioStopDeath
+        ObjectType: 3
+        guid: 661ccf5966fb44418290a2a7e0545c6e
+      Path: Events\Default Work Unit\AudioStopDeath
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Button_Down
       guid: 4cc066c3f6e1b748a378f662bc3a3ae6
       id: 4085851028

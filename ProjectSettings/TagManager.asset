@@ -12,6 +12,7 @@ TagManager:
   - Drawn
   - AudioManager
   - Both
+  - Spring
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - Real Box
   - Drawn Box
   - Player
-  - 
+  - Post-Processing
   - 
   - 
   - 

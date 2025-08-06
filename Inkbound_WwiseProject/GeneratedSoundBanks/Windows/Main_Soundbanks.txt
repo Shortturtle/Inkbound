@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2033183396	Artist_Land			\Default Work Unit\Artist_Land	
 	2074477625	WaterFall			\Default Work Unit\WaterFall	
 	2683770016	Drawing_Jump			\Default Work Unit\Drawing_Jump	
+	3778633917	AudioStopDeath			\Default Work Unit\AudioStopDeath	
 	4083970009	ForestTheme			\Default Work Unit\ForestTheme	
 	4085851028	Button_Down			\Default Work Unit\Button_Down	
 	4152864347	Drawing_Land			\Default Work Unit\Drawing_Land	

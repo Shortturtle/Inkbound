@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID ARTIST_FOOTSTEPS = 936091232U;
         static const AkUniqueID ARTIST_JUMP = 95834383U;
         static const AkUniqueID ARTIST_LAND = 2033183396U;
+        static const AkUniqueID AUDIOSTOPDEATH = 3778633917U;
         static const AkUniqueID BUTTON_DOWN = 4085851028U;
         static const AkUniqueID BUTTON_UP = 1972958575U;
         static const AkUniqueID DRAWING_FOOTSTEPS = 472988777U;
