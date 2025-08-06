@@ -6,12 +6,11 @@ using UnityEngine;
 public class BGMusicHandler : MonoBehaviour
 {
     [SerializeField] private SoundManager soundManager;
-    [SerializeField] private AudioClip bgMusic;
+    [SerializeField] private AK.Wwise.Event BGM;
     // Start is called before the first frame update
     void Start()
     {
-        soundManager.musicSource.volume = 0.8f;
-        soundManager.PlayBackgroundMusic(bgMusic, true);
+        BGM.Post(gameObject);
     }
 
     // Update is called once per frame

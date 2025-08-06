@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9a0d91e9c707764ea664907ca60a3436
     GuidInternal: 
-    m_lastTime: -8584472027791939791
+    m_lastTime: -8584471938911474654
     List:
     - name: Main_Soundbanks
       guid: 37acc1c203697145bba0a63b76ac0e1c
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 21c547873dd38d40bc26bec4498df421
     GuidInternal: 
-    m_lastTime: -8584472027791971315
+    m_lastTime: -8584471951427401054
     List:
     - name: Artist_Footsteps
       guid: f8c2fce433fca948b97e651c012dcedd
@@ -232,6 +232,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.597415
       minDuration: 0.47009072
+    - name: ForestTheme
+      guid: ef6d5a58857008438ecada9690c0b3aa
+      id: 4083970009
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: ForestTheme
+        ObjectType: 3
+        guid: ef6d5a58857008438ecada9690c0b3aa
+      Path: Events\Default Work Unit\ForestTheme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PinWheelSound
+      guid: fc0856f1fa354446b4836c1504bc7e52
+      id: 1876678492
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PinWheelSound
+        ObjectType: 3
+        guid: fc0856f1fa354446b4836c1504bc7e52
+      Path: Events\Default Work Unit\PinWheelSound
+      maxAttenuation: 65
+      maxDuration: 0
+      minDuration: 0
     - name: WaterFall
       guid: eb5a39d32ddb10429614d50a0bc4f8d2
       id: 2074477625
@@ -246,7 +280,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: eb5a39d32ddb10429614d50a0bc4f8d2
       Path: Events\Default Work Unit\WaterFall
-      maxAttenuation: 100
+      maxAttenuation: 65
       maxDuration: 0
       minDuration: 0
   RtpcWwu:
@@ -306,7 +340,7 @@ MonoBehaviour:
     m_lastTime: -8584474930598176684
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000007000000110000001200000013000000
+  ExpandedWaapiItemIds: 050000000600000007000000130000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

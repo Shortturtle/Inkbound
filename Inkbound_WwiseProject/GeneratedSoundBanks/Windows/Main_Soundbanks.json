@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C2C1AC37-6903-4571-BBA0-A63B76AC0E1C}",
     "Language": "SFX",
-    "Hash": "{D52B6665-4B8B-D910-66D6-357CA8957148}",
+    "Hash": "{D924C91E-611F-6929-A4D1-0F4E5EE4E892}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbanks",
     "ShortName": "Main_Soundbanks",
     "Path": "Main_Soundbanks.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "Drawing_Footsteps_Grass04.wav",
       "CachePath": "26/{265662F7-8DD5-0BD8-DE5F-2CE12BFBA8AD}.wem"
+     },
+     {
+      "Id": "131266682",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PinWheelSound.wav",
+      "CachePath": "1F/{1FE8B63F-4309-F22D-5503-1BC6F8649321}.wem"
      },
      {
       "Id": "194237856",
@@ -110,6 +118,14 @@
       "Location": "Memory",
       "ShortName": "Artist_Footsteps_Grass01.wav",
       "CachePath": "DF/{DF4329A5-60E5-301D-1B7C-13C5A2B5431A}.wem"
+     },
+     {
+      "Id": "612517315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ForestTheme.wav",
+      "CachePath": "02/{02C36C88-F62C-E4C2-E0E7-24275D977397}.wem"
      },
      {
       "Id": "640558588",
@@ -378,11 +394,36 @@
       ]
      },
      {
+      "Id": "4083970009",
+      "Name": "ForestTheme",
+      "ObjectPath": "\\Events\\Default Work Unit\\ForestTheme",
+      "GUID": "{585A6DEF-7085-4308-8ECA-DA9690C0B3AA}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "612517315"
+       }
+      ]
+     },
+     {
+      "Id": "1876678492",
+      "Name": "PinWheelSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\PinWheelSound",
+      "GUID": "{F15608FC-35FA-4644-B483-6C1504BC7E52}",
+      "MaxAttenuation": "65",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "131266682"
+       }
+      ]
+     },
+     {
       "Id": "2074477625",
       "Name": "WaterFall",
       "ObjectPath": "\\Events\\Default Work Unit\\WaterFall",
       "GUID": "{D3395AEB-DB2D-4210-9614-D50A0BC4F8D2}",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "65",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -393,6 +434,6 @@
     ]
    }
   ],
-  "FileHash": "{A52FF8D7-031E-DB8F-615E-4741EBA2451C}"
+  "FileHash": "{04F94A40-4B3C-A247-E236-A48CB226F4E0}"
  }
 }
