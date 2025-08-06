@@ -25,6 +25,7 @@ public class RealBoxBehavior : BoxClass
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+        playerSwap = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PlayerSwap>();
     }
 
     // Update is called once per frame
