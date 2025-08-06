@@ -22,6 +22,7 @@ public class WindTunnel : MonoBehaviour
     [SerializeField] private ParticleSystem WindParticles;
     [SerializeField] private BoxCollider2D boxCollider;
     private ParticleSystem.MainModule psMain;
+    private ParticleSystem.ShapeModule psShape;
     private float lifeTime;
     [SerializeField] private bool buttonActivated;
     private bool buttonPress;
@@ -35,6 +36,7 @@ public class WindTunnel : MonoBehaviour
         boxCollider.size = boxSize;
         lifeTime = (boxSize.y / WindParticles.main.startSpeed.constant);
         psMain = WindParticles.main;
+        psShape = WindParticles.shape;
     }
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,7 @@ public class WindTunnel : MonoBehaviour
         Physics2D.IgnoreCollision(GameObject.FindGameObjectWithTag("Artist").GetComponent<CircleCollider2D>(), boxCollider);
         Physics2D.IgnoreCollision(GameObject.FindGameObjectWithTag("Drawing").GetComponent<CircleCollider2D>(), boxCollider);
         psMain.startLifetime = lifeTime;
+        psShape.scale = new Vector3(boxSize.x, WindParticles.shape.scale.y, WindParticles.shape.scale.z);
         if(orientation == Orientation.Left || orientation == Orientation.Right)
         {
             psMain.startSizeX = 2;
@@ -118,13 +121,12 @@ public class WindTunnel : MonoBehaviour
                 {
                     if (collision != null)
                     {
-                        float ratio = Mathf.Abs((collision.gameObject.transform.position.y / (transform.position.y - 2)) + 1);
-                        Debug.Log(ratio);
                         float counterGravity = (-Physics2D.gravity.y * collision.GetComponent<Rigidbody2D>().gravityScale);
 
                         float force;
 
-                        force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y * ratio));
+                        force = counterGravity + (windForce + (-collision.gameObject.GetComponent<Rigidbody2D>().velocity.y));
+                        Debug.Log(force);
 
                         collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, force), ForceMode2D.Force);
                     }
@@ -134,12 +136,10 @@ public class WindTunnel : MonoBehaviour
                 {
                     if (collision != null)
                     {
-                        float ratio = Mathf.Abs((collision.gameObject.transform.position.y / (transform.position.y - 2)) + 1);
-                        Debug.Log(ratio);
 
                         float force;
 
-                        force = (windForce * 2 * ratio);
+                        force = (windForce * 2);
 
                         collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -force), ForceMode2D.Force);
                     }
@@ -149,12 +149,10 @@ public class WindTunnel : MonoBehaviour
                 {
                     if (collision != null)
                     {
-                        float ratio = Mathf.Abs((collision.gameObject.transform.position.x / (transform.position.x - 2)) + 1);
-                        Debug.Log(ratio);
 
                         float force;
 
-                        force = (windForce * 2 * ratio);
+                        force = (windForce * 2);
 
                         collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-force, 0), ForceMode2D.Force);
                     }
@@ -164,12 +162,10 @@ public class WindTunnel : MonoBehaviour
                 {
                     if (collision != null)
                     {
-                        float ratio = Mathf.Abs((collision.gameObject.transform.position.x / (transform.position.y - 2)) + 1);
-                        Debug.Log(ratio);
 
                         float force;
 
-                        force = (windForce * 2 * ratio);
+                        force = (windForce * 2);
 
                         collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0), ForceMode2D.Force);
                     }
