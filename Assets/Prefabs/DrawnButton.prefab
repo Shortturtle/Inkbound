@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8882420751639401930}
   m_Layer: 0
   m_Name: DrawnButton
-  m_TagString: Untagged
+  m_TagString: Drawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -306,8 +306,6 @@ public class PlayerController : MonoBehaviour
         pickUpHandler.enabled = false;
 
         playerInactive.enabled = true;
-
-        soundManager.StopFootsteps();
     }
 
     private void OnEnable()
