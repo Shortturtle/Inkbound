@@ -31,16 +31,17 @@ public class WindTunnel : MonoBehaviour
 
     private void OnValidate()
     {
-        distance = Mathf.Abs(boxSize.y/2 + 2);
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        distance = Mathf.Abs(boxSize.y / 2 + 2);
         boxCollider.offset = new Vector2(0, distance);
         boxCollider.size = boxSize;
         lifeTime = (boxSize.y / WindParticles.main.startSpeed.constant);
         psMain = WindParticles.main;
         psShape = WindParticles.shape;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
+
         Physics2D.IgnoreCollision(GameObject.FindGameObjectWithTag("Artist").GetComponent<CircleCollider2D>(), boxCollider);
         Physics2D.IgnoreCollision(GameObject.FindGameObjectWithTag("Drawing").GetComponent<CircleCollider2D>(), boxCollider);
         psMain.startLifetime = lifeTime;
