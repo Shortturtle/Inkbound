@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVelocity: 3.5
   playerSwap: {fileID: 0}
-  boxCastSize: {x: 1, y: 1.85}
+  boxCastSize: {x: 1, y: 2}
   horizontalBoxCastSize: {x: 1.75, y: 0.25}
   boxCollider: {fileID: 4299842797270749307}
   distance: 1

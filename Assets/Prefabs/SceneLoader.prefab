@@ -225,6 +225,10 @@ MonoBehaviour:
   transition: {fileID: 4960860105127373605}
   paperMask: {fileID: 0}
   transitionTime: 1.25
+  audioStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b964ddea6c9eafb419fdba7c59cade2a, type: 2}
 --- !u!1 &4012403539130228532
 GameObject:
   m_ObjectHideFlags: 0

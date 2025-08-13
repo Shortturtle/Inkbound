@@ -10,6 +10,7 @@ public class sceneLoaderControler : MonoBehaviour
     [SerializeField] private Animator transition;
     [SerializeField] private UnityEngine.UI.Image paperMask;
     [SerializeField] private float transitionTime;
+    [SerializeField] private AK.Wwise.Event audioStop;
     public void LoadLevel(string sceneName)
     {
        StartCoroutine(LoadLevelCoroutine(sceneName));
@@ -24,6 +25,7 @@ public class sceneLoaderControler : MonoBehaviour
         yield return new WaitForSecondsRealtime(transitionTime);
 
         Debug.Log("Loading level: " + sceneName);
+        audioStop.Post(gameObject);
         SceneManager.LoadScene(sceneName);
     }
 

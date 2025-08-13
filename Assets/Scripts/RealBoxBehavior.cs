@@ -20,9 +20,16 @@ public class RealBoxBehavior : BoxClass
     [SerializeField] private PhysicsMaterial2D push;
     [SerializeField] private PhysicsMaterial2D noPush;
 
+    private float boxScale;
+
     // Start is called before the first frame update
+    private void OnValidate()
+    {
+    }
+
     void Start()
     {
+        boxScale = transform.localScale.x;
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         playerSwap = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PlayerSwap>();
@@ -39,9 +46,9 @@ public class RealBoxBehavior : BoxClass
     private void BoxCheck()
     {
         Physics2D.queriesStartInColliders = false;
-        Collider2D rightHit = Physics2D.OverlapBox(transform.position + new Vector3(boxCollider.size.x / 2, 0, 0), boxCastSize, 0f, boxCollisionLayers);
-        Collider2D leftHit = Physics2D.OverlapBox(transform.position - new Vector3(boxCollider.size.x / 2, 0, 0), boxCastSize, 0f, boxCollisionLayers);
-        Collider2D TopHit = Physics2D.OverlapBox(transform.position + new Vector3(0, boxCollider.size.y / 2, 0), horizontalBoxCastSize, 90f, boxCollisionLayers);
+        Collider2D rightHit = Physics2D.OverlapBox(transform.position + new Vector3((boxCollider.size.x / 2) * boxScale, 0, 0), boxCastSize * boxScale, 0f, boxCollisionLayers);
+        Collider2D leftHit = Physics2D.OverlapBox(transform.position - new Vector3((boxCollider.size.x / 2) * boxScale, 0, 0), boxCastSize * boxScale, 0f, boxCollisionLayers);
+        Collider2D TopHit = Physics2D.OverlapBox(transform.position + new Vector3(0, (boxCollider.size.y / 2) * boxScale, 0), horizontalBoxCastSize * boxScale, 90f, boxCollisionLayers);
 
         
         if (rightHit != null && rightHit.gameObject.CompareTag("Drawing") && playerSwap.activePlayer == 2)
@@ -66,11 +73,11 @@ public class RealBoxBehavior : BoxClass
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(transform.position + new Vector3(boxCollider.size.x / 2, 0, 0), boxCastSize);
+        Gizmos.DrawWireCube(transform.position + new Vector3((boxCollider.size.x / 2) * boxScale, 0, 0), boxCastSize * boxScale);
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(transform.position - new Vector3(boxCollider.size.x / 2, 0, 0), boxCastSize);
+        Gizmos.DrawWireCube(transform.position - new Vector3((boxCollider.size.x / 2) * boxScale, 0, 0), boxCastSize * boxScale);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(transform.position + new Vector3(0, boxCollider.size.y / 2, 0), horizontalBoxCastSize);
+        Gizmos.DrawWireCube(transform.position + new Vector3(0, (boxCollider.size.y / 2) * boxScale, 0), horizontalBoxCastSize * boxScale);
     }
 
 }
