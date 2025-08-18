@@ -5,11 +5,13 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
+using System.Runtime.CompilerServices;
 
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(EdgeCollider2D))]
-[RequireComponent(typeof(WaterTriggerHandler))]
+[RequireComponent(typeof(WaterTriggerHandler), typeof(BuoyancyEffector2D))]
 public class InteractiveWater : MonoBehaviour
 {
+
     [Header("Mesh Generation")]
     [Range(2, 500)] public int numOfXVertices = 70;
     public float width = 10;
@@ -27,14 +29,28 @@ public class InteractiveWater : MonoBehaviour
     private int[] topVerticesIndex;
 
     private EdgeCollider2D coll;
+
+    private class WaterPoint
+    {
+        public float velocity, pos, targetHeight;
+    }
+
+    private List<WaterPoint> waterPoints = new List<WaterPoint>();
     // Start is called before the first frame update
     void Start()
     {
+        coll = GetComponent<EdgeCollider2D>();
+
         GenerateMesh();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+    private void FixedUpdate()
     {
         
     }
@@ -76,7 +92,7 @@ public class InteractiveWater : MonoBehaviour
                 float yPos = (y/ (float)(NUM_OF_Y_VERTICES - 1)) * height - height / 2;
                 vertices[y * numOfXVertices + x] = new Vector3(xPos, yPos, 0f);
 
-                if (y == numOfXVertices - 1)
+                if (y == NUM_OF_Y_VERTICES - 1)
                 {
                     topVerticesIndex[x] = y * numOfXVertices + x;
                 }
@@ -134,6 +150,7 @@ public class InteractiveWater : MonoBehaviour
 
         meshFilter.mesh = mesh;
     }
+
 }
 
 [CustomEditor(typeof(InteractiveWater))]

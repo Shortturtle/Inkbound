@@ -24,6 +24,7 @@ public class ForestBossLogic : MonoBehaviour
     [SerializeField] private Sprite normal;
     [SerializeField] private Sprite angry;
     [SerializeField] private Sprite damaged;
+    [SerializeField] private Sprite stunned;
 
     private bool triggered;
     private bool attacking;
@@ -133,6 +134,7 @@ public class ForestBossLogic : MonoBehaviour
         if (stun)
         {
             yield return new WaitForSeconds(stunTime);
+            sr.sprite = stunned;
         }
 
         else

@@ -69,6 +69,10 @@ Material:
     - _Alpha: 0.8
     - _EnableExternalAlpha: 0
     - _Hue: 0.56
+    - _WaveCount: 2
+    - _WaveFlowDirection: 1
+    - _WaveSize: 0.1
+    - _WaveSpeed: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}

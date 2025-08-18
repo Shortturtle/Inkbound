@@ -267,6 +267,7 @@ MonoBehaviour:
   normal: {fileID: 21300000, guid: 5c059a0d907b79c4283adf15358e639c, type: 3}
   angry: {fileID: 21300000, guid: 6beb175ca97d5ef4b8b27a66971734ec, type: 3}
   damaged: {fileID: 21300000, guid: 8d953e2a31ef0f847857703a87012304, type: 3}
+  stunned: {fileID: 21300000, guid: bd96ebef2a673cf4f80a81f0ca108e90, type: 3}
 --- !u!61 &1861128738477970403
 BoxCollider2D:
   m_ObjectHideFlags: 0
