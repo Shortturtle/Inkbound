@@ -4,16 +4,36 @@ using UnityEngine;
 
 public class SpikeHandler : MonoBehaviour
 {
+    private Material hueShifter;
+    private PlayerSwap playerSwap;
+    private int currentPlayer;
+    [SerializeField] private float hue1;
+    [SerializeField] private float hue2;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerSwap = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PlayerSwap>();
+        hueShifter = GetComponent<Renderer>().sharedMaterial;
+        currentPlayer = playerSwap.activePlayer;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentPlayer != playerSwap.activePlayer)
+        {
+            if (playerSwap.activePlayer == 1)
+            {
+                hueShifter.SetFloat("_Hue", hue1);
+                currentPlayer = playerSwap.activePlayer;
+            }
+
+            else if (playerSwap.activePlayer == 2)
+            {
+                hueShifter.SetFloat("_Hue", hue2);
+                currentPlayer = playerSwap.activePlayer;
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
