@@ -15,6 +15,7 @@ public class SpikeHandler : MonoBehaviour
         playerSwap = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PlayerSwap>();
         hueShifter = GetComponent<Renderer>().sharedMaterial;
         currentPlayer = playerSwap.activePlayer;
+        hueShifter.SetFloat("_Hue", hue1);
     }
 
     // Update is called once per frame

@@ -42,6 +42,7 @@ Transform:
   - {fileID: 2273669494530480172}
   - {fileID: 1117088092338010575}
   - {fileID: 7318743548081557743}
+  - {fileID: 6456589629427073814}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3286652081178599325
@@ -209,6 +210,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 960
   isGrounded: 0
+  lastInWaterTime: 0
   shadow: {fileID: 9088364359481593465}
   isOnTopOfBox: 0
   soundManager: {fileID: 0}
@@ -216,6 +218,8 @@ MonoBehaviour:
   pickUpHandler: {fileID: 0}
   stunTime: 2
   slowTime: 2
+  stunParticles: {fileID: 0}
+  slowParticles: {fileID: 6541771181792597223}
   footstepEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -542,3 +546,70 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &4434389369953155597
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7254539238622820422}
+    m_Modifications:
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.40966496
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440816958791085802, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+      propertyPath: m_Name
+      value: SlowParticles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+--- !u!4 &6456589629427073814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7210394584267602203, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+  m_PrefabInstance: {fileID: 4434389369953155597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6541771181792597223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7440816958791085802, guid: 016ec9f83ea90b741a8d2c6fc0a8ff9c, type: 3}
+  m_PrefabInstance: {fileID: 4434389369953155597}
+  m_PrefabAsset: {fileID: 0}

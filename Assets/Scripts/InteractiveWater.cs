@@ -35,6 +35,12 @@ public class InteractiveWater : MonoBehaviour
         public float velocity, pos, targetHeight;
     }
 
+    private Material hueShifter;
+    [SerializeField] private float hue1 = 0.56f;
+    [SerializeField] private float hue2 = 1f;
+    [SerializeField] private int currentPlayer;
+    [SerializeField] private PlayerSwap playerswap;
+
     private List<WaterPoint> waterPoints = new List<WaterPoint>();
     // Start is called before the first frame update
     void Start()
@@ -42,12 +48,30 @@ public class InteractiveWater : MonoBehaviour
         coll = GetComponent<EdgeCollider2D>();
 
         GenerateMesh();
+
+        hueShifter = GetComponent<Renderer>().sharedMaterial;
+
+        playerswap = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PlayerSwap>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentPlayer != playerswap.activePlayer)
+        {
+            if (playerswap.activePlayer == 1)
+            {
+                hueShifter.SetFloat("_Hue", hue1);
+                currentPlayer = playerswap.activePlayer;
+            }
+
+            else if (playerswap.activePlayer == 2)
+            {
+                hueShifter.SetFloat("_Hue", hue2);
+                currentPlayer = playerswap.activePlayer;
+            }
+        }
+
     }
 
     private void FixedUpdate()

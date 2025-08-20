@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     //Player Jump variables
     private bool isJumping;
     private float lastOnGroundTime;
+    [SerializeField] private float lastInWaterTime;
     private bool isJumpFalling;
     private bool isJumpCut;
     private float lastJumpButtonPress;
@@ -53,6 +54,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float slowTime;
     private float stunTimer;
     private float slowTimer;
+    [SerializeField] private GameObject stunParticles;
+    [SerializeField] private GameObject slowParticles;
 
     [Header("Wwise Events")]
     [SerializeField] private AK.Wwise.Event footstepEvent;
@@ -91,6 +94,7 @@ public class PlayerController : MonoBehaviour
         //Timer
         lastJumpButtonPress -= Time.deltaTime;
         lastOnGroundTime -= Time.deltaTime;
+        lastInWaterTime -= Time.deltaTime;
         stunTimer -= Time.deltaTime;
         slowTimer -= Time.deltaTime;
         lastFootstepTime -= Time.deltaTime;
@@ -162,6 +166,8 @@ public class PlayerController : MonoBehaviour
         CheckGround();
 
         ShadowCheck();
+
+        ParticleCheck();
     }
 
     private void FixedUpdate()
@@ -202,6 +208,17 @@ public class PlayerController : MonoBehaviour
             {
                 isGrounded = false;
             }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Water"))
+        {
+            if (!isJumping)
+            {
+                lastInWaterTime = data.coyoteTime;
+            }
+        }
     }
 
     private void GetInput()
@@ -285,10 +302,16 @@ public class PlayerController : MonoBehaviour
             force -= rb.velocity.y; // offsets jump force by falling force to ensure proper jump height
         }
 
+        else if (lastInWaterTime > 0 && !(rb.velocity.y < 0))
+        {
+            force -= rb.velocity.y;
+        }
+
         rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
 
         // prevents multiple jumps 
         lastOnGroundTime = 0;
+        lastInWaterTime = 0;
         lastJumpButtonPress = 0;
 
         jumpEvent.Post(gameObject);
@@ -393,7 +416,7 @@ public class PlayerController : MonoBehaviour
     }
     private bool CanJump()
     {
-        return lastJumpButtonPress > 0 && lastOnGroundTime > 0;
+        return lastJumpButtonPress > 0 && (lastOnGroundTime > 0 || lastInWaterTime > 0);
     }
     private bool CanJumpCut()
     {
@@ -434,6 +457,29 @@ public class PlayerController : MonoBehaviour
         else
         {
             shadow.SetActive(false);
+        }
+    }
+
+    private void ParticleCheck()
+    {
+        if (slowTimer > 0)
+        {
+            slowParticles.SetActive(true);
+        }
+
+        else
+        {
+            slowParticles.SetActive(false);
+        }
+
+        if (stunTimer > 0)
+        {
+            stunParticles.SetActive(true);
+        }
+
+        else
+        {
+            stunParticles.SetActive(false);
         }
     }
 }
