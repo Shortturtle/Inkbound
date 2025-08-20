@@ -68,7 +68,7 @@ Material:
     m_Floats:
     - _Alpha: 0.8
     - _EnableExternalAlpha: 0
-    - _Hue: 0.56
+    - _Hue: 1
     - _WaveCount: 2
     - _WaveFlowDirection: 1
     - _WaveSize: 0.1
