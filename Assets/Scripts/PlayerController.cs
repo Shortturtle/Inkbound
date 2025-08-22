@@ -83,6 +83,10 @@ public class PlayerController : MonoBehaviour
 
         shadow.SetActive(false);
 
+        slowParticles.SetActive(false);
+
+        stunParticles.SetActive(false);
+
     }
 
     // Update is called once per frame

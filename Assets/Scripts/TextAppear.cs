@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
+using UnityEngine.UI;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class TextAppear : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class TextAppear : MonoBehaviour
     private Vector2 boxSize;
     [SerializeField] private bool BoxSizeUpdate = true;
     private bool show;
+    private List<GameObject> playerList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -30,27 +33,40 @@ public class TextAppear : MonoBehaviour
         BoxSizeUpdate = true;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != null && !collision.isTrigger)
+        if (collision != null && ((layerMask & (1 << collision.gameObject.layer)) != 0))
         {
-            show = true;
+            if (collision.isTrigger == false)
+            {
+                playerList.Add(collision.gameObject);
+            }
         }
-
-        else
-        {
-            show = false;
-        }
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-       
+        if (collision != null && ((layerMask & (1 << collision.gameObject.layer)) != 0))
+        {
+            if (collision.isTrigger == false)
+            {
+                playerList.Remove(collision.gameObject);
+            }
+        }
     }
 
     private void TextShow()
     {
+        if (playerList.Count <= 0)
+        {
+            show = false;
+        }
+
+        else
+        {
+            show = true;
+        }
+
         text.SetActive(show);
     }
 
