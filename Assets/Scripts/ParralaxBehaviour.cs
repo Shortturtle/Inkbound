@@ -13,6 +13,7 @@ public class ParralaxBehaviour : MonoBehaviour
     {
         startPos = transform.position;
         length = GetComponent<SpriteRenderer>().bounds.size;
+        cam = GameObject.FindGameObjectWithTag("CameraHolder").transform.Find("Main Camera").gameObject;
 
     }
 

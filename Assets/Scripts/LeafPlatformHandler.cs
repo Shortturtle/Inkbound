@@ -76,7 +76,7 @@ public class LeafPlatformHandler : MonoBehaviour
     {
         Collider2D hit = Physics2D.OverlapBox((Vector2)transform.position + offset, boxCastSize, 0);
 
-        if (hit.gameObject.tag == "Artist")
+        if (hit != null && hit.gameObject.tag == "Artist")
         {
             if (!cracking && !open)
             {

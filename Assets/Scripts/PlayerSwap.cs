@@ -17,8 +17,6 @@ public class PlayerSwap : MonoBehaviour
     [SerializeField] private GameObject artistArrow;
     [SerializeField] private PlayerController drawing;
     [SerializeField] private GameObject drawingArrow;
-    private CinemachineVirtualCamera virtualCam;
-    private Camera cam;
     [SerializeField] private SpriteRenderer artistSpriteRenderer;
     [SerializeField] private SpriteRenderer drawingSpriteRenderer;
     [SerializeField] private GameObject colouredBG;
@@ -27,6 +25,7 @@ public class PlayerSwap : MonoBehaviour
     private List<SpriteRenderer> drawnBackground;
     [SerializeField] private Canvas colouredUI;
     [SerializeField] private Canvas uncolouredUI;
+    private FlexCameraSwitch CamHolder;
     private Array drawnObjects;
 
     [SerializeField] [Range(0f, 1f)] public float fadedAlpha; // The transparency level when faded
@@ -36,13 +35,10 @@ public class PlayerSwap : MonoBehaviour
     private void Start()
     {
         BGSort();
-
-        virtualCam = FindFirstObjectByType<CinemachineVirtualCamera>();
-        cam = FindFirstObjectByType<Camera>();
+        CamHolder = GameObject.FindGameObjectWithTag("CameraHolder").GetComponent<FlexCameraSwitch>();
         artistSpriteRenderer = artist.gameObject.GetComponent<SpriteRenderer>();
         drawingSpriteRenderer = drawing.gameObject.GetComponent<SpriteRenderer>();
 
-        virtualCam.Follow = artist.gameObject.transform;
         artist.enabled = true;
         artistArrow.SetActive(true);
         drawing.enabled = false;
@@ -77,10 +73,10 @@ public class PlayerSwap : MonoBehaviour
                 artistArrow.SetActive(false);
                 drawing.enabled = true;
                 drawingArrow.SetActive(true);
-                virtualCam.Follow = drawing.gameObject.transform;
                 ChangePlayerOpacity();
                 colouredUI.enabled = false;
                 uncolouredUI.enabled = true;
+                CamHolder.CamSwap();
                 activePlayer = 2;
                 break;
 
@@ -89,10 +85,10 @@ public class PlayerSwap : MonoBehaviour
                 artistArrow.SetActive(true);
                 drawing.enabled = false;
                 drawingArrow.SetActive(false);
-                virtualCam.Follow = artist.gameObject.transform;
                 ChangePlayerOpacity();
                 colouredUI.enabled = true;
                 uncolouredUI.enabled = false;
+                CamHolder.CamSwap();
                 activePlayer = 1;
                 break;
         }
@@ -249,15 +245,5 @@ public class PlayerSwap : MonoBehaviour
         isFaded = !isFaded;
         ToggleOpacity(isFaded);
         SetBackgroundOpacity();
-    }
-
-    IEnumerator CamSwapCoroutine(PlayerController player)
-    {
-        virtualCam.Follow = null;
-        cam.transform.position = Vector3.Lerp(cam.transform.position, player.transform.position, 0.5f);
-
-        yield return new WaitForSeconds(1f);
-
-        virtualCam.Follow = player.gameObject.transform; 
     }
 }

@@ -10,7 +10,7 @@ public class TextAppear : MonoBehaviour
     [SerializeField] private GameObject text;
     [SerializeField] private LayerMask layerMask;
     private Vector2 boxSize;
-    [SerializeField] private bool BoxSizeUpdate = true;
+    [SerializeField] private bool boxSizeUpdate = true;
     private bool show;
     private List<GameObject> playerList = new List<GameObject>();
 
@@ -19,6 +19,7 @@ public class TextAppear : MonoBehaviour
     {
         text = this.transform.GetChild(0).gameObject;
         text.SetActive(false);
+        boxSizeUpdate = true;
     }
 
     // Update is called once per frame
@@ -30,7 +31,7 @@ public class TextAppear : MonoBehaviour
     private void OnValidate()
     {
         boxSize = GetComponent<BoxCollider2D>().size;
-        BoxSizeUpdate = true;
+        boxSizeUpdate = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
