@@ -1784,11 +1784,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4240747274534828624, guid: e8cb0f195cab04145b04ea97238da1ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.95
+      value: -23.1
       objectReference: {fileID: 0}
     - target: {fileID: 4240747274534828624, guid: e8cb0f195cab04145b04ea97238da1ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5964234
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4240747274534828624, guid: e8cb0f195cab04145b04ea97238da1ec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11409,6 +11409,14 @@ PrefabInstance:
     - target: {fileID: 7817715898386926272, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
       propertyPath: m_Name
       value: CameraHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976840175107368787, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000002861023
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976840175107368787, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.099044
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

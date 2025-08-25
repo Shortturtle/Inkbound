@@ -14,6 +14,7 @@ public class PlayerInactive : MonoBehaviour
     private bool groundHit;
     private bool isGrounded;
     private float lastOnGroundTime;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +91,7 @@ public class PlayerInactive : MonoBehaviour
             if (groundHit)
             {
                 isGrounded = true;
+                
                 lastOnGroundTime = data.coyoteTime; // allows for jump buffer and also acts as ground check
             }
 

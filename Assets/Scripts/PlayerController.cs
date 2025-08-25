@@ -323,6 +323,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
+        playerInactive.enabled = true;
+
         rb.velocity = Vector2.zero;
         xInput = 0;
         isJumping = false;
@@ -330,9 +332,11 @@ public class PlayerController : MonoBehaviour
         isJumpCut = false;
         shadow.SetActive(false);
 
-        pickUpHandler.enabled = false;
+        slowParticles.SetActive(false);
 
-        playerInactive.enabled = true;
+        stunParticles.SetActive(false);
+
+        pickUpHandler.enabled = false;
     }
 
     private void OnEnable()
