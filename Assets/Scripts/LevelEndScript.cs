@@ -21,9 +21,11 @@ public class LevelEndScript : MonoBehaviour
     {
         if(drawingPresent && artistPresent)
         {
-            EndLevel();
+            if (!levelBeat)
+            {
+                EndLevel();
+            }
         }
-        
         
     }
 
@@ -55,6 +57,7 @@ public class LevelEndScript : MonoBehaviour
 
     private void EndLevel()
     {
+        levelBeat = true;
         victoryUI.SetActive(true);
         Time.timeScale = 0.0f;
         colouredUI.enabled = false;

@@ -133,8 +133,8 @@ public class ForestBossLogic : MonoBehaviour
 
         if (stun)
         {
-            yield return new WaitForSeconds(stunTime);
             sr.sprite = stunned;
+            yield return new WaitForSeconds(stunTime);
         }
 
         else

@@ -258,7 +258,7 @@ MonoBehaviour:
     m_Bits: 1024
   bufferTime: 1
   stunTime: 3
-  cooldownTime: 1
+  cooldownTime: 2
   push1: {fileID: 1503153745144068520}
   push2: {fileID: 5759868062134756468}
   shakeAmt: 40
