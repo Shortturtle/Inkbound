@@ -499,7 +499,6 @@ GameObject:
   - component: {fileID: 118184100}
   - component: {fileID: 118184099}
   - component: {fileID: 118184098}
-  - component: {fileID: 118184097}
   - component: {fileID: 118184096}
   m_Layer: 0
   m_Name: WaterMesh (1)
@@ -520,27 +519,6 @@ SortingGroup:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_SortAtRoot: 0
---- !u!114 &118184097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118184095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ce135d0ad81944c81ce9e65598f91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numOfXVertices: 70
-  width: 4.762329
-  height: 1.3655663
-  waterMaterial: {fileID: -876546973899608171, guid: 1b18f8488e86fa34689f4146ccaba19e, type: 3}
-  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  hue1: 0.56
-  hue2: 1
-  currentPlayer: 0
-  playerswap: {fileID: 0}
 --- !u!253 &118184098
 BuoyancyEffector2D:
   m_ObjectHideFlags: 0
@@ -1823,7 +1801,6 @@ GameObject:
   - component: {fileID: 772103024}
   - component: {fileID: 772103023}
   - component: {fileID: 772103022}
-  - component: {fileID: 772103021}
   - component: {fileID: 772103020}
   m_Layer: 0
   m_Name: WaterMesh
@@ -1844,27 +1821,6 @@ SortingGroup:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_SortAtRoot: 0
---- !u!114 &772103021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772103019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ce135d0ad81944c81ce9e65598f91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numOfXVertices: 70
-  width: 4.762332
-  height: 1.245265
-  waterMaterial: {fileID: -876546973899608171, guid: 1b18f8488e86fa34689f4146ccaba19e, type: 3}
-  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  hue1: 0.56
-  hue2: 1
-  currentPlayer: 0
-  playerswap: {fileID: 0}
 --- !u!253 &772103022
 BuoyancyEffector2D:
   m_ObjectHideFlags: 0
@@ -5389,7 +5345,6 @@ GameObject:
   - component: {fileID: 1219900971}
   - component: {fileID: 1219900970}
   - component: {fileID: 1219900969}
-  - component: {fileID: 1219900968}
   - component: {fileID: 1219900967}
   m_Layer: 0
   m_Name: WaterMesh (2)
@@ -5410,27 +5365,6 @@ SortingGroup:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_SortAtRoot: 0
---- !u!114 &1219900968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219900966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ce135d0ad81944c81ce9e65598f91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numOfXVertices: 70
-  width: 7.8511086
-  height: 1.245266
-  waterMaterial: {fileID: -876546973899608171, guid: 1b18f8488e86fa34689f4146ccaba19e, type: 3}
-  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  hue1: 0.56
-  hue2: 1
-  currentPlayer: 0
-  playerswap: {fileID: 0}
 --- !u!253 &1219900969
 BuoyancyEffector2D:
   m_ObjectHideFlags: 0
@@ -6100,11 +6034,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7976840175107368787, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.228661
+      value: 6.2238574
       objectReference: {fileID: 0}
     - target: {fileID: 7976840175107368787, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.039204
+      value: 9.039224
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -7,16 +7,38 @@ public class WaterTriggerHandler : MonoBehaviour
 {
     [SerializeField] private LayerMask waterMask;
     [SerializeField] private GameObject splashParticles;
+    private Material hueShifter;
+    [SerializeField] private float hue1 = 0.56f;
+    [SerializeField] private float hue2 = 1f;
+    [SerializeField] private int currentPlayer;
+    [SerializeField] private PlayerSwap playerswap;
 
     private EdgeCollider2D edgeColl;
 
-    private InteractiveWater water;
+    private void Update()
+    {
+        if (currentPlayer != playerswap.activePlayer)
+        {
+            if (playerswap.activePlayer == 1)
+            {
+                hueShifter.SetFloat("_Hue", hue1);
+                currentPlayer = playerswap.activePlayer;
+            }
 
+            else if (playerswap.activePlayer == 2)
+            {
+                hueShifter.SetFloat("_Hue", hue2);
+                currentPlayer = playerswap.activePlayer;
+            }
+        }
+    }
     private void Awake()
     {
-        edgeColl = GetComponent<EdgeCollider2D>();
+        hueShifter = GetComponent<Renderer>().sharedMaterial;
 
-        water = GetComponent<InteractiveWater>();
+        playerswap = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PlayerSwap>();
+
+        edgeColl = GetComponent<EdgeCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -5323,7 +5323,6 @@ GameObject:
   - component: {fileID: 1245726597}
   - component: {fileID: 1245726596}
   - component: {fileID: 1245726595}
-  - component: {fileID: 1245726594}
   - component: {fileID: 1245726593}
   m_Layer: 0
   m_Name: WaterMesh
@@ -5344,27 +5343,6 @@ SortingGroup:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_SortAtRoot: 0
---- !u!114 &1245726594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1245726592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ce135d0ad81944c81ce9e65598f91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numOfXVertices: 70
-  width: 11.890892
-  height: 1.3165112
-  waterMaterial: {fileID: -876546973899608171, guid: 1b18f8488e86fa34689f4146ccaba19e, type: 3}
-  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  hue1: 0.56
-  hue2: 1
-  currentPlayer: 0
-  playerswap: {fileID: 0}
 --- !u!253 &1245726595
 BuoyancyEffector2D:
   m_ObjectHideFlags: 0

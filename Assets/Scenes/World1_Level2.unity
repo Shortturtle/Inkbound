@@ -184,11 +184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7976840175107368787, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.317528
+      value: 11.0953
       objectReference: {fileID: 0}
     - target: {fileID: 7976840175107368787, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0012040138
+      value: 1.0012038
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21310,27 +21310,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &704087757201719945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556290399447652340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ce135d0ad81944c81ce9e65598f91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numOfXVertices: 40
-  width: 11.959534
-  height: 2.9819288
-  waterMaterial: {fileID: 2100000, guid: 6e7d17300ca7c9a439786ba733cad88e, type: 2}
-  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  hue1: 0.56
-  hue2: 1
-  currentPlayer: 0
-  playerswap: {fileID: 0}
 --- !u!114 &886426551863343385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23351,7 +23330,6 @@ GameObject:
   - component: {fileID: 1072033633229704547}
   - component: {fileID: 8838468718644658190}
   - component: {fileID: 5705723452120739702}
-  - component: {fileID: 704087757201719945}
   - component: {fileID: 7115398558507187246}
   - component: {fileID: 8095085110782380119}
   m_Layer: 0

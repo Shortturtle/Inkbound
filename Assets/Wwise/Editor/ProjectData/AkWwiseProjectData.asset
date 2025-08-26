@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9a0d91e9c707764ea664907ca60a3436
     GuidInternal: 
-    m_lastTime: -8584453844972578136
+    m_lastTime: -8584453807301988554
     List:
     - name: Main_Soundbanks
       guid: 37acc1c203697145bba0a63b76ac0e1c
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 21c547873dd38d40bc26bec4498df421
     GuidInternal: 
-    m_lastTime: -8584453845004140777
+    m_lastTime: -8584453807301819459
     List:
     - name: Artist_Footsteps
       guid: f8c2fce433fca948b97e651c012dcedd
@@ -283,6 +283,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.597415
       minDuration: 0.47009072
+    - name: Droplet
+      guid: c4f33a8a00da1b44969d59c5a70b7e7a
+      id: 960898869
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Droplet
+        ObjectType: 3
+        guid: c4f33a8a00da1b44969d59c5a70b7e7a
+      Path: Events\Default Work Unit\Droplet
+      maxAttenuation: 65
+      maxDuration: 0.45427352
+      minDuration: 0.45427352
     - name: ForestTheme
       guid: ef6d5a58857008438ecada9690c0b3aa
       id: 4083970009
@@ -317,6 +334,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.9876003
       minDuration: 2.9876003
+    - name: Lightning
+      guid: 87ae32b67d5e9049bf8c47ac37ac2d23
+      id: 3334464137
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: Lightning
+        ObjectType: 3
+        guid: 87ae32b67d5e9049bf8c47ac37ac2d23
+      Path: Events\Default Work Unit\Lightning
+      maxAttenuation: 65
+      maxDuration: 0.89775723
+      minDuration: 0.89775723
     - name: MainMenuTheme
       guid: 67ab7d6e7d07364ba22f41c094b67bdf
       id: 3189827666
@@ -594,9 +628,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584453929462109174
     List: []
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 020000000300000005000000060000000700000013000000150000001600000017000000
   ExpandedWaapiItemIds: 020000000300000005000000060000000700000013000000150000001600000017000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

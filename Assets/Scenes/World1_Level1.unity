@@ -23149,69 +23149,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &704087757067898534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556290399849651163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ce135d0ad81944c81ce9e65598f91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numOfXVertices: 40
-  width: 34.1456
-  height: 5.3663697
-  waterMaterial: {fileID: 2100000, guid: 6e7d17300ca7c9a439786ba733cad88e, type: 2}
-  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  hue1: 0.56
-  hue2: 1
-  currentPlayer: 0
-  playerswap: {fileID: 0}
---- !u!114 &704087758005202186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556290400786954359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ce135d0ad81944c81ce9e65598f91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numOfXVertices: 40
-  width: 12.062445
-  height: 4.009594
-  waterMaterial: {fileID: 2100000, guid: 6e7d17300ca7c9a439786ba733cad88e, type: 2}
-  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  hue1: 0.56
-  hue2: 1
-  currentPlayer: 0
-  playerswap: {fileID: 0}
---- !u!114 &704087758016095199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556290400756987554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ce135d0ad81944c81ce9e65598f91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numOfXVertices: 40
-  width: 6.0253296
-  height: 2.808919
-  waterMaterial: {fileID: 2100000, guid: 6e7d17300ca7c9a439786ba733cad88e, type: 2}
-  gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  hue1: 0.56
-  hue2: 1
-  currentPlayer: 0
-  playerswap: {fileID: 0}
 --- !u!114 &886426551863343385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25316,7 +25253,6 @@ GameObject:
   - component: {fileID: 1072033633094828364}
   - component: {fileID: 8838468718779010081}
   - component: {fileID: 5705723451718476633}
-  - component: {fileID: 704087757067898534}
   - component: {fileID: 7115398558104924161}
   - component: {fileID: 8095085111184376952}
   m_Layer: 0
@@ -25339,7 +25275,6 @@ GameObject:
   - component: {fileID: 1072033631856782389}
   - component: {fileID: 8838468719979159896}
   - component: {fileID: 5705723450802327072}
-  - component: {fileID: 704087758016095199}
   - component: {fileID: 7115398559306898808}
   - component: {fileID: 8095085109986273537}
   m_Layer: 0
@@ -25362,7 +25297,6 @@ GameObject:
   - component: {fileID: 1072033631884649184}
   - component: {fileID: 8838468719985012621}
   - component: {fileID: 5705723450780909813}
-  - component: {fileID: 704087758005202186}
   - component: {fileID: 7115398559310648237}
   - component: {fileID: 8095085109974198228}
   m_Layer: 0
