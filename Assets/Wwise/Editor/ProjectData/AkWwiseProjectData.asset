@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9a0d91e9c707764ea664907ca60a3436
     GuidInternal: 
-    m_lastTime: -8584453905026529535
+    m_lastTime: -8584453852933820989
     List:
     - name: Main_Soundbanks
       guid: 37acc1c203697145bba0a63b76ac0e1c
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 21c547873dd38d40bc26bec4498df421
     GuidInternal: 
-    m_lastTime: -8584453899019457373
+    m_lastTime: -8584453852933782365
     List:
     - name: Artist_Footsteps
       guid: f8c2fce433fca948b97e651c012dcedd
@@ -198,6 +198,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.2802721
       minDuration: 0.2802721
+    - name: CloudTheme
+      guid: 1064bc15ab47c84ea0ef29d3536c790c
+      id: 3211326659
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: CloudTheme
+        ObjectType: 3
+        guid: 1064bc15ab47c84ea0ef29d3536c790c
+      Path: Events\Default Work Unit\CloudTheme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: DeathSFX
       guid: 24449d4f6546ee439035780be6db2419
       id: 4248281050
@@ -317,6 +334,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: NoPickUp
+      guid: 3c245774d5804b41a41df3bc90f90a59
+      id: 264668328
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: NoPickUp
+        ObjectType: 3
+        guid: 3c245774d5804b41a41df3bc90f90a59
+      Path: Events\Default Work Unit\NoPickUp
+      maxAttenuation: 0
+      maxDuration: 0.49963725
+      minDuration: 0.49963725
+    - name: PickUp
+      guid: 505847c9b265bf4d97ae43ef01aca24d
+      id: 3978245845
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PickUp
+        ObjectType: 3
+        guid: 505847c9b265bf4d97ae43ef01aca24d
+      Path: Events\Default Work Unit\PickUp
+      maxAttenuation: 0
+      maxDuration: 0.42935106
+      minDuration: 0.42935106
     - name: PinWheelSound
       guid: fc0856f1fa354446b4836c1504bc7e52
       id: 1876678492
@@ -351,6 +402,125 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.30230954
       minDuration: 0.30230954
+    - name: PointyDeath
+      guid: e4dafc53cd245942a0bd6f75ad039621
+      id: 3235932968
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyDeath
+        ObjectType: 3
+        guid: e4dafc53cd245942a0bd6f75ad039621
+      Path: Events\Default Work Unit\PointyDeath
+      maxAttenuation: 65
+      maxDuration: 1.3311919
+      minDuration: 1.3311919
+    - name: PointyExplode
+      guid: 19a5c521f1babd40a2479a78d218af7a
+      id: 2381764101
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyExplode
+        ObjectType: 3
+        guid: 19a5c521f1babd40a2479a78d218af7a
+      Path: Events\Default Work Unit\PointyExplode
+      maxAttenuation: 65
+      maxDuration: 2.0209918
+      minDuration: 2.0209918
+    - name: PointyHurt
+      guid: 026b4490fc42584b9590a0834b645e65
+      id: 3514648661
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyHurt
+        ObjectType: 3
+        guid: 026b4490fc42584b9590a0834b645e65
+      Path: Events\Default Work Unit\PointyHurt
+      maxAttenuation: 65
+      maxDuration: 0.7960225
+      minDuration: 0.7960225
+    - name: PointyNotice
+      guid: 40384ac774cb114eb9a080cee03f90e6
+      id: 294246142
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyNotice
+        ObjectType: 3
+        guid: 40384ac774cb114eb9a080cee03f90e6
+      Path: Events\Default Work Unit\PointyNotice
+      maxAttenuation: 65
+      maxDuration: 0.29765072
+      minDuration: 0.29765072
+    - name: PointySlam
+      guid: 5799a42fafe392498d4bad9041f5fd42
+      id: 2657967121
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointySlam
+        ObjectType: 3
+        guid: 5799a42fafe392498d4bad9041f5fd42
+      Path: Events\Default Work Unit\PointySlam
+      maxAttenuation: 65
+      maxDuration: 0.9009883
+      minDuration: 0.9009883
+    - name: PointyStun
+      guid: f068c93299f93741b88d38b8e2d729c3
+      id: 2589576726
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyStun
+        ObjectType: 3
+        guid: f068c93299f93741b88d38b8e2d729c3
+      Path: Events\Default Work Unit\PointyStun
+      maxAttenuation: 65
+      maxDuration: 0.8123996
+      minDuration: 0.8123996
+    - name: PutDown
+      guid: f0acea7fea4d744f87d4c8958041360f
+      id: 3496198064
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PutDown
+        ObjectType: 3
+        guid: f0acea7fea4d744f87d4c8958041360f
+      Path: Events\Default Work Unit\PutDown
+      maxAttenuation: 0
+      maxDuration: 0.48753
+      minDuration: 0.48753
     - name: WaterFall
       guid: eb5a39d32ddb10429614d50a0bc4f8d2
       id: 2074477625

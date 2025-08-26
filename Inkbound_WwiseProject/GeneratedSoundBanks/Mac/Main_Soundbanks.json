@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{C2C1AC37-6903-4571-BBA0-A63B76AC0E1C}",
     "Language": "SFX",
-    "Hash": "{539086D7-EC01-8D82-7EFD-B5F55A2FCB67}",
+    "Hash": "{F7289F10-BE26-6AE0-2950-1B804E7EEAE3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbanks",
     "ShortName": "Main_Soundbanks",
     "Path": "Main_Soundbanks.bnk",
     "Media": [
+     {
+      "Id": "37540227",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerSwap.wav",
+      "CachePath": "1A/{1A3F5C3E-4540-53E1-AFE4-63144A11CB99}.wem"
+     },
      {
       "Id": "46542431",
       "Language": "SFX",
@@ -22,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "Drawing_Footsteps_Grass04.wav",
       "CachePath": "26/{265662F7-8DD5-0BD8-DE5F-2CE12BFBA8AD}.wem"
+     },
+     {
+      "Id": "51136669",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "CloudTheme.wav",
+      "CachePath": "29/{291BB2DD-BDDD-34D5-E4C3-DDA0CCE4B49D}.wem"
      },
      {
       "Id": "131266682",
@@ -78,6 +94,14 @@
       "Location": "Memory",
       "ShortName": "Drawing_Jump01.wav",
       "CachePath": "08/{08727D7C-52F5-B7DC-0C42-63C32CFB4AC3}.wem"
+     },
+     {
+      "Id": "267419049",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MainMenuMusic.wav",
+      "CachePath": "30/{30804354-A604-9CEC-788A-EED46281E118}.wem"
      },
      {
       "Id": "381569217",
@@ -192,6 +216,14 @@
       "CachePath": "F3/{F3FF3E1E-21E7-764F-A5FD-E0C2C5ED1D5A}.wem"
      },
      {
+      "Id": "958173152",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LevelWin.wav",
+      "CachePath": "1D/{1D0766B2-0A22-2B72-72DD-F60346EDD69B}.wem"
+     },
+     {
       "Id": "974022152",
       "Language": "SFX",
       "Streaming": "false",
@@ -222,6 +254,14 @@
       "Location": "Memory",
       "ShortName": "Artist_Jump03.wav",
       "CachePath": "00/{0074B371-73D5-09AD-A3B2-ECF91CB004BD}.wem"
+     },
+     {
+      "Id": "1049303977",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DeathSFX.wav",
+      "CachePath": "3C/{3CA22717-CABD-BFBC-72E8-D5AB78D241B7}.wem"
      },
      {
       "Id": "1063318325",
@@ -338,6 +378,32 @@
       ]
      },
      {
+      "Id": "3211326659",
+      "Name": "CloudTheme",
+      "ObjectPath": "\\Events\\Default Work Unit\\CloudTheme",
+      "GUID": "{15BC6410-47AB-4EC8-A0EF-29D3536C790C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "51136669"
+       }
+      ]
+     },
+     {
+      "Id": "4248281050",
+      "Name": "DeathSFX",
+      "ObjectPath": "\\Events\\Default Work Unit\\DeathSFX",
+      "GUID": "{4F9D4424-4665-43EE-9035-780BE6DB2419}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4126827",
+      "DurationMax": "0.4126827",
+      "MediaRefs": [
+       {
+        "Id": "1049303977"
+       }
+      ]
+     },
+     {
       "Id": "472988777",
       "Name": "Drawing_Footsteps",
       "ObjectPath": "\\Events\\Default Work Unit\\Drawing_Footsteps",
@@ -416,6 +482,32 @@
       ]
      },
      {
+      "Id": "2487243565",
+      "Name": "LevelWin",
+      "ObjectPath": "\\Events\\Default Work Unit\\LevelWin",
+      "GUID": "{025E4BE6-B727-4481-83C0-BEA213168A59}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.9876003",
+      "DurationMax": "2.9876003",
+      "MediaRefs": [
+       {
+        "Id": "958173152"
+       }
+      ]
+     },
+     {
+      "Id": "3189827666",
+      "Name": "MainMenuTheme",
+      "ObjectPath": "\\Events\\Default Work Unit\\MainMenuTheme",
+      "GUID": "{6E7DAB67-077D-4B36-A22F-41C094B67BDF}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "267419049"
+       }
+      ]
+     },
+     {
       "Id": "1876678492",
       "Name": "PinWheelSound",
       "ObjectPath": "\\Events\\Default Work Unit\\PinWheelSound",
@@ -425,6 +517,20 @@
       "MediaRefs": [
        {
         "Id": "131266682"
+       }
+      ]
+     },
+     {
+      "Id": "3834561699",
+      "Name": "PlayerSwap",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSwap",
+      "GUID": "{7AD5FF19-37C6-41D9-9DF6-4E1BC5FC8D87}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.30230954",
+      "DurationMax": "0.30230954",
+      "MediaRefs": [
+       {
+        "Id": "37540227"
        }
       ]
      },
@@ -444,6 +550,6 @@
     ]
    }
   ],
-  "FileHash": "{3A785A91-6423-914D-20B1-0CF5AAA33CEA}"
+  "FileHash": "{769AEB14-7275-98E2-891A-ABEF32D9D67B}"
  }
 }

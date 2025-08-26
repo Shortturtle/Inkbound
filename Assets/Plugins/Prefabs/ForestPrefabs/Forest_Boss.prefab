@@ -167,6 +167,31 @@ MonoBehaviour:
   angry: {fileID: 21300000, guid: 6beb175ca97d5ef4b8b27a66971734ec, type: 3}
   damaged: {fileID: 21300000, guid: 8d953e2a31ef0f847857703a87012304, type: 3}
   stunned: {fileID: 21300000, guid: bd96ebef2a673cf4f80a81f0ca108e90, type: 3}
+  PointyNotice:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 13551dbbf37541441a0fef6d28188e40, type: 2}
+  PointyHurt:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 47bbfff8b757a774b8902a7e7b8dcfc4, type: 2}
+  PointyStun:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 370de9f1ca5d59443ab2dde4050ee49e, type: 2}
+  PointySmash:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8bb40ff16aabed84d9ecd8dec74be8ae, type: 2}
+  PointyDeath:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c2f68941af0ba0a4f9a97d6ccbc3e92f, type: 2}
+  PointyExplode:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 87bf6c53edbaa244bb6fff54c096d716, type: 2}
+  PointyDeathParticles: {fileID: 9049432415393769825, guid: 0cdce0959a036584b98be210f50e559f, type: 3}
 --- !u!61 &1861128738477970403
 BoxCollider2D:
   m_ObjectHideFlags: 0

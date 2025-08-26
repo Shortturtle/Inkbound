@@ -218,6 +218,116 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="CloudTheme" ID="{15BC6410-47AB-4EC8-A0EF-29D3536C790C}">
+					<ChildrenList>
+						<Action Name="" ID="{1E32D0D3-E8AB-4AE5-95B5-8F1D8DC6DF25}" ShortID="353670147">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CloudTheme" ID="{3551DC5D-895C-46E5-9FFA-5EAC4E54FEBA}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PickUp" ID="{C9475850-65B2-4DBF-97AE-43EF01ACA24D}">
+					<ChildrenList>
+						<Action Name="" ID="{8C087B05-1BE8-443A-96B4-7DD0D459D979}" ShortID="351605346">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pickup" ID="{77B30813-D6C2-4877-8D31-EF6ED661678F}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PutDown" ID="{7FEAACF0-4DEA-4F74-87D4-C8958041360F}">
+					<ChildrenList>
+						<Action Name="" ID="{53284E93-F332-4057-8A38-DBDC87BA9549}" ShortID="911602581">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PutDown" ID="{2C999562-E7E7-41FA-A09F-490B7F9B8BE2}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NoPickUp" ID="{7457243C-80D5-414B-A41D-F3BC90F90A59}">
+					<ChildrenList>
+						<Action Name="" ID="{050935A7-6657-4D45-B4BD-1FC447C6B02E}" ShortID="834214415">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NoPickup" ID="{E33681F7-E86F-49A1-A0DC-5710C01EC394}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PointySlam" ID="{2FA49957-E3AF-4992-8D4B-AD9041F5FD42}">
+					<ChildrenList>
+						<Action Name="" ID="{2CA40CEC-93EA-440A-A390-929B4BF13941}" ShortID="307274826">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PointySmash" ID="{0720F51F-2565-471A-9460-FF3AC0923E10}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PointyHurt" ID="{90446B02-42FC-4B58-9590-A0834B645E65}">
+					<ChildrenList>
+						<Action Name="" ID="{4B7E676A-67C9-4903-96DA-17653139E712}" ShortID="162028617">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PointyHurt" ID="{C99EA5DA-D21A-4619-BE67-BED46866BFDB}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PointyNotice" ID="{C74A3840-CB74-4E11-B9A0-80CEE03F90E6}">
+					<ChildrenList>
+						<Action Name="" ID="{8917101C-69B8-45FF-8F18-577E68678C5E}" ShortID="462888692">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PointyNotice" ID="{72A50E91-7EF8-471F-AF94-3F12E58E9FA6}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PointyStun" ID="{32C968F0-F999-4137-B88D-38B8E2D729C3}">
+					<ChildrenList>
+						<Action Name="" ID="{31A32A21-7133-4A84-9739-D81ED34BBEEC}" ShortID="5757174">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PointyStun" ID="{77843911-F14D-4897-9C89-8873FE326064}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PointyDeath" ID="{53FCDAE4-24CD-4259-A0BD-6F75AD039621}">
+					<ChildrenList>
+						<Action Name="" ID="{E435D1CC-88C9-445E-98FF-74F55B306E2C}" ShortID="292984680">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PointyDeath" ID="{C883DF36-0BBD-4DD4-BBDA-A24B2F45E97C}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PointyExplode" ID="{21C5A519-BAF1-40BD-A247-9A78D218AF7A}">
+					<ChildrenList>
+						<Action Name="" ID="{CD3FAFCD-86C2-4BBF-B29C-1AD2C7196B1C}" ShortID="914105405">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PointyExplode" ID="{3AB236E9-C318-44AF-AFF3-A5C3E6346A82}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

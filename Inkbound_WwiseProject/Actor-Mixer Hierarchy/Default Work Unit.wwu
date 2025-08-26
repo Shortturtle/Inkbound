@@ -48,6 +48,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Artist_Footsteps_Grass" ID="{37BE85CD-A78B-4B55-8617-1C7A6D04E188}" ShortID="374783327">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
@@ -151,7 +158,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -340,6 +347,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Drawing_Footsteps_Grass" ID="{3549BEED-9564-4819-B7C6-5A1B23E9B278}" ShortID="419796421">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
@@ -443,7 +457,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-14</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -633,6 +647,7 @@
 				</RandomSequenceContainer>
 				<Sound Name="WaterColumn" ID="{1AAEEABC-5AA5-402C-8A19-E396027F1789}" ShortID="71116255">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -669,7 +684,7 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-16</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -696,6 +711,7 @@
 				</Sound>
 				<Sound Name="PinWheelSound" ID="{A2BB9ACD-86BF-4BF8-B321-293562799D04}" ShortID="33701286">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -732,7 +748,7 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -771,7 +787,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-15</Value>
+								<Value>-20</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -805,7 +821,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -844,7 +860,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -872,6 +888,409 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="DeathSFX" ID="{1E4A34A6-3EAB-4D05-907D-4C4AD19840FE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CloudTheme" ID="{3551DC5D-895C-46E5-9FFA-5EAC4E54FEBA}" ShortID="155663385">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-17</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CloudTheme" ID="{32AF6982-4BCE-49A2-986C-3EB09D99669D}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="4.05410460264312"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="216.147790794714"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>CloudTheme.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="51136669"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CloudTheme" ID="{32AF6982-4BCE-49A2-986C-3EB09D99669D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PointySmash" ID="{0720F51F-2565-471A-9460-FF3AC0923E10}" ShortID="481974188">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Environmental" ID="{448202C0-56CC-4765-ADF9-82792D55E3E4}" WorkUnitID="{F0B693D7-BAB5-48DA-B735-7C4D68652DEA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PointySmash" ID="{40526DCF-D5F8-4B30-BD92-54C38B1B2CC5}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.900988287674705"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>PointySmash.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="609998408"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PointySmash" ID="{40526DCF-D5F8-4B30-BD92-54C38B1B2CC5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Pickup" ID="{77B30813-D6C2-4877-8D31-EF6ED661678F}" ShortID="902992844">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pickup" ID="{A7691AE4-4E0D-47E8-9550-F8367E7C8627}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.149069465760613"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0939448195678863"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.523295892751296"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Pickup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="717189655"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pickup" ID="{A7691AE4-4E0D-47E8-9550-F8367E7C8627}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="NoPickup" ID="{E33681F7-E86F-49A1-A0DC-5710C01EC394}" ShortID="1014498611">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-150</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="NoPickup" ID="{46EB9504-3A5F-4E72-963F-25E5157B362A}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0381807800024379"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.496350145753739"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>NoPickup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="333581627"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="NoPickup" ID="{46EB9504-3A5F-4E72-963F-25E5157B362A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PutDown" ID="{2C999562-E7E7-41FA-A09F-490B7F9B8BE2}" ShortID="660542399">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-220</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PutDown" ID="{C9CFE8F6-D9DB-493E-BAC2-771E7D32CD3B}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.149069465760613"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0939448195678863"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.523295892751296"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Pickup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="717189655"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PutDown" ID="{C9CFE8F6-D9DB-493E-BAC2-771E7D32CD3B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PointyHurt" ID="{C99EA5DA-D21A-4619-BE67-BED46866BFDB}" ShortID="325006285">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-730</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Environmental" ID="{448202C0-56CC-4765-ADF9-82792D55E3E4}" WorkUnitID="{F0B693D7-BAB5-48DA-B735-7C4D68652DEA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PointyHurt" ID="{5A7A517F-1CC6-40A6-8631-CFE19C3B9176}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.402176979493233"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.924331102249626"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>PointyHurt.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1023686774"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PointyHurt" ID="{5A7A517F-1CC6-40A6-8631-CFE19C3B9176}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PointyNotice" ID="{72A50E91-7EF8-471F-AF94-3F12E58E9FA6}" ShortID="114591146">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-600</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Environmental" ID="{448202C0-56CC-4765-ADF9-82792D55E3E4}" WorkUnitID="{F0B693D7-BAB5-48DA-B735-7C4D68652DEA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PointyNotice" ID="{378D6301-7BDC-48E7-93F0-C5BC19151757}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.229211457222558"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.43968230142971"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>PointyNotice.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="992364558"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PointyNotice" ID="{378D6301-7BDC-48E7-93F0-C5BC19151757}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PointyStun" ID="{77843911-F14D-4897-9C89-8873FE326064}" ShortID="115103155">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>37</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-830</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Environmental" ID="{448202C0-56CC-4765-ADF9-82792D55E3E4}" WorkUnitID="{F0B693D7-BAB5-48DA-B735-7C4D68652DEA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PointyStun" ID="{9C246F59-451D-472F-86C6-5481ECC947AE}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.502987637645483"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.502987637645483"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>PointyStun.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="74472534"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PointyStun" ID="{9C246F59-451D-472F-86C6-5481ECC947AE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PointyDeath" ID="{C883DF36-0BBD-4DD4-BBDA-A24B2F45E97C}" ShortID="654512243">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>270</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Environmental" ID="{448202C0-56CC-4765-ADF9-82792D55E3E4}" WorkUnitID="{F0B693D7-BAB5-48DA-B735-7C4D68652DEA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PointyDeath" ID="{526F54C9-3E34-4D0D-AF27-821865974D50}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.55586668554609"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>PointyDeath.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="256628209"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PointyDeath" ID="{526F54C9-3E34-4D0D-AF27-821865974D50}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PointyExplode" ID="{3AB236E9-C318-44AF-AFF3-A5C3E6346A82}" ShortID="991393944">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-500</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-16</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Environmental" ID="{448202C0-56CC-4765-ADF9-82792D55E3E4}" WorkUnitID="{F0B693D7-BAB5-48DA-B735-7C4D68652DEA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PointyExplode" ID="{7746A620-5D64-45D5-835C-8E63FBA58386}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.09075519950134"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.449326022481147"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.96335923609788"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>PointyExplode.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="973879342"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PointyExplode" ID="{7746A620-5D64-45D5-835C-8E63FBA58386}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

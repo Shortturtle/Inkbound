@@ -5,6 +5,9 @@ using UnityEngine;
 public class DrawingPickUpHandler : PickUpHandlerClass
 {
     private DrawnDoorHandler drawnDoorHandler;
+    [SerializeField] private AK.Wwise.Event PickUp;
+    [SerializeField] private AK.Wwise.Event PutDown;
+    [SerializeField] private AK.Wwise.Event NoPickUp;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,19 +77,30 @@ public class DrawingPickUpHandler : PickUpHandlerClass
     {
         if (heldItem == null)
         {
-            PickUpItem();
+            if(pickUpsInRadius.Count > 0)
+            {
+                PickUp.Post(gameObject);
+                PickUpItem();
+            }
+
+            else
+            {
+                NoPickUp.Post(gameObject);
+            }
         }
 
         else if (heldItem != null)
         {
             if (heldItem.GetComponent<KeyClass>() && doorNearby == true)
             {
+                PutDown.Post(gameObject);
                 drawnDoorHandler.KeyInserted();
                 Destroy(heldItem);
                 heldItem = null;
             }
             else
             {
+                PutDown.Post(gameObject);
                 PutDownItem();
             }
         }

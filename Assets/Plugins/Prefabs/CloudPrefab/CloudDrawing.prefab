@@ -261,6 +261,18 @@ MonoBehaviour:
   pickUpsInRadius: []
   pickUpLocation: {fileID: 3172514816935663858}
   doorNearby: 0
+  PickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7b2b79e1a80b8834c9babad8a357e0cf, type: 2}
+  PutDown:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bca7914714bc36f4ab717394ffdd8849, type: 2}
+  NoPickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5ef70748f91093f44bf857bef9b7ac17, type: 2}
 --- !u!58 &4135472705231179139
 CircleCollider2D:
   m_ObjectHideFlags: 0

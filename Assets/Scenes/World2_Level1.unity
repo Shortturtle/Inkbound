@@ -1000,6 +1000,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6201337077544220509, guid: a9a4f140570095545bfd32ef3ef88ccf, type: 3}
+      propertyPath: BGM.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ed962113af6d13e47ac57204a0baf177, type: 2}
     - target: {fileID: 8183745381495620476, guid: a9a4f140570095545bfd32ef3ef88ccf, type: 3}
       propertyPath: m_Name
       value: AudioManager

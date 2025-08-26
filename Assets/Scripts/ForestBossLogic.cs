@@ -24,6 +24,13 @@ public class ForestBossLogic : MonoBehaviour
     [SerializeField] private Sprite angry;
     [SerializeField] private Sprite damaged;
     [SerializeField] private Sprite stunned;
+    [SerializeField] private AK.Wwise.Event PointyNotice;
+    [SerializeField] private AK.Wwise.Event PointyHurt;
+    [SerializeField] private AK.Wwise.Event PointyStun;
+    [SerializeField] private AK.Wwise.Event PointySmash;
+    [SerializeField] private AK.Wwise.Event PointyDeath;
+    [SerializeField] private AK.Wwise.Event PointyExplode;
+    [SerializeField] private GameObject PointyDeathParticles;
 
     private bool triggered;
     private bool attacking;
@@ -120,6 +127,7 @@ public class ForestBossLogic : MonoBehaviour
     {
         attacking = true;
         sr.sprite = angry;
+        PointyNotice.Post(gameObject);
 
         yield return new WaitForSeconds(bufferTime);
 
@@ -131,12 +139,14 @@ public class ForestBossLogic : MonoBehaviour
 
         if (stun)
         {
+            PointyStun.Post(gameObject);
             sr.sprite = stunned;
             yield return new WaitForSeconds(stunTime);
         }
 
         else
         {
+            PointySmash.Post(gameObject);
             yield return new WaitForSeconds(0.2f);
         }
 
@@ -186,7 +196,7 @@ public class ForestBossLogic : MonoBehaviour
 
     IEnumerator Hurt(Vector2 dropPosition)
     {
-
+        PointyHurt.Post(gameObject);
         yield return new WaitForSeconds(0.1f);
         originalPos = transform.position;
 
@@ -220,12 +230,15 @@ public class ForestBossLogic : MonoBehaviour
 
     IEnumerator Death()
     {
+        PointyDeath.Post(gameObject);
         dead = true;
         sr.sprite = damaged;
         spikes.SetActive(false);
 
         yield return new WaitForSeconds(3f);
 
+        PointyExplode.Post(gameObject);
+        Instantiate(PointyDeathParticles, gameObject.transform.position, gameObject.transform.rotation);
         gameObject.SetActive(false);
         
     }

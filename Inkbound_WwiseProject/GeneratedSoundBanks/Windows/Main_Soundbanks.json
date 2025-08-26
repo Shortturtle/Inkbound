@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C2C1AC37-6903-4571-BBA0-A63B76AC0E1C}",
     "Language": "SFX",
-    "Hash": "{7E88D996-A057-8FAF-66E9-E4A26AEF14AC}",
+    "Hash": "{90FFFD50-A52C-6E12-16A1-03DBD7BF276C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbanks",
     "ShortName": "Main_Soundbanks",
     "Path": "Main_Soundbanks.bnk",
@@ -30,6 +30,22 @@
       "Location": "Memory",
       "ShortName": "Drawing_Footsteps_Grass04.wav",
       "CachePath": "26/{265662F7-8DD5-0BD8-DE5F-2CE12BFBA8AD}.wem"
+     },
+     {
+      "Id": "51136669",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "CloudTheme.wav",
+      "CachePath": "FB/{FB20180A-DBE3-FC74-E2E5-55BA4F5763FC}.wem"
+     },
+     {
+      "Id": "74472534",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PointyStun.wav",
+      "CachePath": "2C/{2C0DC0D2-79C1-EEBD-E76E-2369654AE8EE}.wem"
      },
      {
       "Id": "131266682",
@@ -80,6 +96,14 @@
       "CachePath": "37/{37B853D2-2F48-860A-64A7-28CAD2C44C0A}.wem"
      },
      {
+      "Id": "256628209",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PointyDeath.wav",
+      "CachePath": "E7/{E7DF8FA8-0C44-2FE1-8287-E54D1C190CB8}.wem"
+     },
+     {
       "Id": "265394344",
       "Language": "SFX",
       "Streaming": "false",
@@ -94,6 +118,14 @@
       "Location": "Memory",
       "ShortName": "MainMenuMusic.wav",
       "CachePath": "30/{30804354-A604-9CEC-788A-EED46281E118}.wem"
+     },
+     {
+      "Id": "333581627",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NoPickup.wav",
+      "CachePath": "60/{60B0AEE4-76A4-784F-569F-2232D780DE15}.wem"
      },
      {
       "Id": "381569217",
@@ -136,6 +168,14 @@
       "CachePath": "DF/{DF4329A5-60E5-301D-1B7C-13C5A2B5431A}.wem"
      },
      {
+      "Id": "609998408",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PointySmash.wav",
+      "CachePath": "AC/{ACCEA4AD-5AA9-A43F-B5EE-9E54A44488E4}.wem"
+     },
+     {
       "Id": "612517315",
       "Language": "SFX",
       "Streaming": "false",
@@ -166,6 +206,14 @@
       "Location": "Memory",
       "ShortName": "Button_Up.wav",
       "CachePath": "83/{831EA8CA-7D4A-8894-9B99-4221E928F654}.wem"
+     },
+     {
+      "Id": "717189655",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Pickup.wav",
+      "CachePath": "97/{9726EEE0-0A7D-5814-69DA-8BBE9CB697E3}.wem"
      },
      {
       "Id": "749448018",
@@ -216,6 +264,14 @@
       "CachePath": "E1/{E17E470A-1824-4883-D73E-34E0EF571CFF}.wem"
      },
      {
+      "Id": "973879342",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PointyExplode.wav",
+      "CachePath": "B9/{B9BB0308-B884-1723-252E-10DE7A42140D}.wem"
+     },
+     {
       "Id": "974022152",
       "Language": "SFX",
       "Streaming": "false",
@@ -232,12 +288,28 @@
       "CachePath": "A2/{A2102E8E-B5B9-66B5-0915-CB60B017AB2B}.wem"
      },
      {
+      "Id": "992364558",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PointyNotice.wav",
+      "CachePath": "51/{51912090-B157-1080-D50F-F09B1D6F31E3}.wem"
+     },
+     {
       "Id": "1000305794",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Drawing_Footsteps_Grass01.wav",
       "CachePath": "1B/{1B058AE3-0554-EB15-ACA1-6F0640B7BFE0}.wem"
+     },
+     {
+      "Id": "1023686774",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PointyHurt.wav",
+      "CachePath": "B2/{B2180FB3-C602-2B23-85BB-CF5218EDAB89}.wem"
      },
      {
       "Id": "1031434444",
@@ -370,6 +442,18 @@
       ]
      },
      {
+      "Id": "3211326659",
+      "Name": "CloudTheme",
+      "ObjectPath": "\\Events\\Default Work Unit\\CloudTheme",
+      "GUID": "{15BC6410-47AB-4EC8-A0EF-29D3536C790C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "51136669"
+       }
+      ]
+     },
+     {
       "Id": "4248281050",
       "Name": "DeathSFX",
       "ObjectPath": "\\Events\\Default Work Unit\\DeathSFX",
@@ -488,6 +572,34 @@
       ]
      },
      {
+      "Id": "264668328",
+      "Name": "NoPickUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\NoPickUp",
+      "GUID": "{7457243C-80D5-414B-A41D-F3BC90F90A59}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.49963725",
+      "DurationMax": "0.49963725",
+      "MediaRefs": [
+       {
+        "Id": "333581627"
+       }
+      ]
+     },
+     {
+      "Id": "3978245845",
+      "Name": "PickUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\PickUp",
+      "GUID": "{C9475850-65B2-4DBF-97AE-43EF01ACA24D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.42935106",
+      "DurationMax": "0.42935106",
+      "MediaRefs": [
+       {
+        "Id": "717189655"
+       }
+      ]
+     },
+     {
       "Id": "1876678492",
       "Name": "PinWheelSound",
       "ObjectPath": "\\Events\\Default Work Unit\\PinWheelSound",
@@ -515,6 +627,110 @@
       ]
      },
      {
+      "Id": "3235932968",
+      "Name": "PointyDeath",
+      "ObjectPath": "\\Events\\Default Work Unit\\PointyDeath",
+      "GUID": "{53FCDAE4-24CD-4259-A0BD-6F75AD039621}",
+      "MaxAttenuation": "65",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3311919",
+      "DurationMax": "1.3311919",
+      "MediaRefs": [
+       {
+        "Id": "256628209"
+       }
+      ]
+     },
+     {
+      "Id": "2381764101",
+      "Name": "PointyExplode",
+      "ObjectPath": "\\Events\\Default Work Unit\\PointyExplode",
+      "GUID": "{21C5A519-BAF1-40BD-A247-9A78D218AF7A}",
+      "MaxAttenuation": "65",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0209918",
+      "DurationMax": "2.0209918",
+      "MediaRefs": [
+       {
+        "Id": "973879342"
+       }
+      ]
+     },
+     {
+      "Id": "3514648661",
+      "Name": "PointyHurt",
+      "ObjectPath": "\\Events\\Default Work Unit\\PointyHurt",
+      "GUID": "{90446B02-42FC-4B58-9590-A0834B645E65}",
+      "MaxAttenuation": "65",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7960225",
+      "DurationMax": "0.7960225",
+      "MediaRefs": [
+       {
+        "Id": "1023686774"
+       }
+      ]
+     },
+     {
+      "Id": "294246142",
+      "Name": "PointyNotice",
+      "ObjectPath": "\\Events\\Default Work Unit\\PointyNotice",
+      "GUID": "{C74A3840-CB74-4E11-B9A0-80CEE03F90E6}",
+      "MaxAttenuation": "65",
+      "DurationType": "OneShot",
+      "DurationMin": "0.29765072",
+      "DurationMax": "0.29765072",
+      "MediaRefs": [
+       {
+        "Id": "992364558"
+       }
+      ]
+     },
+     {
+      "Id": "2657967121",
+      "Name": "PointySlam",
+      "ObjectPath": "\\Events\\Default Work Unit\\PointySlam",
+      "GUID": "{2FA49957-E3AF-4992-8D4B-AD9041F5FD42}",
+      "MaxAttenuation": "65",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9009883",
+      "DurationMax": "0.9009883",
+      "MediaRefs": [
+       {
+        "Id": "609998408"
+       }
+      ]
+     },
+     {
+      "Id": "2589576726",
+      "Name": "PointyStun",
+      "ObjectPath": "\\Events\\Default Work Unit\\PointyStun",
+      "GUID": "{32C968F0-F999-4137-B88D-38B8E2D729C3}",
+      "MaxAttenuation": "65",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8123996",
+      "DurationMax": "0.8123996",
+      "MediaRefs": [
+       {
+        "Id": "74472534"
+       }
+      ]
+     },
+     {
+      "Id": "3496198064",
+      "Name": "PutDown",
+      "ObjectPath": "\\Events\\Default Work Unit\\PutDown",
+      "GUID": "{7FEAACF0-4DEA-4F74-87D4-C8958041360F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.48753",
+      "DurationMax": "0.48753",
+      "MediaRefs": [
+       {
+        "Id": "717189655"
+       }
+      ]
+     },
+     {
       "Id": "2074477625",
       "Name": "WaterFall",
       "ObjectPath": "\\Events\\Default Work Unit\\WaterFall",
@@ -530,6 +746,6 @@
     ]
    }
   ],
-  "FileHash": "{C223A3DA-9F42-42A4-C3A0-0F1F082CF77D}"
+  "FileHash": "{CA733AE5-6A0E-ACD9-DBF5-E2E84A08B9C2}"
  }
 }
