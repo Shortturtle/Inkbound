@@ -486,6 +486,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 7683602903287271291, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Cutscene2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5206219279698877681, guid: 6abd799cdea51b8448c38238ba78933a, type: 3}
@@ -5378,6 +5382,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   splashParticles: {fileID: 0}
+  hue1: 0.56
+  hue2: 1
+  currentPlayer: 0
+  playerswap: {fileID: 0}
 --- !u!68 &1245726597
 EdgeCollider2D:
   m_ObjectHideFlags: 0
