@@ -25,6 +25,7 @@ public class PlayerSwap : MonoBehaviour
     private List<SpriteRenderer> drawnBackground;
     [SerializeField] private Canvas colouredUI;
     [SerializeField] private Canvas uncolouredUI;
+    [SerializeField] private AK.Wwise.Event playerSwap;
     private FlexCameraSwitch CamHolder;
     private Array drawnObjects;
 
@@ -78,6 +79,7 @@ public class PlayerSwap : MonoBehaviour
                 uncolouredUI.enabled = true;
                 CamHolder.CamSwap();
                 activePlayer = 2;
+                playerSwap.Post(gameObject);
                 break;
 
             case 2:
@@ -90,6 +92,7 @@ public class PlayerSwap : MonoBehaviour
                 uncolouredUI.enabled = false;
                 CamHolder.CamSwap();
                 activePlayer = 1;
+                playerSwap.Post(gameObject);
                 break;
         }
     }

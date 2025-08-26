@@ -39,6 +39,8 @@ public class WaterColumn : MonoBehaviour
         startPosition2 = new Vector2(transform.position.x + (sizeX / 2), transform.position.y);
 
         hueShifter = GetComponent<Renderer>().sharedMaterial;
+
+        waterfallAudio.Post(gameObject);
     }
 
     // Update is called once per frame
@@ -131,7 +133,6 @@ public class WaterColumn : MonoBehaviour
         if (waterfallParticlesInstance != null)
         {
             waterfallParticlesInstance.gameObject.transform.position = new Vector2(transform.position.x, endposition);
-            waterfallAudio.Post(waterfallParticlesInstance.gameObject);
         }
 
         else

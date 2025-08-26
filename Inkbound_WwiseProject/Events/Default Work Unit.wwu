@@ -126,11 +126,95 @@
 				</Event>
 				<Event Name="AudioStopDeath" ID="{59CF1C66-FB66-4144-8290-A2A7E0545C6E}">
 					<ChildrenList>
+						<Action Name="" ID="{1080A093-953C-48B6-9038-30FB1C49D03B}" ShortID="508346846">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="34"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuMusic" ID="{4EA95692-0572-4CF2-872E-6D0D2C8EDFEE}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{89E9DE3C-87FB-4B5C-8156-56BBDB011DD2}" ShortID="560254864">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuMusic" ID="{4EA95692-0572-4CF2-872E-6D0D2C8EDFEE}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{40B6C45F-B8D2-4909-BE0F-3F6D7B405B5F}" ShortID="481535750">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="34"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ForestTheme" ID="{766FE364-E86C-4A74-8959-8FACF930FBE3}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{29BC4385-EC3B-42A7-A130-00478EBE971A}" ShortID="216868007">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ForestTheme" ID="{766FE364-E86C-4A74-8959-8FACF930FBE3}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{3DFEB9CF-2162-4E8A-97C1-249183F9E61B}" ShortID="729436697">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMenuTheme" ID="{6E7DAB67-077D-4B36-A22F-41C094B67BDF}">
+					<ChildrenList>
+						<Action Name="" ID="{0623400B-76DA-4D2A-A6F8-6DAE5DF0E388}" ShortID="288140211">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuMusic" ID="{4EA95692-0572-4CF2-872E-6D0D2C8EDFEE}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayerSwap" ID="{7AD5FF19-37C6-41D9-9DF6-4E1BC5FC8D87}">
+					<ChildrenList>
+						<Action Name="" ID="{B9EEFA9B-BCD0-46B1-A141-CA8869C4AD51}" ShortID="278709590">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerSwap" ID="{FDE34D5F-E8D5-4A27-B225-47C15F50A781}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LevelWin" ID="{025E4BE6-B727-4481-83C0-BEA213168A59}">
+					<ChildrenList>
+						<Action Name="" ID="{BD288549-3E5C-4C84-8845-A3A00F99CB64}" ShortID="187839703">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LevelWin" ID="{CDEEE33B-899F-4DC8-9077-0423861DD1CE}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DeathSFX" ID="{4F9D4424-4665-43EE-9035-780BE6DB2419}">
+					<ChildrenList>
+						<Action Name="" ID="{D336A0C9-450A-418C-AC4B-A03F01537504}" ShortID="195657770">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DeathSFX" ID="{08DE260E-18C4-4DFD-859E-3C9417CA186F}" WorkUnitID="{621C93A3-B748-46B5-9C48-166A2493AB2A}"/>
+								</Reference>
+							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>

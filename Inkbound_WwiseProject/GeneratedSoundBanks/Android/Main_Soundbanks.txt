@@ -6,13 +6,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	1972958575	Button_Up			\Default Work Unit\Button_Up	
 	2033183396	Artist_Land			\Default Work Unit\Artist_Land	
 	2074477625	WaterFall			\Default Work Unit\WaterFall	
+	2487243565	LevelWin			\Default Work Unit\LevelWin	
 	2683770016	Drawing_Jump			\Default Work Unit\Drawing_Jump	
+	3189827666	MainMenuTheme			\Default Work Unit\MainMenuTheme	
 	3778633917	AudioStopDeath			\Default Work Unit\AudioStopDeath	
+	3834561699	PlayerSwap			\Default Work Unit\PlayerSwap	
 	4083970009	ForestTheme			\Default Work Unit\ForestTheme	
 	4085851028	Button_Down			\Default Work Unit\Button_Down	
 	4152864347	Drawing_Land			\Default Work Unit\Drawing_Land	
+	4248281050	DeathSFX			\Default Work Unit\DeathSFX	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	37540227	PlayerSwap	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\93\{935E8988-0B02-8BC4-F4AC-8160D17821D0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSwap		47608
 	46542431	Drawing_Footsteps_Grass04	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\26\{265662F7-8DD5-0BD8-DE5F-2CE12BFBA8AD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawing_Footsteps_Grass\Drawing_Footsteps_Grass04		76964
 	131266682	PinWheelSound	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\1F\{1FE8B63F-4309-F22D-5503-1BC6F8649321}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PinWheelSound		1976500
 	194237856	Drawing_Jump03	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\7B\{7B057B7D-6560-25EE-1B09-7D37AB16A275}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawing_Jump\Drawing_Jump03		25168
@@ -21,6 +26,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	231881547	Artist_Land_Grass02	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\55\{557FF557-4502-7B37-A859-A4047173DC4A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Artist_Land_Grass\Artist_Land_Grass02		50252
 	253930368	Drawing_Land_Grass01	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\37\{37B853D2-2F48-860A-64A7-28CAD2C44C0A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawing_Land_Grass\Drawing_Land_Grass01		105480
 	265394344	Drawing_Jump01	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\08\{08727D7C-52F5-B7DC-0C42-63C32CFB4AC3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawing_Jump\Drawing_Jump01		24848
+	267419049	MainMenuMusic	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\30\{30804354-A604-9CEC-788A-EED46281E118}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenuMusic		21731424
 	381569217	Artist_Land_Grass03	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\F7\{F74302E3-8C0F-B607-81FE-60668218ACC6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Artist_Land_Grass\Artist_Land_Grass03		53424
 	429384468	Drawing_Footsteps_Grass02	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\8D\{8D8E5341-C8C1-47F7-1742-D19D606BA72D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawing_Footsteps_Grass\Drawing_Footsteps_Grass02		76964
 	508601689	Drawing_Jump02	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\57\{571D607E-57E5-995B-54EC-383AE0A84CB3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawing_Jump\Drawing_Jump02		33120
@@ -35,9 +41,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	855616272	WaterColumn	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\74\{742E57FF-90E8-4DD8-87DD-08D820D25DF6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WaterColumn		10574672
 	906590923	Artist_Jump02	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\66\{6682899D-0943-24A6-1518-97DDAD78B737}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Artist_Jump\Artist_Jump02		16608
 	953034653	Artist_Jump01	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\F3\{F3FF3E1E-21E7-764F-A5FD-E0C2C5ED1D5A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Artist_Jump\Artist_Jump01		12472
+	958173152	LevelWin	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\E1\{E17E470A-1824-4883-D73E-34E0EF571CFF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\LevelWin		286904
 	974022152	Button_Down	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\02\{02B03A2D-D45B-358F-566E-34F0F4742C1E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button_Down		51240
 	977891240	Artist_Footsteps_Grass02	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\A2\{A2102E8E-B5B9-66B5-0915-CB60B017AB2B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Artist_Footsteps_Grass\Artist_Footsteps_Grass02		44196
 	1000305794	Drawing_Footsteps_Grass01	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\1B\{1B058AE3-0554-EB15-ACA1-6F0640B7BFE0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawing_Footsteps_Grass\Drawing_Footsteps_Grass01		76964
 	1031434444	Artist_Jump03	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\00\{0074B371-73D5-09AD-A3B2-ECF91CB004BD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Artist_Jump\Artist_Jump03		12632
+	1049303977	DeathSFX	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\3A\{3A3EB76B-B6F7-63DA-87C5-4B49BBCB6DB8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DeathSFX		30704
 	1063318325	Artist_Footsteps_Grass03	C:\Users\DanishNaufal\Documents\GitHub\Inkbound\Inkbound_WwiseProject\.cache\1E\{1E2E87F3-24CB-CC29-19BF-DFF1ED45AE71}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Artist_Footsteps_Grass\Artist_Footsteps_Grass03		44196
 

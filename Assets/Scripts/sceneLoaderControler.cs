@@ -11,6 +11,7 @@ public class sceneLoaderControler : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Image paperMask;
     [SerializeField] private float transitionTime;
     [SerializeField] private AK.Wwise.Event audioStop;
+    private GameObject bgMusicHandler;
     public void LoadLevel(string sceneName)
     {
        StartCoroutine(LoadLevelCoroutine(sceneName));
@@ -24,14 +25,15 @@ public class sceneLoaderControler : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(transitionTime);
 
+        audioStop.Post(bgMusicHandler);
         Debug.Log("Loading level: " + sceneName);
-        audioStop.Post(gameObject);
         SceneManager.LoadScene(sceneName);
     }
 
     private void Awake()
     {
         Time.timeScale = 1.0f;
+        bgMusicHandler = GameObject.FindGameObjectWithTag("AudioManager");
     }
 }
 

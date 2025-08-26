@@ -13,11 +13,14 @@ public class PlayerRespawnHandler : MonoBehaviour
     [SerializeField] private GameObject artistDeathParticles;
     [SerializeField] private GameObject drawingDeathParticles;
     [SerializeField] private AK.Wwise.Event AudioStop;
+    [SerializeField] private AK.Wwise.Event DeathSFX;
+    private GameObject bgMusicHandler;
     // Start is called before the first frame update
     void Start()
     {
         artistDeath = GameObject.FindGameObjectWithTag("Artist").GetComponent<ArtistDeath>();
         drawingDeath = GameObject.FindGameObjectWithTag("Drawing").GetComponent<DrawingDeath>();
+        bgMusicHandler = GameObject.FindGameObjectWithTag("AudioManager");
 
     }
 
@@ -44,6 +47,7 @@ public class PlayerRespawnHandler : MonoBehaviour
         {
             if (drawingDeath.drawingDead)
             {
+                DeathSFX.Post(gameObject);
                 StartCoroutine("DrawingRespawnCo");
             }
         }
@@ -59,6 +63,7 @@ public class PlayerRespawnHandler : MonoBehaviour
         isRespawning = false;
 
         AudioStop.Post(gameObject);
+        AudioStop.Post(bgMusicHandler);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 
@@ -70,6 +75,7 @@ public class PlayerRespawnHandler : MonoBehaviour
         {
             if (artistDeath.artistDead)
             {
+                DeathSFX.Post(gameObject);
                 StartCoroutine("ArtistRespawnCo");
             }
         }

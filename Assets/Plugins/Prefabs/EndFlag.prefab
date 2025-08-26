@@ -136,3 +136,11 @@ MonoBehaviour:
   victoryUI: {fileID: 0}
   colouredUI: {fileID: 0}
   uncolouredUI: {fileID: 0}
+  audioStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b964ddea6c9eafb419fdba7c59cade2a, type: 2}
+  winSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 13c568c50bba091468f51bba95b2068e, type: 2}

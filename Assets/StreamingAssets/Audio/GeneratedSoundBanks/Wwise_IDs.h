@@ -19,11 +19,15 @@ namespace AK
         static const AkUniqueID AUDIOSTOPDEATH = 3778633917U;
         static const AkUniqueID BUTTON_DOWN = 4085851028U;
         static const AkUniqueID BUTTON_UP = 1972958575U;
+        static const AkUniqueID DEATHSFX = 4248281050U;
         static const AkUniqueID DRAWING_FOOTSTEPS = 472988777U;
         static const AkUniqueID DRAWING_JUMP = 2683770016U;
         static const AkUniqueID DRAWING_LAND = 4152864347U;
         static const AkUniqueID FORESTTHEME = 4083970009U;
+        static const AkUniqueID LEVELWIN = 2487243565U;
+        static const AkUniqueID MAINMENUTHEME = 3189827666U;
         static const AkUniqueID PINWHEELSOUND = 1876678492U;
+        static const AkUniqueID PLAYERSWAP = 3834561699U;
         static const AkUniqueID WATERFALL = 2074477625U;
     } // namespace EVENTS
 

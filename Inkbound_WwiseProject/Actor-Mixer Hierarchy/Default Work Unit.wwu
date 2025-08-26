@@ -699,7 +699,7 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>2</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -725,6 +725,153 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="PinWheelSound" ID="{DD938581-9655-448A-B10F-CCFE1AD0984D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MainMenuMusic" ID="{4EA95692-0572-4CF2-872E-6D0D2C8EDFEE}" ShortID="760451190">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MainMenuMusic" ID="{FC8D27C0-DC57-432D-B50E-87D6F21BCA0E}">
+							<Language>SFX</Language>
+							<AudioFile>MainMenuMusic.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="267419049"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MainMenuMusic" ID="{FC8D27C0-DC57-432D-B50E-87D6F21BCA0E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PlayerSwap" ID="{FDE34D5F-E8D5-4A27-B225-47C15F50A781}" ShortID="812132847">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-200</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PlayerSwap" ID="{D3754B85-FDCE-4080-9E4A-6684E30DDF29}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0668098384374442"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.336137020414868"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>PlayerSwap.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="37540227"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PlayerSwap" ID="{D3754B85-FDCE-4080-9E4A-6684E30DDF29}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="LevelWin" ID="{CDEEE33B-899F-4DC8-9077-0423861DD1CE}" ShortID="310014413">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="LevelWin" ID="{49387490-0409-4331-8A40-E11292C7670E}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.98760037331622"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>LevelWin.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="958173152"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LevelWin" ID="{49387490-0409-4331-8A40-E11292C7670E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="DeathSFX" ID="{08DE260E-18C4-4DFD-859E-3C9417CA186F}" ShortID="367596434">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-300</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{68DEC74A-5BB6-4081-B8B9-E3D380949D58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D47ABA6D-5F46-417C-943B-0FEC32E767A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="DeathSFX" ID="{1E4A34A6-3EAB-4D05-907D-4C4AD19840FE}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.177712201164746"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.347023413837825"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>DeathSFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1049303977"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="DeathSFX" ID="{1E4A34A6-3EAB-4D05-907D-4C4AD19840FE}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9a0d91e9c707764ea664907ca60a3436
     GuidInternal: 
-    m_lastTime: -8584465914122099983
+    m_lastTime: -8584453905026529535
     List:
     - name: Main_Soundbanks
       guid: 37acc1c203697145bba0a63b76ac0e1c
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 21c547873dd38d40bc26bec4498df421
     GuidInternal: 
-    m_lastTime: -8584465914143090297
+    m_lastTime: -8584453899019457373
     List:
     - name: Artist_Footsteps
       guid: f8c2fce433fca948b97e651c012dcedd
@@ -198,6 +198,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.2802721
       minDuration: 0.2802721
+    - name: DeathSFX
+      guid: 24449d4f6546ee439035780be6db2419
+      id: 4248281050
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: DeathSFX
+        ObjectType: 3
+        guid: 24449d4f6546ee439035780be6db2419
+      Path: Events\Default Work Unit\DeathSFX
+      maxAttenuation: 0
+      maxDuration: 0.4126827
+      minDuration: 0.4126827
     - name: Drawing_Footsteps
       guid: 6827f753061d1e439ae8b0a6f2013240
       id: 472988777
@@ -266,6 +283,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: LevelWin
+      guid: e64b5e0227b7814483c0bea213168a59
+      id: 2487243565
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: LevelWin
+        ObjectType: 3
+        guid: e64b5e0227b7814483c0bea213168a59
+      Path: Events\Default Work Unit\LevelWin
+      maxAttenuation: 0
+      maxDuration: 2.9876003
+      minDuration: 2.9876003
+    - name: MainMenuTheme
+      guid: 67ab7d6e7d07364ba22f41c094b67bdf
+      id: 3189827666
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: MainMenuTheme
+        ObjectType: 3
+        guid: 67ab7d6e7d07364ba22f41c094b67bdf
+      Path: Events\Default Work Unit\MainMenuTheme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: PinWheelSound
       guid: fc0856f1fa354446b4836c1504bc7e52
       id: 1876678492
@@ -283,6 +334,23 @@ MonoBehaviour:
       maxAttenuation: 65
       maxDuration: 0
       minDuration: 0
+    - name: PlayerSwap
+      guid: 19ffd57ac637d9419df64e1bc5fc8d87
+      id: 3834561699
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PlayerSwap
+        ObjectType: 3
+        guid: 19ffd57ac637d9419df64e1bc5fc8d87
+      Path: Events\Default Work Unit\PlayerSwap
+      maxAttenuation: 0
+      maxDuration: 0.30230954
+      minDuration: 0.30230954
     - name: WaterFall
       guid: eb5a39d32ddb10429614d50a0bc4f8d2
       id: 2074477625
