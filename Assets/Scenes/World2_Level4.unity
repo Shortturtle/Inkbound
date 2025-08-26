@@ -5568,11 +5568,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7976840175107368787, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8278065
+      value: 1.8229847
       objectReference: {fileID: 0}
     - target: {fileID: 7976840175107368787, guid: ad590b3ef79840942a81f713cc3d1938, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.210083
+      value: 11.210064
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7754,8 +7754,12 @@ PrefabInstance:
       value: Death spike line
       objectReference: {fileID: 0}
     - target: {fileID: 4296507262187560523, guid: 1d9ed1dbfed56764eaf1b022e8a32c22, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4285314
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296507262187560523, guid: 1d9ed1dbfed56764eaf1b022e8a32c22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 122.26
+      value: 138.7
       objectReference: {fileID: 0}
     - target: {fileID: 4296507262187560523, guid: 1d9ed1dbfed56764eaf1b022e8a32c22, type: 3}
       propertyPath: m_LocalPosition.y
