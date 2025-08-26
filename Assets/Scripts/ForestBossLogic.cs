@@ -17,8 +17,7 @@ public class ForestBossLogic : MonoBehaviour
     [SerializeField] private float bufferTime;
     [SerializeField] private float stunTime;
     [SerializeField] private float cooldownTime;
-    [SerializeField] private AreaEffector2D push1;
-    [SerializeField] private AreaEffector2D push2;
+    [SerializeField] private BoxCollider2D push;
     [SerializeField] private float shakeAmt;
     [SerializeField] private GameObject spikes;
     [SerializeField] private Sprite normal;
@@ -44,8 +43,7 @@ public class ForestBossLogic : MonoBehaviour
 
         transform.position = points[startingPoint].position;
 
-        push1.forceMagnitude = 0f;
-        push2.forceMagnitude = 0f;
+        push.enabled = false;
     }
 
     // Update is called once per frame
@@ -167,6 +165,8 @@ public class ForestBossLogic : MonoBehaviour
         {
             stun = true;
         }
+
+
     }
 
     private void Damage()
@@ -192,14 +192,12 @@ public class ForestBossLogic : MonoBehaviour
 
         sr.sprite = damaged;
         hurt = true;
-        push1.forceMagnitude = 1000f;
-        push2.forceMagnitude = 1000f;
+        push.enabled = true;
 
         yield return new WaitForSeconds(1.5f);
 
         hurt = false;
-        push1.forceMagnitude = 0f;
-        push2.forceMagnitude = 0f;
+        push.enabled = false;
         transform.position = originalPos;
         sr.sprite = normal;
 
