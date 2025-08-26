@@ -50,6 +50,7 @@ public class WaterTriggerHandler : MonoBehaviour
             if (rb.gameObject.CompareTag("Drawing"))
             {
                 rb.gameObject.GetComponent<DrawingDeath>().drawingDead = true;
+                Debug.Log("Die");
             }
 
             if(rb != null)

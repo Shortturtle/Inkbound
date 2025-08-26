@@ -1812,8 +1812,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   splashParticles: {fileID: 0}
+  hue1: 0.56
+  hue2: 1
+  currentPlayer: 0
+  playerswap: {fileID: 0}
 --- !u!68 &700956635
 EdgeCollider2D:
   m_ObjectHideFlags: 0

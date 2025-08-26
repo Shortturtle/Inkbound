@@ -5380,7 +5380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   splashParticles: {fileID: 0}
   hue1: 0.56
   hue2: 1

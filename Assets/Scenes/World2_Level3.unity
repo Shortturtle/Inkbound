@@ -552,8 +552,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   splashParticles: {fileID: 0}
+  hue1: 0.56
+  hue2: 1
+  currentPlayer: 0
+  playerswap: {fileID: 0}
 --- !u!68 &118184100
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1854,8 +1858,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   splashParticles: {fileID: 0}
+  hue1: 0.56
+  hue2: 1
+  currentPlayer: 0
+  playerswap: {fileID: 0}
 --- !u!68 &772103024
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -5398,8 +5406,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   splashParticles: {fileID: 0}
+  hue1: 0.56
+  hue2: 1
+  currentPlayer: 0
+  playerswap: {fileID: 0}
 --- !u!68 &1219900971
 EdgeCollider2D:
   m_ObjectHideFlags: 0
