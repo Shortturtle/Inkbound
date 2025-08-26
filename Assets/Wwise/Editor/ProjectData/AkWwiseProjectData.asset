@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: f8c2fce433fca948b97e651c012dcedd
       Path: Events\Default Work Unit\Artist_Footsteps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.25
+      minDuration: 0.25
     - name: Artist_Jump
       guid: 9981b6cfc282884f99ecc7a7ff32955a
       id: 95834383
@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: 9981b6cfc282884f99ecc7a7ff32955a
       Path: Events\Default Work Unit\Artist_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.093605444
+      minDuration: 0.07015873
     - name: Artist_Land
       guid: f2ab63c0ea40c841b755ba77bbf2310e
       id: 2033183396
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: f2ab63c0ea40c841b755ba77bbf2310e
       Path: Events\Default Work Unit\Artist_Land
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.41165534
+      minDuration: 0.28433105
     - name: AudioStopDeath
       guid: 661ccf5966fb44418290a2a7e0545c6e
       id: 3778633917
@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: 661ccf5966fb44418290a2a7e0545c6e
       Path: Events\Default Work Unit\AudioStopDeath
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Button_Down
       guid: 4cc066c3f6e1b748a378f662bc3a3ae6
       id: 4085851028
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: 4cc066c3f6e1b748a378f662bc3a3ae6
       Path: Events\Default Work Unit\Button_Down
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.28993198
+      minDuration: 0.28993198
     - name: Button_Up
       guid: 1244fa414beba54b8e2d005f303f06fb
       id: 1972958575
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: 1244fa414beba54b8e2d005f303f06fb
       Path: Events\Default Work Unit\Button_Up
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.2802721
+      minDuration: 0.2802721
     - name: CloudTheme
       guid: 1064bc15ab47c84ea0ef29d3536c790c
       id: 3211326659
@@ -213,8 +213,8 @@ MonoBehaviour:
         guid: 1064bc15ab47c84ea0ef29d3536c790c
       Path: Events\Default Work Unit\CloudTheme
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: DeathSFX
       guid: 24449d4f6546ee439035780be6db2419
       id: 4248281050
@@ -230,8 +230,8 @@ MonoBehaviour:
         guid: 24449d4f6546ee439035780be6db2419
       Path: Events\Default Work Unit\DeathSFX
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.4126827
+      minDuration: 0.4126827
     - name: Drawing_Footsteps
       guid: 6827f753061d1e439ae8b0a6f2013240
       id: 472988777
@@ -247,8 +247,8 @@ MonoBehaviour:
         guid: 6827f753061d1e439ae8b0a6f2013240
       Path: Events\Default Work Unit\Drawing_Footsteps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.43575963
+      minDuration: 0.43575963
     - name: Drawing_Jump
       guid: 5e122065ce53644bac2aea24740a1e24
       id: 2683770016
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: 5e122065ce53644bac2aea24740a1e24
       Path: Events\Default Work Unit\Drawing_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.18721089
+      minDuration: 0.14031745
     - name: Drawing_Land
       guid: da386c237da32c4fa8c0c13a93dbe03f
       id: 4152864347
@@ -281,8 +281,8 @@ MonoBehaviour:
         guid: da386c237da32c4fa8c0c13a93dbe03f
       Path: Events\Default Work Unit\Drawing_Land
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.597415
+      minDuration: 0.47009072
     - name: ForestTheme
       guid: ef6d5a58857008438ecada9690c0b3aa
       id: 4083970009
@@ -298,8 +298,8 @@ MonoBehaviour:
         guid: ef6d5a58857008438ecada9690c0b3aa
       Path: Events\Default Work Unit\ForestTheme
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: LevelWin
       guid: e64b5e0227b7814483c0bea213168a59
       id: 2487243565
@@ -315,8 +315,8 @@ MonoBehaviour:
         guid: e64b5e0227b7814483c0bea213168a59
       Path: Events\Default Work Unit\LevelWin
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.9876003
+      minDuration: 2.9876003
     - name: MainMenuTheme
       guid: 67ab7d6e7d07364ba22f41c094b67bdf
       id: 3189827666
@@ -332,8 +332,8 @@ MonoBehaviour:
         guid: 67ab7d6e7d07364ba22f41c094b67bdf
       Path: Events\Default Work Unit\MainMenuTheme
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: NoPickUp
       guid: 3c245774d5804b41a41df3bc90f90a59
       id: 264668328
@@ -349,8 +349,8 @@ MonoBehaviour:
         guid: 3c245774d5804b41a41df3bc90f90a59
       Path: Events\Default Work Unit\NoPickUp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.49963725
+      minDuration: 0.49963725
     - name: PickUp
       guid: 505847c9b265bf4d97ae43ef01aca24d
       id: 3978245845
@@ -366,8 +366,8 @@ MonoBehaviour:
         guid: 505847c9b265bf4d97ae43ef01aca24d
       Path: Events\Default Work Unit\PickUp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.42935106
+      minDuration: 0.42935106
     - name: PinWheelSound
       guid: fc0856f1fa354446b4836c1504bc7e52
       id: 1876678492
@@ -382,9 +382,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: fc0856f1fa354446b4836c1504bc7e52
       Path: Events\Default Work Unit\PinWheelSound
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 65
+      maxDuration: 0
+      minDuration: 0
     - name: PlayerSwap
       guid: 19ffd57ac637d9419df64e1bc5fc8d87
       id: 3834561699
@@ -400,8 +400,8 @@ MonoBehaviour:
         guid: 19ffd57ac637d9419df64e1bc5fc8d87
       Path: Events\Default Work Unit\PlayerSwap
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.30230954
+      minDuration: 0.30230954
     - name: PointyDeath
       guid: e4dafc53cd245942a0bd6f75ad039621
       id: 3235932968
@@ -416,9 +416,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: e4dafc53cd245942a0bd6f75ad039621
       Path: Events\Default Work Unit\PointyDeath
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 65
+      maxDuration: 1.3311919
+      minDuration: 1.3311919
     - name: PointyExplode
       guid: 19a5c521f1babd40a2479a78d218af7a
       id: 2381764101
@@ -433,9 +433,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 19a5c521f1babd40a2479a78d218af7a
       Path: Events\Default Work Unit\PointyExplode
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 65
+      maxDuration: 2.0209918
+      minDuration: 2.0209918
     - name: PointyHurt
       guid: 026b4490fc42584b9590a0834b645e65
       id: 3514648661
@@ -450,9 +450,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 026b4490fc42584b9590a0834b645e65
       Path: Events\Default Work Unit\PointyHurt
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 65
+      maxDuration: 0.7960225
+      minDuration: 0.7960225
     - name: PointyNotice
       guid: 40384ac774cb114eb9a080cee03f90e6
       id: 294246142
@@ -467,9 +467,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 40384ac774cb114eb9a080cee03f90e6
       Path: Events\Default Work Unit\PointyNotice
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 65
+      maxDuration: 0.29765072
+      minDuration: 0.29765072
     - name: PointySlam
       guid: 5799a42fafe392498d4bad9041f5fd42
       id: 2657967121
@@ -484,9 +484,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5799a42fafe392498d4bad9041f5fd42
       Path: Events\Default Work Unit\PointySlam
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 65
+      maxDuration: 0.9009883
+      minDuration: 0.9009883
     - name: PointyStun
       guid: f068c93299f93741b88d38b8e2d729c3
       id: 2589576726
@@ -501,9 +501,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: f068c93299f93741b88d38b8e2d729c3
       Path: Events\Default Work Unit\PointyStun
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 65
+      maxDuration: 0.8123996
+      minDuration: 0.8123996
     - name: PutDown
       guid: f0acea7fea4d744f87d4c8958041360f
       id: 3496198064
@@ -519,8 +519,8 @@ MonoBehaviour:
         guid: f0acea7fea4d744f87d4c8958041360f
       Path: Events\Default Work Unit\PutDown
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.48753
+      minDuration: 0.48753
     - name: WaterFall
       guid: eb5a39d32ddb10429614d50a0bc4f8d2
       id: 2074477625
@@ -535,9 +535,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: eb5a39d32ddb10429614d50a0bc4f8d2
       Path: Events\Default Work Unit\WaterFall
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 65
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

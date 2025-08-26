@@ -91,6 +91,7 @@ public class PlayerRespawnHandler : MonoBehaviour
         isRespawning = false;
 
         AudioStop.Post(gameObject);
+        AudioStop.Post(bgMusicHandler);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 

@@ -8,6 +8,7 @@ public class RainCloud : MonoBehaviour
     [SerializeField] private GameObject rain;
     private GameObject rainInstance;
     private float timeInBetweenTimer;
+    [SerializeField] private AK.Wwise.Event Droplet;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +31,6 @@ public class RainCloud : MonoBehaviour
     {
         rainInstance = Instantiate(rain, transform);
         rainInstance.transform.position = transform.position;
+        Droplet.Post(gameObject);
     }
 }

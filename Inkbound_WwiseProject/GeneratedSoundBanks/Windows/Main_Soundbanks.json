@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C2C1AC37-6903-4571-BBA0-A63B76AC0E1C}",
     "Language": "SFX",
-    "Hash": "{90FFFD50-A52C-6E12-16A1-03DBD7BF276C}",
+    "Hash": "{EA495377-CFD1-38B4-9955-9D5494257655}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbanks",
     "ShortName": "Main_Soundbanks",
     "Path": "Main_Soundbanks.bnk",
@@ -200,6 +200,14 @@
       "CachePath": "2A/{2A5F17B6-622C-C9A7-7F8D-D1317053CF11}.wem"
      },
      {
+      "Id": "698896471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Lightning.wav",
+      "CachePath": "3A/{3A2709DB-729F-7455-6B35-67E8536094A0}.wem"
+     },
+     {
       "Id": "701565758",
       "Language": "SFX",
       "Streaming": "false",
@@ -238,6 +246,14 @@
       "Location": "Memory",
       "ShortName": "WaterColumn.wav",
       "CachePath": "74/{742E57FF-90E8-4DD8-87DD-08D820D25DF6}.wem"
+     },
+     {
+      "Id": "885253731",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Droplet.wav",
+      "CachePath": "C1/{C137B0A0-D168-72D3-7ADB-EF8894DD9645}.wem"
      },
      {
       "Id": "906590923",
@@ -534,6 +550,21 @@
       ]
      },
      {
+      "Id": "960898869",
+      "Name": "Droplet",
+      "ObjectPath": "\\Events\\Default Work Unit\\Droplet",
+      "GUID": "{8A3AF3C4-DA00-441B-969D-59C5A70B7E7A}",
+      "MaxAttenuation": "65",
+      "DurationType": "OneShot",
+      "DurationMin": "0.45427352",
+      "DurationMax": "0.45427352",
+      "MediaRefs": [
+       {
+        "Id": "885253731"
+       }
+      ]
+     },
+     {
       "Id": "4083970009",
       "Name": "ForestTheme",
       "ObjectPath": "\\Events\\Default Work Unit\\ForestTheme",
@@ -556,6 +587,21 @@
       "MediaRefs": [
        {
         "Id": "958173152"
+       }
+      ]
+     },
+     {
+      "Id": "3334464137",
+      "Name": "Lightning",
+      "ObjectPath": "\\Events\\Default Work Unit\\Lightning",
+      "GUID": "{B632AE87-5E7D-4990-BF8C-47AC37AC2D23}",
+      "MaxAttenuation": "65",
+      "DurationType": "OneShot",
+      "DurationMin": "0.89775723",
+      "DurationMax": "0.89775723",
+      "MediaRefs": [
+       {
+        "Id": "698896471"
        }
       ]
      },
@@ -746,6 +792,6 @@
     ]
    }
   ],
-  "FileHash": "{CA733AE5-6A0E-ACD9-DBF5-E2E84A08B9C2}"
+  "FileHash": "{BA977A91-1506-2DE9-5795-86569CDC0C7A}"
  }
 }

@@ -99,3 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeInBetweenStrikes: 2
   rain: {fileID: 684795156264891669, guid: 6e07940aee3b84449aa8a1869c86f68a, type: 3}
+  Droplet:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 37a093ecad710704e819169223a731f6, type: 2}

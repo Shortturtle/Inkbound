@@ -100,3 +100,7 @@ MonoBehaviour:
   timeInBetweenStrikes: 5
   lifeTimeOfLightning: 1
   lightning: {fileID: 3463751846220820656, guid: 64a8797daddc3d4498efddac89004520, type: 3}
+  Lightning:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4d2ad9cb161aa994586ede2bbaa1b716, type: 2}

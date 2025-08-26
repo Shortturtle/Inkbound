@@ -9,6 +9,7 @@ public class LightningCloud : MonoBehaviour
     [SerializeField] private GameObject lightning;
     private GameObject lightningInstance;
     private float timeInBetweenTimer;
+    [SerializeField] private AK.Wwise.Event Lightning;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class LightningCloud : MonoBehaviour
     {
         lightningInstance = Instantiate(lightning, transform);
         lightningInstance.transform.position = transform.position;
+        Lightning.Post(gameObject);
         lightningInstance.GetComponent<LightningHandler>().SetTime(lifeTimeOfLightning);
     }
 }

@@ -24,8 +24,10 @@ namespace AK
         static const AkUniqueID DRAWING_FOOTSTEPS = 472988777U;
         static const AkUniqueID DRAWING_JUMP = 2683770016U;
         static const AkUniqueID DRAWING_LAND = 4152864347U;
+        static const AkUniqueID DROPLET = 960898869U;
         static const AkUniqueID FORESTTHEME = 4083970009U;
         static const AkUniqueID LEVELWIN = 2487243565U;
+        static const AkUniqueID LIGHTNING = 3334464137U;
         static const AkUniqueID MAINMENUTHEME = 3189827666U;
         static const AkUniqueID NOPICKUP = 264668328U;
         static const AkUniqueID PICKUP = 3978245845U;
