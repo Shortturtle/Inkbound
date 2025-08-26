@@ -52,7 +52,7 @@ MonoBehaviour:
   mantaRayBait: {fileID: 0}
   followPoint: {fileID: 0}
   above: 0
-  boxSize: {x: 6, y: 8}
+  boxSize: {x: 6.5, y: 8}
   boxOffset: {x: -0.1, y: 5.5}
   distance: 1
   layerMask:

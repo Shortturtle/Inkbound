@@ -80,7 +80,6 @@ GameObject:
   - component: {fileID: 4540901582754126464}
   - component: {fileID: 5571168758307711012}
   - component: {fileID: 9052141699003771459}
-  - component: {fileID: 5548854727268435384}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: LevelManager
@@ -127,6 +126,10 @@ MonoBehaviour:
   uncolouredBG: {fileID: 0}
   colouredUI: {fileID: 0}
   uncolouredUI: {fileID: 0}
+  playerSwap:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5847277e9984a4f47abac76d953a5681, type: 2}
   fadedAlpha: 0.5
   fadeDuration: 1
 --- !u!114 &5571168758307711012
@@ -148,6 +151,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b964ddea6c9eafb419fdba7c59cade2a, type: 2}
+  DeathSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 694592016ab4e984e89826fe93edf4cb, type: 2}
 --- !u!114 &9052141699003771459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,20 +167,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17406cb8e89fc0747a6fbdbfa7a0bf8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5548854727268435384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2227589228424190708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 497a292add8e25345b48cae7abe665e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundManager: {fileID: 0}
-  BGM:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5a0e55aaeed0cf1428d43db2b0c61b05, type: 2}

@@ -44,7 +44,10 @@ public class MovingPlatformBehavior : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        collision.transform.SetParent(null);
+        if(collision.transform.parent == this.transform)
+        {
+            collision.transform.SetParent(null);
+        }
     }
 
     public void ButtonPressed()

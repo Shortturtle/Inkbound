@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d33f39382733640b32d768bf185588, type: 3}
+  m_Name: 4F9D4424-4665-43EE-9035-780BE6DB2419
+  m_EditorClassIdentifier: 
+  objectName: DeathSFX
+  id: 4248281050
+  guid: 4F9D4424-4665-43EE-9035-780BE6DB2419
+  IsInUserDefinedSoundBank: 1

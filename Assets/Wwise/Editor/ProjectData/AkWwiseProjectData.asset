@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 5b87d34899a977479a062c1279aaec76
     GuidInternal: 
-    m_lastTime: -8584471989239740753
+    m_lastTime: -8584453929462053826
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6dba7ad4465f7c41943b0fec32e767a4
     GuidInternal: 
-    m_lastTime: -8584471989240760892
+    m_lastTime: -8584453929464806298
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9a0d91e9c707764ea664907ca60a3436
     GuidInternal: 
-    m_lastTime: -8584465914122099983
+    m_lastTime: -8584453844972578136
     List:
     - name: Main_Soundbanks
       guid: 37acc1c203697145bba0a63b76ac0e1c
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 21c547873dd38d40bc26bec4498df421
     GuidInternal: 
-    m_lastTime: -8584465914143090297
+    m_lastTime: -8584453845004140777
     List:
     - name: Artist_Footsteps
       guid: f8c2fce433fca948b97e651c012dcedd
@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: f8c2fce433fca948b97e651c012dcedd
       Path: Events\Default Work Unit\Artist_Footsteps
       maxAttenuation: 0
-      maxDuration: 0.25
-      minDuration: 0.25
+      maxDuration: -1
+      minDuration: -1
     - name: Artist_Jump
       guid: 9981b6cfc282884f99ecc7a7ff32955a
       id: 95834383
@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: 9981b6cfc282884f99ecc7a7ff32955a
       Path: Events\Default Work Unit\Artist_Jump
       maxAttenuation: 0
-      maxDuration: 0.093605444
-      minDuration: 0.07015873
+      maxDuration: -1
+      minDuration: -1
     - name: Artist_Land
       guid: f2ab63c0ea40c841b755ba77bbf2310e
       id: 2033183396
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: f2ab63c0ea40c841b755ba77bbf2310e
       Path: Events\Default Work Unit\Artist_Land
       maxAttenuation: 0
-      maxDuration: 0.41165534
-      minDuration: 0.28433105
+      maxDuration: -1
+      minDuration: -1
     - name: AudioStopDeath
       guid: 661ccf5966fb44418290a2a7e0545c6e
       id: 3778633917
@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: 661ccf5966fb44418290a2a7e0545c6e
       Path: Events\Default Work Unit\AudioStopDeath
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Button_Down
       guid: 4cc066c3f6e1b748a378f662bc3a3ae6
       id: 4085851028
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: 4cc066c3f6e1b748a378f662bc3a3ae6
       Path: Events\Default Work Unit\Button_Down
       maxAttenuation: 0
-      maxDuration: 0.28993198
-      minDuration: 0.28993198
+      maxDuration: -1
+      minDuration: -1
     - name: Button_Up
       guid: 1244fa414beba54b8e2d005f303f06fb
       id: 1972958575
@@ -196,8 +196,42 @@ MonoBehaviour:
         guid: 1244fa414beba54b8e2d005f303f06fb
       Path: Events\Default Work Unit\Button_Up
       maxAttenuation: 0
-      maxDuration: 0.2802721
-      minDuration: 0.2802721
+      maxDuration: -1
+      minDuration: -1
+    - name: CloudTheme
+      guid: 1064bc15ab47c84ea0ef29d3536c790c
+      id: 3211326659
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: CloudTheme
+        ObjectType: 3
+        guid: 1064bc15ab47c84ea0ef29d3536c790c
+      Path: Events\Default Work Unit\CloudTheme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DeathSFX
+      guid: 24449d4f6546ee439035780be6db2419
+      id: 4248281050
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: DeathSFX
+        ObjectType: 3
+        guid: 24449d4f6546ee439035780be6db2419
+      Path: Events\Default Work Unit\DeathSFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Drawing_Footsteps
       guid: 6827f753061d1e439ae8b0a6f2013240
       id: 472988777
@@ -213,8 +247,8 @@ MonoBehaviour:
         guid: 6827f753061d1e439ae8b0a6f2013240
       Path: Events\Default Work Unit\Drawing_Footsteps
       maxAttenuation: 0
-      maxDuration: 0.43575963
-      minDuration: 0.43575963
+      maxDuration: -1
+      minDuration: -1
     - name: Drawing_Jump
       guid: 5e122065ce53644bac2aea24740a1e24
       id: 2683770016
@@ -230,8 +264,8 @@ MonoBehaviour:
         guid: 5e122065ce53644bac2aea24740a1e24
       Path: Events\Default Work Unit\Drawing_Jump
       maxAttenuation: 0
-      maxDuration: 0.18721089
-      minDuration: 0.14031745
+      maxDuration: -1
+      minDuration: -1
     - name: Drawing_Land
       guid: da386c237da32c4fa8c0c13a93dbe03f
       id: 4152864347
@@ -247,8 +281,8 @@ MonoBehaviour:
         guid: da386c237da32c4fa8c0c13a93dbe03f
       Path: Events\Default Work Unit\Drawing_Land
       maxAttenuation: 0
-      maxDuration: 0.597415
-      minDuration: 0.47009072
+      maxDuration: -1
+      minDuration: -1
     - name: ForestTheme
       guid: ef6d5a58857008438ecada9690c0b3aa
       id: 4083970009
@@ -264,8 +298,76 @@ MonoBehaviour:
         guid: ef6d5a58857008438ecada9690c0b3aa
       Path: Events\Default Work Unit\ForestTheme
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LevelWin
+      guid: e64b5e0227b7814483c0bea213168a59
+      id: 2487243565
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: LevelWin
+        ObjectType: 3
+        guid: e64b5e0227b7814483c0bea213168a59
+      Path: Events\Default Work Unit\LevelWin
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainMenuTheme
+      guid: 67ab7d6e7d07364ba22f41c094b67bdf
+      id: 3189827666
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: MainMenuTheme
+        ObjectType: 3
+        guid: 67ab7d6e7d07364ba22f41c094b67bdf
+      Path: Events\Default Work Unit\MainMenuTheme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: NoPickUp
+      guid: 3c245774d5804b41a41df3bc90f90a59
+      id: 264668328
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: NoPickUp
+        ObjectType: 3
+        guid: 3c245774d5804b41a41df3bc90f90a59
+      Path: Events\Default Work Unit\NoPickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PickUp
+      guid: 505847c9b265bf4d97ae43ef01aca24d
+      id: 3978245845
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PickUp
+        ObjectType: 3
+        guid: 505847c9b265bf4d97ae43ef01aca24d
+      Path: Events\Default Work Unit\PickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PinWheelSound
       guid: fc0856f1fa354446b4836c1504bc7e52
       id: 1876678492
@@ -280,9 +382,145 @@ MonoBehaviour:
         ObjectType: 3
         guid: fc0856f1fa354446b4836c1504bc7e52
       Path: Events\Default Work Unit\PinWheelSound
-      maxAttenuation: 65
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayerSwap
+      guid: 19ffd57ac637d9419df64e1bc5fc8d87
+      id: 3834561699
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PlayerSwap
+        ObjectType: 3
+        guid: 19ffd57ac637d9419df64e1bc5fc8d87
+      Path: Events\Default Work Unit\PlayerSwap
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PointyDeath
+      guid: e4dafc53cd245942a0bd6f75ad039621
+      id: 3235932968
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyDeath
+        ObjectType: 3
+        guid: e4dafc53cd245942a0bd6f75ad039621
+      Path: Events\Default Work Unit\PointyDeath
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PointyExplode
+      guid: 19a5c521f1babd40a2479a78d218af7a
+      id: 2381764101
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyExplode
+        ObjectType: 3
+        guid: 19a5c521f1babd40a2479a78d218af7a
+      Path: Events\Default Work Unit\PointyExplode
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PointyHurt
+      guid: 026b4490fc42584b9590a0834b645e65
+      id: 3514648661
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyHurt
+        ObjectType: 3
+        guid: 026b4490fc42584b9590a0834b645e65
+      Path: Events\Default Work Unit\PointyHurt
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PointyNotice
+      guid: 40384ac774cb114eb9a080cee03f90e6
+      id: 294246142
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyNotice
+        ObjectType: 3
+        guid: 40384ac774cb114eb9a080cee03f90e6
+      Path: Events\Default Work Unit\PointyNotice
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PointySlam
+      guid: 5799a42fafe392498d4bad9041f5fd42
+      id: 2657967121
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointySlam
+        ObjectType: 3
+        guid: 5799a42fafe392498d4bad9041f5fd42
+      Path: Events\Default Work Unit\PointySlam
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PointyStun
+      guid: f068c93299f93741b88d38b8e2d729c3
+      id: 2589576726
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PointyStun
+        ObjectType: 3
+        guid: f068c93299f93741b88d38b8e2d729c3
+      Path: Events\Default Work Unit\PointyStun
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PutDown
+      guid: f0acea7fea4d744f87d4c8958041360f
+      id: 3496198064
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 21c547873dd38d40bc26bec4498df421
+      - ElementName: PutDown
+        ObjectType: 3
+        guid: f0acea7fea4d744f87d4c8958041360f
+      Path: Events\Default Work Unit\PutDown
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: WaterFall
       guid: eb5a39d32ddb10429614d50a0bc4f8d2
       id: 2074477625
@@ -297,9 +535,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: eb5a39d32ddb10429614d50a0bc4f8d2
       Path: Events\Default Work Unit\WaterFall
-      maxAttenuation: 65
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -312,7 +550,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 4c2d94c9389c8745a5bc284e481c2f2b
     GuidInternal: 
-    m_lastTime: -8584471989243158069
+    m_lastTime: -8584453929470003460
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -326,7 +564,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e873dbcfb3375f4db234ed9d085a8ace
     GuidInternal: 
-    m_lastTime: -8584471989239769636
+    m_lastTime: -8584453929462109174
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -340,7 +578,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 33eb118c14c2c74fabdd6b24d3bd4e57
     GuidInternal: 
-    m_lastTime: -8584471989239754796
+    m_lastTime: -8584453929462109174
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -354,7 +592,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 73eabae531121a4cbacae9ed609cee9d
     GuidInternal: 
-    m_lastTime: -8584471989239754796
+    m_lastTime: -8584453929462109174
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 020000000300000005000000060000000700000013000000150000001600000017000000

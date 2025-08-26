@@ -10,10 +10,13 @@ public class LevelEndScript : MonoBehaviour
     [SerializeField] private GameObject victoryUI;
     [SerializeField] private Canvas colouredUI;
     [SerializeField] private Canvas uncolouredUI;
+    [SerializeField] AK.Wwise.Event audioStop;
+    [SerializeField] AK.Wwise.Event winSFX;
+    private GameObject bgMusicHandler;
     // Start is called before the first frame update
     void Start()
     {
-        
+        bgMusicHandler = GameObject.FindGameObjectWithTag("AudioManager");
     }
 
     // Update is called once per frame
@@ -21,9 +24,11 @@ public class LevelEndScript : MonoBehaviour
     {
         if(drawingPresent && artistPresent)
         {
-            EndLevel();
+            if (!levelBeat)
+            {
+                EndLevel();
+            }
         }
-        
         
     }
 
@@ -55,6 +60,10 @@ public class LevelEndScript : MonoBehaviour
 
     private void EndLevel()
     {
+        audioStop.Post(gameObject);
+        audioStop.Post(bgMusicHandler);
+        winSFX.Post(gameObject);
+        levelBeat = true;
         victoryUI.SetActive(true);
         Time.timeScale = 0.0f;
         colouredUI.enabled = false;

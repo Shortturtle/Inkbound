@@ -17,14 +17,20 @@ public class ForestBossLogic : MonoBehaviour
     [SerializeField] private float bufferTime;
     [SerializeField] private float stunTime;
     [SerializeField] private float cooldownTime;
-    [SerializeField] private AreaEffector2D push1;
-    [SerializeField] private AreaEffector2D push2;
+    [SerializeField] private BoxCollider2D push;
     [SerializeField] private float shakeAmt;
     [SerializeField] private GameObject spikes;
     [SerializeField] private Sprite normal;
     [SerializeField] private Sprite angry;
     [SerializeField] private Sprite damaged;
     [SerializeField] private Sprite stunned;
+    [SerializeField] private AK.Wwise.Event PointyNotice;
+    [SerializeField] private AK.Wwise.Event PointyHurt;
+    [SerializeField] private AK.Wwise.Event PointyStun;
+    [SerializeField] private AK.Wwise.Event PointySmash;
+    [SerializeField] private AK.Wwise.Event PointyDeath;
+    [SerializeField] private AK.Wwise.Event PointyExplode;
+    [SerializeField] private GameObject PointyDeathParticles;
 
     private bool triggered;
     private bool attacking;
@@ -44,8 +50,7 @@ public class ForestBossLogic : MonoBehaviour
 
         transform.position = points[startingPoint].position;
 
-        push1.forceMagnitude = 0f;
-        push2.forceMagnitude = 0f;
+        push.enabled = false;
     }
 
     // Update is called once per frame
@@ -122,6 +127,7 @@ public class ForestBossLogic : MonoBehaviour
     {
         attacking = true;
         sr.sprite = angry;
+        PointyNotice.Post(gameObject);
 
         yield return new WaitForSeconds(bufferTime);
 
@@ -133,12 +139,14 @@ public class ForestBossLogic : MonoBehaviour
 
         if (stun)
         {
-            yield return new WaitForSeconds(stunTime);
+            PointyStun.Post(gameObject);
             sr.sprite = stunned;
+            yield return new WaitForSeconds(stunTime);
         }
 
         else
         {
+            PointySmash.Post(gameObject);
             yield return new WaitForSeconds(0.2f);
         }
 
@@ -167,6 +175,8 @@ public class ForestBossLogic : MonoBehaviour
         {
             stun = true;
         }
+
+
     }
 
     private void Damage()
@@ -186,20 +196,18 @@ public class ForestBossLogic : MonoBehaviour
 
     IEnumerator Hurt(Vector2 dropPosition)
     {
-
+        PointyHurt.Post(gameObject);
         yield return new WaitForSeconds(0.1f);
         originalPos = transform.position;
 
         sr.sprite = damaged;
         hurt = true;
-        push1.forceMagnitude = 1000f;
-        push2.forceMagnitude = 1000f;
+        push.enabled = true;
 
         yield return new WaitForSeconds(1.5f);
 
         hurt = false;
-        push1.forceMagnitude = 0f;
-        push2.forceMagnitude = 0f;
+        push.enabled = false;
         transform.position = originalPos;
         sr.sprite = normal;
 
@@ -222,12 +230,15 @@ public class ForestBossLogic : MonoBehaviour
 
     IEnumerator Death()
     {
+        PointyDeath.Post(gameObject);
         dead = true;
         sr.sprite = damaged;
         spikes.SetActive(false);
 
         yield return new WaitForSeconds(3f);
 
+        PointyExplode.Post(gameObject);
+        Instantiate(PointyDeathParticles, gameObject.transform.position, gameObject.transform.rotation);
         gameObject.SetActive(false);
         
     }

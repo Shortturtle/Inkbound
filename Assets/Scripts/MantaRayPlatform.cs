@@ -71,12 +71,18 @@ public class MantaRayPlatform : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.transform.SetParent(transform);
+        if (collision.gameObject.transform.position.y > (gameObject.transform.position.y + (gameObject.GetComponent<BoxCollider2D>().size.y/4)))
+        {
+            collision.transform.SetParent(transform);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        collision.transform.SetParent(null);
+        if (collision.transform.parent == this.transform)
+        {
+            collision.transform.SetParent(null);
+        }
     }
 
     private void BoxCast()
