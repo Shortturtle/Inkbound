@@ -1,2 +1,2 @@
 # Inkbound
- SP MGD Idea 2
+ MGD Game for SP Mobile Game Development (2025)
